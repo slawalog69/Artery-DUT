@@ -1,0 +1,1019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Файл adc.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('adc_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл adc.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="adc_8h_source.html">adc.h</a>&quot;</code><br />
+<code>#include &quot;math.h&quot;</code><br />
+</div>
+<p><a href="adc_8c_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a12cff7d68ffa596315a731d300ad77b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a12cff7d68ffa596315a731d300ad77b9">TEMP110_CAL_ADDR</a>&#160;&#160;&#160;((uint16_t*) ((uint32_t) 0x1FFFF7C2))</td></tr>
+<tr class="separator:a12cff7d68ffa596315a731d300ad77b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ec4e75c2713b03028da7e4fae538bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#ac6ec4e75c2713b03028da7e4fae538bb">TEMP30_CAL_ADDR</a>&#160;&#160;&#160;((uint16_t*) ((uint32_t) 0x1FFFF7B8))</td></tr>
+<tr class="separator:ac6ec4e75c2713b03028da7e4fae538bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ede2d222ba5ac72babdd4fd5e3a4313"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a9ede2d222ba5ac72babdd4fd5e3a4313">ADC_VAL_DR_MAX</a>&#160;&#160;&#160;4095</td></tr>
+<tr class="separator:a9ede2d222ba5ac72babdd4fd5e3a4313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf36658650ad4f495cb4e03858fa169"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a6cf36658650ad4f495cb4e03858fa169">ADC_TEMP_OFFSET</a>&#160;&#160;&#160;(0.0f)</td></tr>
+<tr class="separator:a6cf36658650ad4f495cb4e03858fa169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1492f95dec5b6ca4ec238a6593e81400"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a1492f95dec5b6ca4ec238a6593e81400">ADC_WDT_ALARM_CNT_MAX</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a1492f95dec5b6ca4ec238a6593e81400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bc7adf1db19a604a3bcc27fce313d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a75bc7adf1db19a604a3bcc27fce313d6">kVin</a>&#160;&#160;&#160;25.0f</td></tr>
+<tr class="separator:a75bc7adf1db19a604a3bcc27fce313d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4ba7ccad8434c789e2ee21cf479ce5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a5d4ba7ccad8434c789e2ee21cf479ce5">k_5V</a>&#160;&#160;&#160;1.64705882353f</td></tr>
+<tr class="separator:a5d4ba7ccad8434c789e2ee21cf479ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad861e47292f8d489d3c3659ee047825d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#ad861e47292f8d489d3c3659ee047825d">stepADC</a>&#160;&#160;&#160;0.000805664f</td></tr>
+<tr class="separator:ad861e47292f8d489d3c3659ee047825d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a4b15a4f626285529f3d9f2cde4179"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#af9a4b15a4f626285529f3d9f2cde4179">ADC_TEMP_BASE</a>&#160;&#160;&#160;(1.32f)</td></tr>
+<tr class="separator:af9a4b15a4f626285529f3d9f2cde4179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9775153e21cc6623e2670bc3329ecba6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a9775153e21cc6623e2670bc3329ecba6">ADC_TEMP_SLOPE</a>&#160;&#160;&#160;(-0.00434f)</td></tr>
+<tr class="separator:a9775153e21cc6623e2670bc3329ecba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a58a7786b5006ff40f64cd3f2845e02d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a58a7786b5006ff40f64cd3f2845e02d5">fill_ADC_Data</a> ()</td></tr>
+<tr class="separator:a58a7786b5006ff40f64cd3f2845e02d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b3ea071e2c8eb556ad968241906a61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a26b3ea071e2c8eb556ad968241906a61">adc_measure_All</a> ()</td></tr>
+<tr class="separator:a26b3ea071e2c8eb556ad968241906a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c1822dabd4f2c4d607932c368b1f50"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a35c1822dabd4f2c4d607932c368b1f50">ADC_gpio_config</a> (void)</td></tr>
+<tr class="memdesc:a35c1822dabd4f2c4d607932c368b1f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpio configuration.  <a href="#a35c1822dabd4f2c4d607932c368b1f50">Подробнее...</a><br /></td></tr>
+<tr class="separator:a35c1822dabd4f2c4d607932c368b1f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c54d5469ed0db6cf2cee1fbcec2b1a4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a9c54d5469ed0db6cf2cee1fbcec2b1a4">ADC_dma_config</a> (void)</td></tr>
+<tr class="memdesc:a9c54d5469ed0db6cf2cee1fbcec2b1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">dma configuration.  <a href="#a9c54d5469ed0db6cf2cee1fbcec2b1a4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9c54d5469ed0db6cf2cee1fbcec2b1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7f21e220653e353491bceced7c5df3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#aca7f21e220653e353491bceced7c5df3">MX_ADC_Init</a> (void)</td></tr>
+<tr class="separator:aca7f21e220653e353491bceced7c5df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a95d0e8cf54db6251897a4d9056ea1"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#ae4a95d0e8cf54db6251897a4d9056ea1">aprox_Volt</a> (<a class="el" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604">eNameAdcChan</a> Chan)</td></tr>
+<tr class="separator:ae4a95d0e8cf54db6251897a4d9056ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e1e9110324f01b4989f9ae20e78ea3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a34e1e9110324f01b4989f9ae20e78ea3">adc_get_temperature</a> ()</td></tr>
+<tr class="separator:a34e1e9110324f01b4989f9ae20e78ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdf00751151037e391e08af10e6c32f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#abbdf00751151037e391e08af10e6c32f">adc_start_measurement</a> ()</td></tr>
+<tr class="separator:abbdf00751151037e391e08af10e6c32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6fac3d670a4860ebec8a961d5c4a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a7b6fac3d670a4860ebec8a961d5c4a73">DMA1_Channel1_IRQHandler</a> (void)</td></tr>
+<tr class="separator:a7b6fac3d670a4860ebec8a961d5c4a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a5c917a92605cca17bb7f46e715b7cba9"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a></td></tr>
+<tr class="separator:a5c917a92605cca17bb7f46e715b7cba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dee2f64f1184da78aa4d5dc8b3d81b4"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a7dee2f64f1184da78aa4d5dc8b3d81b4">adc_wdt_alarm_flg</a></td></tr>
+<tr class="separator:a7dee2f64f1184da78aa4d5dc8b3d81b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac565dd8e28e2052bde3edd6e6938a6cf"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#ac565dd8e28e2052bde3edd6e6938a6cf">adc_wdt_alarm_cnt</a></td></tr>
+<tr class="separator:ac565dd8e28e2052bde3edd6e6938a6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0eae5f694683479707fe13cf76ae5b"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a></td></tr>
+<tr class="separator:afb0eae5f694683479707fe13cf76ae5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4599638d12c29e1cd110cb402cf0b480"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a> [<a class="el" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a>]</td></tr>
+<tr class="separator:a4599638d12c29e1cd110cb402cf0b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63045a38d9fd8c28b0bfa297af6b14ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvalues___cl.html">values_Cl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a> [<a class="el" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a>]</td></tr>
+<tr class="separator:a63045a38d9fd8c28b0bfa297af6b14ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b1cabdcf22221be6104a3cb3cbbecd"><td class="memItemLeft" align="right" valign="top">volatile s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a62b1cabdcf22221be6104a3cb3cbbecd">adc_temperature</a></td></tr>
+<tr class="separator:a62b1cabdcf22221be6104a3cb3cbbecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8cec8f3a1cde1cd6445df4269b8287"><td class="memItemLeft" align="right" valign="top">volatile u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#acd8cec8f3a1cde1cd6445df4269b8287">adc_5V_mv</a></td></tr>
+<tr class="separator:acd8cec8f3a1cde1cd6445df4269b8287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace741d6a0014555913eb7ad3e19482e1"><td class="memItemLeft" align="right" valign="top">volatile u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a></td></tr>
+<tr class="separator:ace741d6a0014555913eb7ad3e19482e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc867b16d309ce2eac56a334b6f5eb0"><td class="memItemLeft" align="right" valign="top">volatile u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#abbc867b16d309ce2eac56a334b6f5eb0">adc_temp_mv</a></td></tr>
+<tr class="separator:abbc867b16d309ce2eac56a334b6f5eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="af9a4b15a4f626285529f3d9f2cde4179"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_TEMP_BASE&#160;&#160;&#160;(1.32f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00243">243</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cf36658650ad4f495cb4e03858fa169"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_TEMP_OFFSET&#160;&#160;&#160;(0.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00026">26</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00253">adc_get_temperature()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9775153e21cc6623e2670bc3329ecba6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_TEMP_SLOPE&#160;&#160;&#160;(-0.00434f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00244">244</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ede2d222ba5ac72babdd4fd5e3a4313"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_VAL_DR_MAX&#160;&#160;&#160;4095</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1492f95dec5b6ca4ec238a6593e81400"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_WDT_ALARM_CNT_MAX&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a5d4ba7ccad8434c789e2ee21cf479ce5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define k_5V&#160;&#160;&#160;1.64705882353f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00239">239</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a75bc7adf1db19a604a3bcc27fce313d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kVin&#160;&#160;&#160;25.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00238">238</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad861e47292f8d489d3c3659ee047825d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define stepADC&#160;&#160;&#160;0.000805664f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00240">240</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00246">aprox_Volt()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12cff7d68ffa596315a731d300ad77b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMP110_CAL_ADDR&#160;&#160;&#160;((uint16_t*) ((uint32_t) 0x1FFFF7C2))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>File Name : <a class="el" href="adc_8c.html">ADC.c</a> Description : This file provides code for the configuration of the ADC instances. </p>
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ac6ec4e75c2713b03028da7e4fae538bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMP30_CAL_ADDR&#160;&#160;&#160;((uint16_t*) ((uint32_t) 0x1FFFF7B8))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00016">16</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="a9c54d5469ed0db6cf2cee1fbcec2b1a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ADC_dma_config </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dma configuration. </p>
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00096">96</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8c_source.html#l00038">adc_dma_buffer</a>.</p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00172">MX_ADC_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  dma_init_type dma_init_struct;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  crm_periph_clock_enable(CRM_DMA1_PERIPH_CLOCK, TRUE);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  memset((u16*)&amp;<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a>[0], 0,<span class="keyword">sizeof</span>(<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a>));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  dma_reset(DMA1_CHANNEL1);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  dma_default_para_init(&amp;dma_init_struct);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">//  indxDma =0;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  dma_init_struct.buffer_size = 3;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  dma_init_struct.direction = DMA_DIR_PERIPHERAL_TO_MEMORY;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  dma_init_struct.memory_base_addr = (u32)&amp;<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a>[0];<span class="comment">//[indxDma][0];</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  dma_init_struct.memory_data_width =  DMA_MEMORY_DATA_WIDTH_HALFWORD;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  dma_init_struct.memory_inc_enable = TRUE;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  dma_init_struct.peripheral_base_addr = (uint32_t)&amp;(ADC1-&gt;odt);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  dma_init_struct.peripheral_data_width = DMA_PERIPHERAL_DATA_WIDTH_HALFWORD;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  dma_init_struct.peripheral_inc_enable = FALSE;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  dma_init_struct.priority = DMA_PRIORITY_HIGH;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  dma_init_struct.loop_mode_enable = TRUE;<span class="comment">// FALSE;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  dma_init(DMA1_CHANNEL1, &amp;dma_init_struct);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  dma_interrupt_enable(DMA1_CHANNEL1, DMA_FDT_INT, TRUE);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  dma_channel_enable(DMA1_CHANNEL1, TRUE);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  nvic_irq_enable(DMA1_Channel1_IRQn, 0, 0);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_a4599638d12c29e1cd110cb402cf0b480"><div class="ttname"><a href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a></div><div class="ttdeci">volatile uint16_t adc_dma_buffer[ADC_DMA_BUF_QNT_CHANS]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00038">adc.c:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a34e1e9110324f01b4989f9ae20e78ea3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float adc_get_temperature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00253">253</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8c_source.html#l00026">ADC_TEMP_OFFSET</a> и <a class="el" href="adc_8c_source.html#l00040">adc_temperature</a>.</p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00050">adc_measure_All()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                             {  <span class="comment">// пересчет кода АЦП в температуру  </span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">//  if(adc_Values[ADC_CHAN_TEMP].calc() == false)</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">//    return 0.0f; </span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">//  float tmp = aprox_Volt(ADC_CHAN_TEMP);</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">//  float term =(ADC_TEMP_BASE - tmp ) / ADC_TEMP_SLOPE + 25; </span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">//  return (term - ADC_TEMP_OFFSET); </span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="adc_8c.html#a62b1cabdcf22221be6104a3cb3cbbecd">adc_temperature</a> - <a class="code" href="adc_8c.html#a6cf36658650ad4f495cb4e03858fa169">ADC_TEMP_OFFSET</a>);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_a6cf36658650ad4f495cb4e03858fa169"><div class="ttname"><a href="adc_8c.html#a6cf36658650ad4f495cb4e03858fa169">ADC_TEMP_OFFSET</a></div><div class="ttdeci">#define ADC_TEMP_OFFSET</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00026">adc.c:26</a></div></div>
+<div class="ttc" id="adc_8c_html_a62b1cabdcf22221be6104a3cb3cbbecd"><div class="ttname"><a href="adc_8c.html#a62b1cabdcf22221be6104a3cb3cbbecd">adc_temperature</a></div><div class="ttdeci">volatile s32 adc_temperature</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00040">adc.c:40</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a35c1822dabd4f2c4d607932c368b1f50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ADC_gpio_config </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gpio configuration. </p>
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00077">77</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="main_8h_source.html#l00105">ADC_5V_GPIO_Port</a>, <a class="el" href="main_8h_source.html#l00104">ADC_5V_Pin</a>, <a class="el" href="main_8h_source.html#l00081">ADC_VIN_GPIO_Port</a>, <a class="el" href="main_8h_source.html#l00080">ADC_VIN_Pin</a> и <a class="el" href="gpio_8c_source.html#l00137">gpio_init()</a>.</p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00172">MX_ADC_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  gpio_init_type gpio_initstructure;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  crm_periph_clock_enable(CRM_GPIOA_PERIPH_CLOCK, TRUE);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  crm_periph_clock_enable(CRM_GPIOB_PERIPH_CLOCK, TRUE);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  gpio_default_para_init(&amp;gpio_initstructure);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  gpio_initstructure.gpio_mode = GPIO_MODE_ANALOG;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  gpio_initstructure.gpio_pins = <a class="code" href="main_8h.html#a381cd5b903b0556325e30046406cabf0">ADC_5V_Pin</a>  ;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="gpio_8c.html#a84f88a73b7bafb4c856cb7ba9f6fe8b5">gpio_init</a>(<a class="code" href="main_8h.html#af3b13ea3511b0286e049b6974bec0f02">ADC_5V_GPIO_Port</a> , &amp;gpio_initstructure);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  gpio_initstructure.gpio_mode = GPIO_MODE_ANALOG;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  gpio_initstructure.gpio_pins =  <a class="code" href="main_8h.html#a712016883c8758bc2d2b7378aa403f8c">ADC_VIN_Pin</a>  ;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="gpio_8c.html#a84f88a73b7bafb4c856cb7ba9f6fe8b5">gpio_init</a>( <a class="code" href="main_8h.html#a2c087780f75b5e01dfdd1d221bded117">ADC_VIN_GPIO_Port</a> , &amp;gpio_initstructure);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="ttc" id="main_8h_html_af3b13ea3511b0286e049b6974bec0f02"><div class="ttname"><a href="main_8h.html#af3b13ea3511b0286e049b6974bec0f02">ADC_5V_GPIO_Port</a></div><div class="ttdeci">#define ADC_5V_GPIO_Port</div><div class="ttdef"><b>Definition:</b> <a href="main_8h_source.html#l00105">main.h:105</a></div></div>
+<div class="ttc" id="main_8h_html_a712016883c8758bc2d2b7378aa403f8c"><div class="ttname"><a href="main_8h.html#a712016883c8758bc2d2b7378aa403f8c">ADC_VIN_Pin</a></div><div class="ttdeci">#define ADC_VIN_Pin</div><div class="ttdef"><b>Definition:</b> <a href="main_8h_source.html#l00080">main.h:80</a></div></div>
+<div class="ttc" id="main_8h_html_a381cd5b903b0556325e30046406cabf0"><div class="ttname"><a href="main_8h.html#a381cd5b903b0556325e30046406cabf0">ADC_5V_Pin</a></div><div class="ttdeci">#define ADC_5V_Pin</div><div class="ttdef"><b>Definition:</b> <a href="main_8h_source.html#l00104">main.h:104</a></div></div>
+<div class="ttc" id="main_8h_html_a2c087780f75b5e01dfdd1d221bded117"><div class="ttname"><a href="main_8h.html#a2c087780f75b5e01dfdd1d221bded117">ADC_VIN_GPIO_Port</a></div><div class="ttdeci">#define ADC_VIN_GPIO_Port</div><div class="ttdef"><b>Definition:</b> <a href="main_8h_source.html#l00081">main.h:81</a></div></div>
+<div class="ttc" id="gpio_8c_html_a84f88a73b7bafb4c856cb7ba9f6fe8b5"><div class="ttname"><a href="gpio_8c.html#a84f88a73b7bafb4c856cb7ba9f6fe8b5">gpio_init</a></div><div class="ttdeci">void gpio_init()</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00137">gpio.c:137</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a26b3ea071e2c8eb556ad968241906a61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adc_measure_All </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00050">50</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8c_source.html#l00041">adc_5V_mv</a>, <a class="el" href="adc_8c_source.html#l00031">adc_data_ready</a>, <a class="el" href="adc_8c_source.html#l00253">adc_get_temperature()</a>, <a class="el" href="adc_8c_source.html#l00344">adc_start_measurement()</a>, <a class="el" href="adc_8c_source.html#l00041">adc_VIN_mv</a>, <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>, <a class="el" href="measurement_8c_source.html#l00096">mb_hold_reg</a>, <a class="el" href="measurement_8c_source.html#l00095">meas_state</a>, <a class="el" href="measurement_8c_source.html#l00649">measure_calc_corr_temperature()</a>, <a class="el" href="measurement_8h_source.html#l00125">meas_state_t::power5v</a>, <a class="el" href="measurement_8h_source.html#l00126">meas_state_t::powerVin</a>, <a class="el" href="measurement_8h_source.html#l00127">meas_state_t::temperature_corr</a>, <a class="el" href="measurement_8h_source.html#l00144">mb_hold_reg_t::temperature_corr</a>, <a class="el" href="measurement_8h_source.html#l00122">meas_state_t::temperature_pure</a> и <a class="el" href="wdt_8c_source.html#l00039">wdt_refresh()</a>.</p>
+
+<p>Используется в <a class="el" href="main_8c_source.html#l00031">main()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                      {  <span class="comment">// фиксация значения температуры и запуск нового измерения температуры</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//    meas_state.temperature = adc_get_temperature();</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//    meas_state.temperature_pure = (s8)meas_state.temperature;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//    meas_state.temperature_corr = measure_calc_corr_temperature();</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//    mb_hold_reg.temperature_corr =(int16_t)meas_state.temperature_corr; </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//    meas_state.power5v = adc_get_5V_value (); </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//    meas_state.powerVin = adc_get_Vin_value(); </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// *********************</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a> == 1){</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="adc_8c.html#a58a7786b5006ff40f64cd3f2845e02d5">fill_ADC_Data</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#a787050de06c5e511c102b72f210fff10">temperature_pure</a> = (int8_t)<a class="code" href="adc_8c.html#a34e1e9110324f01b4989f9ae20e78ea3">adc_get_temperature</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#a7483d34cf982e0e8964edc843551b81a">temperature_corr</a> = <a class="code" href="measurement_8h.html#a77a474a55fa8c91ae995cbb824dd5cd7">measure_calc_corr_temperature</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="measurement_8h.html#af4ae29ac919b5c639c55d926d38c4228">mb_hold_reg</a>.<a class="code" href="structmb__hold__reg__t.html#a7ee22b20fe1923d2a513e92a5fec111e">temperature_corr</a> =(int16_t)<a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#a7483d34cf982e0e8964edc843551b81a">temperature_corr</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#a47dc8d62abed2ab3a106653a7e24e9a1">power5v</a> = <a class="code" href="adc_8c.html#acd8cec8f3a1cde1cd6445df4269b8287">adc_5V_mv</a>/1000.0f;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#aac9d80b579acc5c4620485b809e2e76b">powerVin</a> = <a class="code" href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a> /1000.0f;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="adc_8c.html#abbdf00751151037e391e08af10e6c32f">adc_start_measurement</a>(); </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a>();<span class="comment">//** </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_ace741d6a0014555913eb7ad3e19482e1"><div class="ttname"><a href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a></div><div class="ttdeci">volatile u32 adc_VIN_mv</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00041">adc.c:41</a></div></div>
+<div class="ttc" id="measurement_8h_html_af4ae29ac919b5c639c55d926d38c4228"><div class="ttname"><a href="measurement_8h.html#af4ae29ac919b5c639c55d926d38c4228">mb_hold_reg</a></div><div class="ttdeci">mb_hold_reg_t mb_hold_reg</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00096">measurement.c:96</a></div></div>
+<div class="ttc" id="structmb__hold__reg__t_html_a7ee22b20fe1923d2a513e92a5fec111e"><div class="ttname"><a href="structmb__hold__reg__t.html#a7ee22b20fe1923d2a513e92a5fec111e">mb_hold_reg_t::temperature_corr</a></div><div class="ttdeci">int16_t temperature_corr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00144">measurement.h:144</a></div></div>
+<div class="ttc" id="adc_8c_html_a58a7786b5006ff40f64cd3f2845e02d5"><div class="ttname"><a href="adc_8c.html#a58a7786b5006ff40f64cd3f2845e02d5">fill_ADC_Data</a></div><div class="ttdeci">static void fill_ADC_Data()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00285">adc.c:285</a></div></div>
+<div class="ttc" id="adc_8c_html_acd8cec8f3a1cde1cd6445df4269b8287"><div class="ttname"><a href="adc_8c.html#acd8cec8f3a1cde1cd6445df4269b8287">adc_5V_mv</a></div><div class="ttdeci">volatile u32 adc_5V_mv</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00041">adc.c:41</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_aac9d80b579acc5c4620485b809e2e76b"><div class="ttname"><a href="structmeas__state__t.html#aac9d80b579acc5c4620485b809e2e76b">meas_state_t::powerVin</a></div><div class="ttdeci">float powerVin</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00126">measurement.h:126</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a7483d34cf982e0e8964edc843551b81a"><div class="ttname"><a href="structmeas__state__t.html#a7483d34cf982e0e8964edc843551b81a">meas_state_t::temperature_corr</a></div><div class="ttdeci">int8_t temperature_corr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00127">measurement.h:127</a></div></div>
+<div class="ttc" id="measurement_8h_html_a98d9e6a2868eae8714e26828e86c5028"><div class="ttname"><a href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a></div><div class="ttdeci">meas_state_t meas_state</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00095">measurement.c:95</a></div></div>
+<div class="ttc" id="adc_8c_html_abbdf00751151037e391e08af10e6c32f"><div class="ttname"><a href="adc_8c.html#abbdf00751151037e391e08af10e6c32f">adc_start_measurement</a></div><div class="ttdeci">void adc_start_measurement()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00344">adc.c:344</a></div></div>
+<div class="ttc" id="adc_8c_html_a34e1e9110324f01b4989f9ae20e78ea3"><div class="ttname"><a href="adc_8c.html#a34e1e9110324f01b4989f9ae20e78ea3">adc_get_temperature</a></div><div class="ttdeci">float adc_get_temperature()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00253">adc.c:253</a></div></div>
+<div class="ttc" id="wdt_8h_html_a1fd115669e84cefafd0e2b8c698d72cc"><div class="ttname"><a href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a></div><div class="ttdeci">void wdt_refresh()</div><div class="ttdef"><b>Definition:</b> <a href="wdt_8c_source.html#l00039">wdt.c:39</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a787050de06c5e511c102b72f210fff10"><div class="ttname"><a href="structmeas__state__t.html#a787050de06c5e511c102b72f210fff10">meas_state_t::temperature_pure</a></div><div class="ttdeci">int8_t temperature_pure</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00122">measurement.h:122</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a47dc8d62abed2ab3a106653a7e24e9a1"><div class="ttname"><a href="structmeas__state__t.html#a47dc8d62abed2ab3a106653a7e24e9a1">meas_state_t::power5v</a></div><div class="ttdeci">float power5v</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00125">measurement.h:125</a></div></div>
+<div class="ttc" id="adc_8c_html_a5c917a92605cca17bb7f46e715b7cba9"><div class="ttname"><a href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a></div><div class="ttdeci">volatile uint8_t adc_data_ready</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00031">adc.c:31</a></div></div>
+<div class="ttc" id="measurement_8h_html_a77a474a55fa8c91ae995cbb824dd5cd7"><div class="ttname"><a href="measurement_8h.html#a77a474a55fa8c91ae995cbb824dd5cd7">measure_calc_corr_temperature</a></div><div class="ttdeci">int8_t measure_calc_corr_temperature()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00649">measurement.c:649</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abbdf00751151037e391e08af10e6c32f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adc_start_measurement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00344">344</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8c_source.html#l00031">adc_data_ready</a> и <a class="el" href="adc_8c_source.html#l00038">adc_dma_buffer</a>.</p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00050">adc_measure_All()</a>, <a class="el" href="init_8c_source.html#l00018">init_board()</a> и <a class="el" href="adc_8c_source.html#l00172">MX_ADC_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                            { </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <a class="code" href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a> = 0; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  u32 next = (u32)&amp;<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a> [0];</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  DMA1_CHANNEL1-&gt;maddr = next;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  adc_ordinary_software_trigger_enable(ADC1, TRUE); </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  dma_channel_enable(DMA1_CHANNEL1, TRUE);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_a4599638d12c29e1cd110cb402cf0b480"><div class="ttname"><a href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a></div><div class="ttdeci">volatile uint16_t adc_dma_buffer[ADC_DMA_BUF_QNT_CHANS]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00038">adc.c:38</a></div></div>
+<div class="ttc" id="adc_8c_html_a5c917a92605cca17bb7f46e715b7cba9"><div class="ttname"><a href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a></div><div class="ttdeci">volatile uint8_t adc_data_ready</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00031">adc.c:31</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae4a95d0e8cf54db6251897a4d9056ea1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float aprox_Volt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604">eNameAdcChan</a>&#160;</td>
+          <td class="paramname"><em>Chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00246">246</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8c_source.html#l00240">stepADC</a>.</p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                           {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordtype">float</span> tmp;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[Chan].GetAverage(&amp;tmp ) == <span class="keyword">false</span>) <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordtype">float</span> x = ( float)tmp *<a class="code" href="adc_8c.html#ad861e47292f8d489d3c3659ee047825d">stepADC</a>; <span class="comment">// ADC_VREF / 4096;</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_ad861e47292f8d489d3c3659ee047825d"><div class="ttname"><a href="adc_8c.html#ad861e47292f8d489d3c3659ee047825d">stepADC</a></div><div class="ttdeci">#define stepADC</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00240">adc.c:240</a></div></div>
+<div class="ttc" id="adc_8c_html_a63045a38d9fd8c28b0bfa297af6b14ed"><div class="ttname"><a href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a></div><div class="ttdeci">values_Cl adc_Values[ADC_DMA_BUF_QNT_CHANS]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00039">adc.c:39</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7b6fac3d670a4860ebec8a961d5c4a73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DMA1_Channel1_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00353">353</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8c_source.html#l00031">adc_data_ready</a>.</p>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keywordflow">if</span>(dma_flag_get(DMA1_FDT1_FLAG) != RESET)</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    dma_flag_clear(DMA1_FDT1_FLAG);  </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    dma_channel_enable(DMA1_CHANNEL1, FALSE);   </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">/*    //    if(++indxDma &gt; (ADC_CASH-1)) {</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">    //    //      indxDma = 0;</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">    //    //      adc_data_ready =1; </span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">    //    adc_Values[ADC_CHAN_5V].addVal((float)adc_dma_buffer[ADC_CHAN_5V] );</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">    //    adc_Values[ADC_CHAN_VIN ].addVal((float)adc_dma_buffer[ADC_CHAN_VIN] );</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">    //    adc_Values[ADC_CHAN_TEMP ].addVal((float)adc_dma_buffer[ADC_CHAN_TEMP ] );</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">    //    //    }</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">    //    </span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">    //    u32 next = (u32)&amp;adc_dma_buffer[0]; //[indxDma][0];</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">    //    DMA1_CHANNEL1-&gt;maddr = next;</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">    //    dma_channel_enable(DMA1_CHANNEL1, TRUE);</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">    //    adc_ordinary_software_trigger_enable(ADC1, TRUE);</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a> = 1; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_a5c917a92605cca17bb7f46e715b7cba9"><div class="ttname"><a href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a></div><div class="ttdeci">volatile uint8_t adc_data_ready</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00031">adc.c:31</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a58a7786b5006ff40f64cd3f2845e02d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void fill_ADC_Data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00285">285</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8c_source.html#l00041">adc_5V_mv</a>, <a class="el" href="adc_8h_source.html#l00022">ADC_CHAN_5V</a>, <a class="el" href="adc_8h_source.html#l00025">ADC_CHAN_TEMP</a>, <a class="el" href="adc_8h_source.html#l00024">ADC_CHAN_VIN</a>, <a class="el" href="adc_8c_source.html#l00038">adc_dma_buffer</a>, <a class="el" href="adc_8c_source.html#l00034">adc_low_power</a>, <a class="el" href="adc_8c_source.html#l00243">ADC_TEMP_BASE</a>, <a class="el" href="adc_8c_source.html#l00244">ADC_TEMP_SLOPE</a>, <a class="el" href="adc_8c_source.html#l00040">adc_temperature</a>, <a class="el" href="adc_8c_source.html#l00041">adc_VIN_mv</a>, <a class="el" href="_values___cl_8cpp_source.html#l00039">values_Cl::addVal()</a> и <a class="el" href="adc_8c_source.html#l00246">aprox_Volt()</a>.</p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00050">adc_measure_All()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                           {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">//  static u8 indxTerm = 0;</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordtype">float</span>  tmp_mv;  </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="comment">// пересчет кода АЦП в напряжение канала VIN</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="comment">//  u32 tmp_mv = (adc_dma_buffer[ADC_CHAN_VIN] * VDD_APPLY) &gt;&gt;  ADC_VAL_MAX_BR;// / ADC_VAL_DR_MAX;</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[<a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">ADC_CHAN_VIN</a>].<a class="code" href="classvalues___cl.html#a1d1c9d18489dbb78aae3d130c2174f11">addVal</a>((<span class="keywordtype">float</span>)<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a>[<a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">ADC_CHAN_VIN</a>]);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[ADC_CHAN_VIN ].calc()){</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">//  if(adc_Values[ADC_CHAN_VIN].GetAverage(&amp;tVal) == false) return; // not stable</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">//  float tmp_mv = (( tVal  * (float)VDD_APPLY))/ (float)ADC_VAL_DR_MAX;// &gt;&gt;  ADC_VAL_MAX_BR;// </span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    tmp_mv =  <a class="code" href="adc_8c.html#ae4a95d0e8cf54db6251897a4d9056ea1">aprox_Volt</a>(ADC_CHAN_VIN );</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a> =  (u32)( tmp_mv * (20.0f + 1.0f) / 1.0f *1000.0f);<span class="comment">//(10 + 240) / 10; // расчет напряжения на делителе, сопротивление в кОм</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a> += 520; <span class="comment">//корр на падение напр на диоде</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">if</span>((<a class="code" href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a> == 1) &amp;&amp;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;          (<a class="code" href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a> &gt; 7000 )) <span class="comment">// напряжение на делителе при напряжении на входе 8 Вольт</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {  </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <a class="code" href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a> = 0;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="comment">//    adc_data_ready = 1;</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>  ((<a class="code" href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a> == 0) &amp;&amp;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                (<a class="code" href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a> &lt; 6000))<span class="comment">//if  (meas_state.filter_started == 1)</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="comment">//    adc_data_ready = 1;  </span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <a class="code" href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a> = 1;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  };</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="comment">// пересчет кода АЦП в напряжение канала 5V</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[<a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3">ADC_CHAN_5V</a> ].<a class="code" href="classvalues___cl.html#a1d1c9d18489dbb78aae3d130c2174f11">addVal</a>((<span class="keywordtype">float</span>)<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a>[<a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3">ADC_CHAN_5V</a> ]);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordflow">if</span>( <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[ADC_CHAN_5V  ].calc()){</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    tmp_mv =  <a class="code" href="adc_8c.html#ae4a95d0e8cf54db6251897a4d9056ea1">aprox_Volt</a>( ADC_CHAN_5V );</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">//  if(adc_Values[ADC_CHAN_5V ].GetAverage(&amp;tVal)){</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">//    tmp_mv = ((u32)tVal  * VDD_APPLY) / ADC_VAL_DR_MAX;</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="adc_8c.html#acd8cec8f3a1cde1cd6445df4269b8287">adc_5V_mv</a> = (u32)( tmp_mv * (3.3f + 5.1f) / 5.1f*1000.0f); <span class="comment">// расчет напряжения на делителе, сопротивление в Ом</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="comment">//  }</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  };</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="comment">// пересчет кода АЦП в температуру  </span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="comment">//  int32_t tmp = adc_dma_buffer[ADC_CHAN_TEMP];  </span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[<a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16">ADC_CHAN_TEMP</a>].<a class="code" href="classvalues___cl.html#a1d1c9d18489dbb78aae3d130c2174f11">addVal</a>((<span class="keywordtype">float</span>)<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a>[<a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16">ADC_CHAN_TEMP</a>]);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordflow">if</span>( <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[ADC_CHAN_TEMP].calc()){ </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    tmp_mv =  <a class="code" href="adc_8c.html#ae4a95d0e8cf54db6251897a4d9056ea1">aprox_Volt</a>( ADC_CHAN_TEMP );</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">float</span> term =(<a class="code" href="adc_8c.html#af9a4b15a4f626285529f3d9f2cde4179">ADC_TEMP_BASE</a> -  tmp_mv) / <a class="code" href="adc_8c.html#a9775153e21cc6623e2670bc3329ecba6">ADC_TEMP_SLOPE</a> + 25; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">//    int32_t  tmp = (((int32_t)tmp_mv   * VDD_APPLY / VDD_CALIB) - (int32_t)(*TEMP30_CAL_ADDR));</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">//    tmp = tmp * (int32_t)(110 - 30);</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">//    tmp = tmp / (int32_t)((*TEMP110_CAL_ADDR) - (*TEMP30_CAL_ADDR));</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="comment">//    tmp = tmp + 30; </span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    s32 sign = 1; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">if</span>(term &lt; 0.0f)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      sign = -1; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordtype">float</span> intg ;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">float</span> frct = modff(term , &amp;intg);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">if</span>((frct * sign) &gt; 0.5f)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      intg += (1.0f * sign);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="adc_8c.html#a62b1cabdcf22221be6104a3cb3cbbecd">adc_temperature</a> =  (s32)intg;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_ace741d6a0014555913eb7ad3e19482e1"><div class="ttname"><a href="adc_8c.html#ace741d6a0014555913eb7ad3e19482e1">adc_VIN_mv</a></div><div class="ttdeci">volatile u32 adc_VIN_mv</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00041">adc.c:41</a></div></div>
+<div class="ttc" id="adc_8c_html_afb0eae5f694683479707fe13cf76ae5b"><div class="ttname"><a href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a></div><div class="ttdeci">volatile uint8_t adc_low_power</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00034">adc.c:34</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16">ADC_CHAN_TEMP</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00025">adc.h:25</a></div></div>
+<div class="ttc" id="adc_8c_html_acd8cec8f3a1cde1cd6445df4269b8287"><div class="ttname"><a href="adc_8c.html#acd8cec8f3a1cde1cd6445df4269b8287">adc_5V_mv</a></div><div class="ttdeci">volatile u32 adc_5V_mv</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00041">adc.c:41</a></div></div>
+<div class="ttc" id="adc_8c_html_af9a4b15a4f626285529f3d9f2cde4179"><div class="ttname"><a href="adc_8c.html#af9a4b15a4f626285529f3d9f2cde4179">ADC_TEMP_BASE</a></div><div class="ttdeci">#define ADC_TEMP_BASE</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00243">adc.c:243</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3">ADC_CHAN_5V</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00022">adc.h:22</a></div></div>
+<div class="ttc" id="adc_8c_html_ae4a95d0e8cf54db6251897a4d9056ea1"><div class="ttname"><a href="adc_8c.html#ae4a95d0e8cf54db6251897a4d9056ea1">aprox_Volt</a></div><div class="ttdeci">static float aprox_Volt(eNameAdcChan Chan)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00246">adc.c:246</a></div></div>
+<div class="ttc" id="adc_8c_html_a63045a38d9fd8c28b0bfa297af6b14ed"><div class="ttname"><a href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a></div><div class="ttdeci">values_Cl adc_Values[ADC_DMA_BUF_QNT_CHANS]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00039">adc.c:39</a></div></div>
+<div class="ttc" id="classvalues___cl_html_a1d1c9d18489dbb78aae3d130c2174f11"><div class="ttname"><a href="classvalues___cl.html#a1d1c9d18489dbb78aae3d130c2174f11">values_Cl::addVal</a></div><div class="ttdeci">void addVal(float v)</div><div class="ttdef"><b>Definition:</b> <a href="_values___cl_8cpp_source.html#l00039">Values_Cl.cpp:39</a></div></div>
+<div class="ttc" id="adc_8c_html_a62b1cabdcf22221be6104a3cb3cbbecd"><div class="ttname"><a href="adc_8c.html#a62b1cabdcf22221be6104a3cb3cbbecd">adc_temperature</a></div><div class="ttdeci">volatile s32 adc_temperature</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00040">adc.c:40</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">ADC_CHAN_VIN</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00024">adc.h:24</a></div></div>
+<div class="ttc" id="adc_8c_html_a4599638d12c29e1cd110cb402cf0b480"><div class="ttname"><a href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a></div><div class="ttdeci">volatile uint16_t adc_dma_buffer[ADC_DMA_BUF_QNT_CHANS]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00038">adc.c:38</a></div></div>
+<div class="ttc" id="adc_8c_html_a9775153e21cc6623e2670bc3329ecba6"><div class="ttname"><a href="adc_8c.html#a9775153e21cc6623e2670bc3329ecba6">ADC_TEMP_SLOPE</a></div><div class="ttdeci">#define ADC_TEMP_SLOPE</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00244">adc.c:244</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aca7f21e220653e353491bceced7c5df3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MX_ADC_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00172">172</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="adc_8h_source.html#l00024">ADC_CHAN_VIN</a>, <a class="el" href="adc_8c_source.html#l00031">adc_data_ready</a>, <a class="el" href="adc_8h_source.html#l00026">ADC_DMA_BUF_QNT_CHANS</a>, <a class="el" href="adc_8c_source.html#l00038">adc_dma_buffer</a>, <a class="el" href="adc_8c_source.html#l00096">ADC_dma_config()</a>, <a class="el" href="adc_8c_source.html#l00077">ADC_gpio_config()</a>, <a class="el" href="adc_8c_source.html#l00034">adc_low_power</a>, <a class="el" href="adc_8c_source.html#l00344">adc_start_measurement()</a>, <a class="el" href="_values___cl_8cpp_source.html#l00039">values_Cl::addVal()</a>, <a class="el" href="_values___cl_8cpp_source.html#l00058">values_Cl::calc()</a>, <a class="el" href="values___cl_8h_source.html#l00014">EXPONET_MIDDLE</a>, <a class="el" href="_values___cl_8cpp_source.html#l00013">values_Cl::Ini_values_Cl()</a>, <a class="el" href="_values___cl_8cpp_source.html#l00034">values_Cl::SetFiltrMode()</a>, <a class="el" href="values___cl_8h_source.html#l00013">SIMPLE_AVERAGE</a> и <a class="el" href="wdt_8c_source.html#l00039">wdt_refresh()</a>.</p>
+
+<p>Используется в <a class="el" href="init_8c_source.html#l00018">init_board()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="adc_8c.html#a35c1822dabd4f2c4d607932c368b1f50">ADC_gpio_config</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">//***********************</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;   <a class="code" href="adc_8c.html#a9c54d5469ed0db6cf2cee1fbcec2b1a4">ADC_dma_config</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">//***********************</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  adc_base_config_type adc_base_struct;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  crm_periph_clock_enable(CRM_ADC1_PERIPH_CLOCK, TRUE);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  crm_adc_clock_div_set(CRM_ADC_DIV_16);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">//    nvic_irq_enable(ADC1_IRQn, 0, 0);</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">/* select combine mode */</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  adc_combine_mode_select(ADC_INDEPENDENT_MODE);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  adc_base_default_para_init(&amp;adc_base_struct);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  adc_base_struct.sequence_mode = TRUE; <span class="comment">// FALSE;// TRUE; //</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  adc_base_struct.repeat_mode = FALSE;<span class="comment">//  TRUE;// FALSE;//</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  adc_base_struct.data_align = ADC_RIGHT_ALIGNMENT;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  adc_base_struct.ordinary_channel_length =  3;<span class="comment">//ADC_DMA_BUF_QNT_CHANS;</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  adc_base_config(ADC1, &amp;adc_base_struct);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  adc_ordinary_channel_set(ADC1, ADC_CHANNEL_1, 1, ADC_SAMPLETIME_239_5); <span class="comment">// +5v</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  adc_ordinary_channel_set(ADC1, ADC_CHANNEL_8, 2, ADC_SAMPLETIME_239_5); <span class="comment">// Vin</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  adc_ordinary_channel_set(ADC1, ADC_CHANNEL_16, 3, ADC_SAMPLETIME_239_5); <span class="comment">// termo</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  adc_ordinary_conversion_trigger_set(ADC1, ADC12_ORDINARY_TRIG_SOFTWARE, TRUE);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  adc_dma_mode_enable(ADC1, TRUE);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  adc_tempersensor_vintrv_enable(TRUE);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">//  adc_ordinary_part_mode_enable(ADC1, TRUE);</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">//  adc_voltage_monitor_enable(ADC1, ADC_VMONITOR_SINGLE_ORDINARY);</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">//  adc_voltage_monitor_threshold_value_set(ADC1, 0xBBB, 0xAAA);</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">//  adc_voltage_monitor_single_channel_select(ADC1, ADC_CHANNEL_5);</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="comment">//  adc_interrupt_enable(ADC1, ADC_VMOR_INT, TRUE);</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  adc_enable(ADC1, TRUE);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  adc_calibration_init(ADC1);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordflow">while</span>(adc_calibration_init_status_get(ADC1));</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  adc_calibration_start(ADC1);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">while</span>(adc_calibration_status_get(ADC1));</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="comment">//************************************* </span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a> ; i++) {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <a class="code" href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a>();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[i].<a class="code" href="classvalues___cl.html#abc61a93bb9098b0114c2e28f7fb4174a">Ini_values_Cl</a>(<a class="code" href="values___cl_8h.html#ad1c946f0efdd7b2f37c95e1a27a91527a1637520d034004673eac077b60600a81">SIMPLE_AVERAGE</a> , 8, 5);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[<a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">ADC_CHAN_VIN</a>].<a class="code" href="classvalues___cl.html#ac26c3224a7182b6c51f59d375421877f">SetFiltrMode</a>(<a class="code" href="values___cl_8h.html#ad1c946f0efdd7b2f37c95e1a27a91527af4212e163f73ee368cf75e91b18603ba">EXPONET_MIDDLE</a>, 1.5f);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">while</span> ((<a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[0].Is_complete()==0 )&amp;&amp;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;         (<a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[1].Is_complete()==0 )&amp;&amp;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;           (<a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[2].Is_complete()==0 ))</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a>();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="adc_8c.html#abbdf00751151037e391e08af10e6c32f">adc_start_measurement</a>();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a> ; i++) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[i].<a class="code" href="classvalues___cl.html#a1d1c9d18489dbb78aae3d130c2174f11">addVal</a>((<span class="keywordtype">float</span>)<a class="code" href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a>[i]);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <a class="code" href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a>[i].<a class="code" href="classvalues___cl.html#a61f6fd91ec9f5b893c1d011e8e15721e">calc</a>();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <a class="code" href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a> = 1; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
+<div class="ttc" id="adc_8c_html_afb0eae5f694683479707fe13cf76ae5b"><div class="ttname"><a href="adc_8c.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a></div><div class="ttdeci">volatile uint8_t adc_low_power</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00034">adc.c:34</a></div></div>
+<div class="ttc" id="classvalues___cl_html_abc61a93bb9098b0114c2e28f7fb4174a"><div class="ttname"><a href="classvalues___cl.html#abc61a93bb9098b0114c2e28f7fb4174a">values_Cl::Ini_values_Cl</a></div><div class="ttdeci">void Ini_values_Cl(filterMode fm, u8 CashLvl, u8 cnt_stab)</div><div class="ttdef"><b>Definition:</b> <a href="_values___cl_8cpp_source.html#l00013">Values_Cl.cpp:13</a></div></div>
+<div class="ttc" id="adc_8c_html_a35c1822dabd4f2c4d607932c368b1f50"><div class="ttname"><a href="adc_8c.html#a35c1822dabd4f2c4d607932c368b1f50">ADC_gpio_config</a></div><div class="ttdeci">static void ADC_gpio_config(void)</div><div class="ttdoc">gpio configuration. </div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00077">adc.c:77</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00026">adc.h:26</a></div></div>
+<div class="ttc" id="values___cl_8h_html_ad1c946f0efdd7b2f37c95e1a27a91527af4212e163f73ee368cf75e91b18603ba"><div class="ttname"><a href="values___cl_8h.html#ad1c946f0efdd7b2f37c95e1a27a91527af4212e163f73ee368cf75e91b18603ba">EXPONET_MIDDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="values___cl_8h_source.html#l00014">values_Cl.h:14</a></div></div>
+<div class="ttc" id="adc_8c_html_a63045a38d9fd8c28b0bfa297af6b14ed"><div class="ttname"><a href="adc_8c.html#a63045a38d9fd8c28b0bfa297af6b14ed">adc_Values</a></div><div class="ttdeci">values_Cl adc_Values[ADC_DMA_BUF_QNT_CHANS]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00039">adc.c:39</a></div></div>
+<div class="ttc" id="classvalues___cl_html_a1d1c9d18489dbb78aae3d130c2174f11"><div class="ttname"><a href="classvalues___cl.html#a1d1c9d18489dbb78aae3d130c2174f11">values_Cl::addVal</a></div><div class="ttdeci">void addVal(float v)</div><div class="ttdef"><b>Definition:</b> <a href="_values___cl_8cpp_source.html#l00039">Values_Cl.cpp:39</a></div></div>
+<div class="ttc" id="adc_8c_html_abbdf00751151037e391e08af10e6c32f"><div class="ttname"><a href="adc_8c.html#abbdf00751151037e391e08af10e6c32f">adc_start_measurement</a></div><div class="ttdeci">void adc_start_measurement()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00344">adc.c:344</a></div></div>
+<div class="ttc" id="wdt_8h_html_a1fd115669e84cefafd0e2b8c698d72cc"><div class="ttname"><a href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a></div><div class="ttdeci">void wdt_refresh()</div><div class="ttdef"><b>Definition:</b> <a href="wdt_8c_source.html#l00039">wdt.c:39</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">ADC_CHAN_VIN</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00024">adc.h:24</a></div></div>
+<div class="ttc" id="adc_8c_html_a9c54d5469ed0db6cf2cee1fbcec2b1a4"><div class="ttname"><a href="adc_8c.html#a9c54d5469ed0db6cf2cee1fbcec2b1a4">ADC_dma_config</a></div><div class="ttdeci">static void ADC_dma_config(void)</div><div class="ttdoc">dma configuration. </div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00096">adc.c:96</a></div></div>
+<div class="ttc" id="adc_8c_html_a4599638d12c29e1cd110cb402cf0b480"><div class="ttname"><a href="adc_8c.html#a4599638d12c29e1cd110cb402cf0b480">adc_dma_buffer</a></div><div class="ttdeci">volatile uint16_t adc_dma_buffer[ADC_DMA_BUF_QNT_CHANS]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00038">adc.c:38</a></div></div>
+<div class="ttc" id="classvalues___cl_html_a61f6fd91ec9f5b893c1d011e8e15721e"><div class="ttname"><a href="classvalues___cl.html#a61f6fd91ec9f5b893c1d011e8e15721e">values_Cl::calc</a></div><div class="ttdeci">bool calc()</div><div class="ttdef"><b>Definition:</b> <a href="_values___cl_8cpp_source.html#l00058">Values_Cl.cpp:58</a></div></div>
+<div class="ttc" id="values___cl_8h_html_ad1c946f0efdd7b2f37c95e1a27a91527a1637520d034004673eac077b60600a81"><div class="ttname"><a href="values___cl_8h.html#ad1c946f0efdd7b2f37c95e1a27a91527a1637520d034004673eac077b60600a81">SIMPLE_AVERAGE</a></div><div class="ttdef"><b>Definition:</b> <a href="values___cl_8h_source.html#l00013">values_Cl.h:13</a></div></div>
+<div class="ttc" id="classvalues___cl_html_ac26c3224a7182b6c51f59d375421877f"><div class="ttname"><a href="classvalues___cl.html#ac26c3224a7182b6c51f59d375421877f">values_Cl::SetFiltrMode</a></div><div class="ttdeci">void SetFiltrMode(filterMode fm, float SensPersent)</div><div class="ttdef"><b>Definition:</b> <a href="_values___cl_8cpp_source.html#l00034">Values_Cl.cpp:34</a></div></div>
+<div class="ttc" id="adc_8c_html_a5c917a92605cca17bb7f46e715b7cba9"><div class="ttname"><a href="adc_8c.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a></div><div class="ttdeci">volatile uint8_t adc_data_ready</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00031">adc.c:31</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a class="anchor" id="acd8cec8f3a1cde1cd6445df4269b8287"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile u32 adc_5V_mv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00041">41</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00050">adc_measure_All()</a> и <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c917a92605cca17bb7f46e715b7cba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_data_ready</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00031">31</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00050">adc_measure_All()</a>, <a class="el" href="adc_8c_source.html#l00344">adc_start_measurement()</a>, <a class="el" href="adc_8c_source.html#l00353">DMA1_Channel1_IRQHandler()</a> и <a class="el" href="adc_8c_source.html#l00172">MX_ADC_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4599638d12c29e1cd110cb402cf0b480"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint16_t adc_dma_buffer[<a class="el" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00038">38</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00096">ADC_dma_config()</a>, <a class="el" href="adc_8c_source.html#l00344">adc_start_measurement()</a>, <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a> и <a class="el" href="adc_8c_source.html#l00172">MX_ADC_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb0eae5f694683479707fe13cf76ae5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_low_power</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00034">34</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>, <a class="el" href="main_8c_source.html#l00031">main()</a> и <a class="el" href="adc_8c_source.html#l00172">MX_ADC_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbc867b16d309ce2eac56a334b6f5eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile u32 adc_temp_mv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a62b1cabdcf22221be6104a3cb3cbbecd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile s32 adc_temperature</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00040">40</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00253">adc_get_temperature()</a> и <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63045a38d9fd8c28b0bfa297af6b14ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvalues___cl.html">values_Cl</a> adc_Values[<a class="el" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ace741d6a0014555913eb7ad3e19482e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile u32 adc_VIN_mv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00041">41</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00050">adc_measure_All()</a> и <a class="el" href="adc_8c_source.html#l00285">fill_ADC_Data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac565dd8e28e2052bde3edd6e6938a6cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_wdt_alarm_cnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a7dee2f64f1184da78aa4d5dc8b3d81b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_wdt_alarm_flg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="adc_8c_source.html">adc.c</a> строка <a class="el" href="adc_8c_source.html#l00032">32</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="adc_8c.html">adc.c</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

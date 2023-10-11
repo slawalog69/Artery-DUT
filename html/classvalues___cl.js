@@ -1,0 +1,27 @@
+var classvalues___cl =
+[
+    [ "values_Cl", "classvalues___cl.html#adc6f0dad55fa94987130045bd0ac36f2", null ],
+    [ "~values_Cl", "classvalues___cl.html#ad9f5f6bdf917641374a4ba83257aac90", null ],
+    [ "addVal", "classvalues___cl.html#a1d1c9d18489dbb78aae3d130c2174f11", null ],
+    [ "calc", "classvalues___cl.html#a61f6fd91ec9f5b893c1d011e8e15721e", null ],
+    [ "FindDispMax", "classvalues___cl.html#ad8689334653602b43331423c3daabf0d", null ],
+    [ "GetAverage", "classvalues___cl.html#a1fdc068cca70cef3205dd7585d8ce7f1", null ],
+    [ "Ini_values_Cl", "classvalues___cl.html#abc61a93bb9098b0114c2e28f7fb4174a", null ],
+    [ "Is_complete", "classvalues___cl.html#ac336fb0ebeec0e9625aa0c531c7a7bd5", null ],
+    [ "SetFiltrMode", "classvalues___cl.html#ac26c3224a7182b6c51f59d375421877f", null ],
+    [ "setSensivityPersent", "classvalues___cl.html#add76cbc3f3429e0330bea08632ddc63e", null ],
+    [ "CashLevel", "classvalues___cl.html#a18868bd85329c62e79a65363e0e02909", null ],
+    [ "Cnt_to_stab", "classvalues___cl.html#a4bb7ff7c4a89c260e86fc8dfe9194714", null ],
+    [ "Curr_cntStab", "classvalues___cl.html#aeb2f5fa07856de6bb6a2e68ab3ae57ff", null ],
+    [ "Disp_max", "classvalues___cl.html#ad0b7da0f4024752d60c33d8d9d8e7aa6", null ],
+    [ "Dispersion", "classvalues___cl.html#aee214d2f89805795d7f337650c554915", null ],
+    [ "fltMode", "classvalues___cl.html#a155795acff489169806548b539495837", null ],
+    [ "indx", "classvalues___cl.html#afa2f8d7022bccbd8f58ebcdcc3523655", null ],
+    [ "Is_Full", "classvalues___cl.html#affe08b082f33a3f00b950c9d66521f80", null ],
+    [ "IsStabilisere", "classvalues___cl.html#af482bfaca195c2167c6978f12904c6b2", null ],
+    [ "lastValues", "classvalues___cl.html#a16e022e414de0cd8c95a4daebc53cfb5", null ],
+    [ "max", "classvalues___cl.html#a2aeb55ba8df7f408d21642ef0f102490", null ],
+    [ "min", "classvalues___cl.html#a86670fb427e6022365babc6de9d59747", null ],
+    [ "SensivityPersent", "classvalues___cl.html#a3778ede664bd9ca25c7c233be8beb266", null ],
+    [ "ValueAverage", "classvalues___cl.html#a65c8b5715f47599e36f3b97085f5b439", null ]
+];

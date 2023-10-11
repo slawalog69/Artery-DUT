@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл protocol.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('protocol_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">protocol.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="protocol_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __PROTOCOL_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __PROTOCOL_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="protocol_8h.html#af4e69e53bfec6093eea1373944323cd3">    7</a></span>&#160;<span class="preprocessor">#define PREFIX_INCOMING     (0x31)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="protocol_8h.html#a71d91a4b256e2f41957fd2f21c22fc9a">    8</a></span>&#160;<span class="preprocessor">#define PREFIX_OUTGOING     (0x3E)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="protocol_8h.html#a8e5c4d1801a1f377ab291f8a15e70bc4">   10</a></span>&#160;<span class="preprocessor">#define RES_SUCCESS         (0x00)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="protocol_8h.html#a6020d69b46287a85bd526e1f1212554c">   11</a></span>&#160;<span class="preprocessor">#define RES_FAILED          (0x01)</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="protocol_8h.html#acae4d29f913672998e3ab8e492f4a79f">   13</a></span>&#160;<span class="preprocessor">#define RQ_GET_TELEMETRY_DATA   (0x06)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="protocol_8h.html#a943f0d520690e0b93b6732755a4febbd">   14</a></span>&#160;<span class="preprocessor">#define RQ_AUTOSEND_DATA        (0x07)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="protocol_8h.html#ad14575637b0dfcc8c2d024661b82b649">   15</a></span>&#160;<span class="preprocessor">#define RQ_SET_FILTER_LENGTH    (0x0E)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="protocol_8h.html#a1279b46ca7f6eb738d8756769af74b88">   16</a></span>&#160;<span class="preprocessor">#define RQ_GET_LOG_DATA         (0x0F)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="protocol_8h.html#a3d3e0b6be8797f45aefe0a4c84336cb8">   17</a></span>&#160;<span class="preprocessor">#define READ_SETTINGS_RQ        (0x10)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="protocol_8h.html#a061cc437b17478e7926048c5cb28804a">   18</a></span>&#160;<span class="preprocessor">#define RQ_SET_AUTOSEND_TIME    (0x13)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="protocol_8h.html#ab93567ea63b592b8a3a29247d4942594">   19</a></span>&#160;<span class="preprocessor">#define RQ_READ_SN     (0x14)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="protocol_8h.html#ad0f717b1ffb078999c44c3dfaf5ab9d6">   20</a></span>&#160;<span class="preprocessor">#define RQ_WRITE_SN     (0x15)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="protocol_8h.html#a3454be907777bebfed7d6eaa7e7f7c4c">   21</a></span>&#160;<span class="preprocessor">#define RQ_SET_AUTOSEND_MODE    (0x17)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="protocol_8h.html#a089536c862e0a67ccc0e72c9507d632a">   23</a></span>&#160;<span class="preprocessor">#define RQ_SET_PAGE_ATTR        (0x20)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="protocol_8h.html#a5c3853d5f83f592d87012ea5dec64d20">   24</a></span>&#160;<span class="preprocessor">#define RQ_GET_PAGE_ATTR        (0x21)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="protocol_8h.html#ae560571bdaac2871fe4537177cee3c34">   25</a></span>&#160;<span class="preprocessor">#define RQ_WRITE_PAGE_DATA      (0x22)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="protocol_8h.html#a58fcfd827704ba9822ba830744aed9e9">   26</a></span>&#160;<span class="preprocessor">#define RQ_READ_PAGE_DATA       (0x23)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="protocol_8h.html#a06ba63b5c8356696a494efb5d1f704b0">   27</a></span>&#160;<span class="preprocessor">#define RQ_GET_UID              (0x25)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="protocol_8h.html#aa9adc3c5293d2a61b9932b50cc27d16b">   28</a></span>&#160;<span class="preprocessor">#define RQ_SET_UID              (0x26)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="protocol_8h.html#af86fa527ce8e6d6ae7c9eb62c0e14f2b">   29</a></span>&#160;<span class="preprocessor">#define RQ_RESET_DEVICE         (0x28)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="protocol_8h.html#a2f88c523bb5f4320fc147700ef55e09a">   31</a></span>&#160;<span class="preprocessor">#define RQ_READ_DBGI            (0x50)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="protocol_8h.html#a252ded1dd3e2f89d0639225ca83c2898">   32</a></span>&#160;<span class="preprocessor">#define RQ_CTRL_AUTOTUNE        (0x51)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="protocol_8h.html#a53f7d8bae49b7a369b58e626a0c5c02b">   34</a></span>&#160;<span class="preprocessor">#define RQ_READ_OPT_BYTE            (0x93)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="protocol_8h.html#a12abb5aa427f42bd919624d9d094e660">   36</a></span>&#160;<span class="preprocessor">#define PAGE_BUF_LEN            (64)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="protocol_8h.html#a4c54d6c79880b487dbfe08c5d3c26f80">   37</a></span>&#160;<span class="preprocessor">#define FILTER_LENGTH_MAX       (30)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="protocol_8h.html#a8f9c051e07ab5bd86f8dbc52e04484a6">   38</a></span>&#160;<span class="preprocessor">#define N_LEVEL_MAX             (4095)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="protocol_8h.html#a8d8b34426f358b94dd27b8d3f825017c">   40</a></span>&#160;<span class="preprocessor">#define APP_VER_LEN             11</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="protocol_8h.html#ae736c76f828d86ac506d260fb291c7b4">   41</a></span>&#160;<span class="preprocessor">#define DEVICE_UID_LEN          11</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="protocol_8h.html#a86cdbb6e1bee7933713ff566fafd334d">   42</a></span>&#160;<span class="preprocessor">#define DEVICE_SN_LEN           9</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="protocol_8h.html#a43c20e5424886cb41c1ba88aa77336ba">   43</a></span>&#160;<span class="preprocessor">#define SENSOR_NAME_LEN         16</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="protocol_8h.html#a839187f4452aff7fd1953d80d399008f">   44</a></span>&#160;<span class="preprocessor">#define AUTO_SEND_OFF           (0x00)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="protocol_8h.html#ab6d560cb68bcba7c4f9ab4f7b41756ac">   45</a></span>&#160;<span class="preprocessor">#define AUTO_SEND_BIN           (0x01)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="protocol_8h.html#a409c5d1a895251f7eb9c7a2fd29ac910">   46</a></span>&#160;<span class="preprocessor">#define AUTO_SEND_TEXT          (0x02)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="protocol_8h.html#a945d534be95af2929ddb3c44d2a3a8a3">   47</a></span>&#160;<span class="preprocessor">#define OMNICOMM_BROADCAST      (0xFF)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="protocol_8h.html#a616be1a7686729ac20390984fea0f20c">   49</a></span>&#160;<span class="preprocessor">#define OMNICOMM_PACKET         (0x1)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="protocol_8h.html#a5dea0e6959da3a6a8a85c4f1bf4076be">   50</a></span>&#160;<span class="preprocessor">#define MODBUS_RTU_PACKET       (0x2)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="protocol_8h.html#a46665b4b654c2475a079519ca285ef5e">   51</a></span>&#160;<span class="preprocessor">#define ERROR_PACKET            (0x3)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">// Modbus constants</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="protocol_8h.html#adccb52e083d60cde3230b7075a073bd3">   54</a></span>&#160;<span class="preprocessor">#define MB_FUNCTION_READ_HOLDING_REGISTERS (0x03)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="protocol_8h.html#a008292c215ba190bd1f3c2adac5f064e">   55</a></span>&#160;<span class="preprocessor">#define MB_FUNCTION_READ_INPUT_REGISTERS (0x04)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="protocol_8h.html#a7b508ecd429f47f5124eaec5aba1c614">   56</a></span>&#160;<span class="preprocessor">#define MODBUS_RTU_BROADCAST      (0x00)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="protocol_8h.html#a2ddaafd06591c2148f085d0b3a6f3a5d">   59</a></span>&#160;<span class="preprocessor">#define MB_MIN_AI_INPUT_REGS       (0x7531)    // 30001</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="protocol_8h.html#a40a2113a9b00618196e1690435f26b26">   60</a></span>&#160;<span class="preprocessor">#define MB_MAX_AI_INPUT_REGS       (0x9C3F)    // 39999</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="protocol_8h.html#a3e4691488db1ddd2389e2bb6632d693e">   62</a></span>&#160;<span class="preprocessor">#define MB_MIN_AO_HOLDING_REGS       (0x9C41)    // 40001</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="protocol_8h.html#a6a61b2756f45d59534f4033b78b88ab1">   63</a></span>&#160;<span class="preprocessor">#define MB_MAX_AO_HOLDING_REGS       (0xC34F)    // 49999</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="protocol_8h.html#a26dfed27a0078d4c620e8d436922cd55">   65</a></span>&#160;<span class="preprocessor">#define ntohs(a) (a &gt;&gt; 8 | (a &amp; 0xff) &lt;&lt; 8)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="protocol_8h.html#a5f520f83a29e104953b9ccacd2efa919">   66</a></span>&#160;<span class="preprocessor">#define ntohl(a) (uint32_t)(a &gt;&gt; 24 | ((a &gt;&gt; 8) &amp; 0xFF00) | ((a &lt;&lt; 8) &amp; 0xff0000) | (a &amp; 0xff) &lt;&lt; 24)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">typedef</span> __packed <span class="keyword">struct</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="protocol_8h.html#acf4a7a7457f3d922d7118075fc1a300b">   70</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#acf4a7a7457f3d922d7118075fc1a300b">prefix</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="protocol_8h.html#af5105c72a61e60d3b44670de20e0c3fb">   71</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#af5105c72a61e60d3b44670de20e0c3fb">addr</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="protocol_8h.html#a4d43e8212bdc9dbee866506f04effcea">   72</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a4d43e8212bdc9dbee866506f04effcea">cmd</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="protocol_8h.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">   73</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">value</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}<a class="code" href="protocol_8h.html#ad085bc4bd319bfd6724deae0c256b408">protocol_request_t</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">typedef</span> __packed <span class="keyword">struct</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="protocol_8h.html#a74b1b3f539460e465f48091aa758cce9">   78</a></span>&#160;  int8_t <a class="code" href="protocol_8h.html#a74b1b3f539460e465f48091aa758cce9">t_c</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="protocol_8h.html#a42857788f41cb792240eddf327761417">   79</a></span>&#160;  uint16_t <a class="code" href="protocol_8h.html#a42857788f41cb792240eddf327761417">rel_level</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="protocol_8h.html#ac01cfaa2f10809f433db0c10d2833635">   80</a></span>&#160;  uint16_t <a class="code" href="protocol_8h.html#ac01cfaa2f10809f433db0c10d2833635">freq_val</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}<a class="code" href="protocol_8h.html#abc3e3cc908477a2b52344a2a5dfcdb5f">protocol_binary_telemetry_t</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">typedef</span> __packed <span class="keyword">struct</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="protocol_8h.html#a71aa6bf2268a292d4f2e49b965465b48">   85</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a71aa6bf2268a292d4f2e49b965465b48">n_page</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="protocol_8h.html#a94a0e9b1a87b872f648bdc10666c8299">   86</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a94a0e9b1a87b872f648bdc10666c8299">data</a>[<a class="code" href="protocol_8h.html#a12abb5aa427f42bd919624d9d094e660">PAGE_BUF_LEN</a>];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}<a class="code" href="protocol_8h.html#a34519b9bdc1db5aa50039149681ed97e">protocol_read_page_reply_t</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">typedef</span> __packed <span class="keyword">struct</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="protocol_8h.html#a77d5d17787037bbb21347a684a46d947">   91</a></span>&#160;  <span class="keywordtype">char</span> <a class="code" href="protocol_8h.html#a77d5d17787037bbb21347a684a46d947">name</a>[<a class="code" href="protocol_8h.html#a43c20e5424886cb41c1ba88aa77336ba">SENSOR_NAME_LEN</a>]; <span class="comment">// [0]</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="protocol_8h.html#a1a5f7a498606464600bafe7183d5489d">   92</a></span>&#160;  <span class="keywordtype">char</span> <a class="code" href="protocol_8h.html#a1a5f7a498606464600bafe7183d5489d">app_ver</a>[<a class="code" href="protocol_8h.html#a8d8b34426f358b94dd27b8d3f825017c">APP_VER_LEN</a>];  <span class="comment">// [16]</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="protocol_8h.html#a21d1848f0fd71b7ae14ab7f3d5e811ef">   93</a></span>&#160;  <span class="keywordtype">char</span> <a class="code" href="protocol_8h.html#a21d1848f0fd71b7ae14ab7f3d5e811ef">uid</a>[<a class="code" href="protocol_8h.html#ae736c76f828d86ac506d260fb291c7b4">DEVICE_UID_LEN</a>];   <span class="comment">// [27]</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="protocol_8h.html#a178001af5d88119bfaca14c362aed00c">   94</a></span>&#160;  <span class="keywordtype">char</span> <a class="code" href="protocol_8h.html#a178001af5d88119bfaca14c362aed00c">sensor_type</a>;           <span class="comment">// [38]</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="protocol_8h.html#afd11ffd1d1ba34b9619fdffad21880d0">   95</a></span>&#160;  <span class="keywordtype">char</span> <a class="code" href="protocol_8h.html#afd11ffd1d1ba34b9619fdffad21880d0">sensor_amplify</a>;        <span class="comment">// [39]</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="protocol_8h.html#a53f19d09e000917418746a4da0e2435a">   96</a></span>&#160;  uint64_t <a class="code" href="protocol_8h.html#a53f19d09e000917418746a4da0e2435a">serial_number</a>;     <span class="comment">// [40]</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}<a class="code" href="protocol_8h.html#a57f43dc985e480cc7dbf7a2b700e1053">protocol_page_N0_t</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">typedef</span> __packed <span class="keyword">struct</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="protocol_8h.html#a1cce511603a3192836063b55cdb092c7">  101</a></span>&#160;  int16_t <a class="code" href="protocol_8h.html#a1cce511603a3192836063b55cdb092c7">diff_eps</a>;           <span class="comment">// [0]</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="protocol_8h.html#ae66c46400e7b8f58abc684c335bcfebb">  102</a></span>&#160;  int16_t <a class="code" href="protocol_8h.html#ae66c46400e7b8f58abc684c335bcfebb">coef_corr</a>;          <span class="comment">// [2]</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="protocol_8h.html#ab351af9a8aef9b938e1ae34337b388ed">  103</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#ab351af9a8aef9b938e1ae34337b388ed">cnt_ref_pure</a>;      <span class="comment">// [4]</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="protocol_8h.html#ab160b3b26f2610469e9a3a32d1d8e0da">  104</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#ab160b3b26f2610469e9a3a32d1d8e0da">cnt_main_pure</a>;     <span class="comment">// [8]</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="protocol_8h.html#a8e01cb1c012dedbf3a9ac96165c82b53">  105</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#a8e01cb1c012dedbf3a9ac96165c82b53">cnt_ref_curr</a>;      <span class="comment">// [12]</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="protocol_8h.html#a8faeb0d3e4d469b22e0b7da528143b77">  106</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#a8faeb0d3e4d469b22e0b7da528143b77">cnt_main_curr</a>;     <span class="comment">// [16]</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="protocol_8h.html#a33514194148c873e1ccda8b3e0d502bb">  107</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#a33514194148c873e1ccda8b3e0d502bb">cnt_corr</a>;          <span class="comment">// [20]</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="protocol_8h.html#ab9c4d9f5b0b0626d2159db7d29e90f10">  108</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#ab9c4d9f5b0b0626d2159db7d29e90f10">flg_need_to_init</a>;   <span class="comment">// [24]</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="protocol_8h.html#a64d67c7a0daa7db501c94c8c3a47cef5">  109</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a64d67c7a0daa7db501c94c8c3a47cef5">temperature</a>;        <span class="comment">// [25]</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="protocol_8h.html#a45b4b0a88e1fb108cf933cee23bebf4b">  110</a></span>&#160;  uint16_t <a class="code" href="protocol_8h.html#a45b4b0a88e1fb108cf933cee23bebf4b">n_before</a>;          <span class="comment">// [26]</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="protocol_8h.html#a7f3e4bdcd46d77222235d4afb9e6b927">  111</a></span>&#160;  uint16_t <a class="code" href="protocol_8h.html#a7f3e4bdcd46d77222235d4afb9e6b927">n_after</a>;           <span class="comment">// [28]</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="protocol_8h.html#ab2ba03af2c1e938b0a12d3b2cf0c5e2b">  112</a></span>&#160;  uint16_t <a class="code" href="protocol_8h.html#ab2ba03af2c1e938b0a12d3b2cf0c5e2b">tsc_value</a>;         <span class="comment">// [30]</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}<a class="code" href="protocol_8h.html#a2751a233d953f6b60d43c831780ea7ec">protocol_page_N2_t</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">typedef</span> __packed <span class="keyword">struct</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="protocol_8h.html#a1d127017fb298b889f4ba24752d08b8e">  117</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>;               <span class="comment">// [0]</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a21d1848f0fd71b7ae14ab7f3d5e811ef">uid</a>[11];            <span class="comment">// [1]</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="protocol_8h.html#a6125677f9244866bb9c443dc00c370d9">  119</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a6125677f9244866bb9c443dc00c370d9">sw_ver</a>[11];         <span class="comment">// [12]</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="protocol_8h.html#ac9f6e0d7f13955269a2606ba839f0296">  120</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#ac9f6e0d7f13955269a2606ba839f0296">flg_autotuning</a>;     <span class="comment">// [23]</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="protocol_8h.html#a8c1f65cf0a62769cb4acfc28f23821de">  121</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a8c1f65cf0a62769cb4acfc28f23821de">cnt_main_h</a>;         <span class="comment">// [24]</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="protocol_8h.html#a214160d8bbd3596616a2647b0ad72d4d">  122</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a214160d8bbd3596616a2647b0ad72d4d">cnt_main_m</a>;         <span class="comment">// [25]</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="protocol_8h.html#a8553c1b5aa6dbb5d3156072d7b97a083">  123</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a8553c1b5aa6dbb5d3156072d7b97a083">cnt_main_l</a>;         <span class="comment">// [26]</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="protocol_8h.html#acd39578c1186d44c92359c1bd27c04c4">  124</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#acd39578c1186d44c92359c1bd27c04c4">cnt_ref_h</a>;          <span class="comment">// [27]</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="protocol_8h.html#a04bfdfbe7c7ad21551e63f3c5e69e48d">  125</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a04bfdfbe7c7ad21551e63f3c5e69e48d">cnt_ref_m</a>;          <span class="comment">// [28]</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="protocol_8h.html#a54c45659da472e371d46841202776574">  126</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a54c45659da472e371d46841202776574">cnt_ref_l</a>;          <span class="comment">// [29]</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="protocol_8h.html#a129e7daf0561d4325e803d56f11d994e">  127</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#a129e7daf0561d4325e803d56f11d994e">coef_recalc</a>;       <span class="comment">// [30]</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="protocol_8h.html#a972a1abe0f13b9b3298b4a0bdb03346d">  128</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a972a1abe0f13b9b3298b4a0bdb03346d">ref_sensivity</a>;      <span class="comment">// [34]</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  int8_t <a class="code" href="protocol_8h.html#a64d67c7a0daa7db501c94c8c3a47cef5">temperature</a>;         <span class="comment">// [35]</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="protocol_8h.html#a4a834a11994bab65098368a30c8a03aa">  130</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a4a834a11994bab65098368a30c8a03aa">last_error</a>;         <span class="comment">// [36]</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}<a class="code" href="protocol_8h.html#aa0b9e9933a12af57fec02a633ad4a405">protocol_read_dbgi_reply_t</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">typedef</span> __packed <span class="keyword">struct</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="protocol_8h.html#a1c1c3f5f6955699ef21d59082822868e">  138</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a1c1c3f5f6955699ef21d59082822868e">device_name</a>[16];</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="protocol_8h.html#aee39d5c6dcbedd496b5a0527dd4063cf">  139</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#aee39d5c6dcbedd496b5a0527dd4063cf">program_version</a>[11];</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="protocol_8h.html#a37e90f5e3bd99fac2021fb3a326607d4">  140</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>          :8;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="protocol_8h.html#a7a6db7c78ae2acf13f1387ea876ba9a8">  141</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#a7a6db7c78ae2acf13f1387ea876ba9a8">interval</a>      :8;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="protocol_8h.html#abc8c60c4d7037a6736ea0d19cda64cfe">  142</a></span>&#160;  uint8_t <a class="code" href="protocol_8h.html#abc8c60c4d7037a6736ea0d19cda64cfe">filter_length</a> :8;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="protocol_8h.html#acf844f87b347a607b281c948aa440a9c">  143</a></span>&#160;  uint16_t <a class="code" href="protocol_8h.html#acf844f87b347a607b281c948aa440a9c">n_min</a>        :16;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="protocol_8h.html#abbbd0f0226405af96fe0b290a56d6f15">  144</a></span>&#160;  uint16_t <a class="code" href="protocol_8h.html#abbbd0f0226405af96fe0b290a56d6f15">n_max</a>        :16;</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="protocol_8h.html#a5342d16879c2715a6a990e9b000bf352">  145</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#a5342d16879c2715a6a990e9b000bf352">cnt_min</a>      :24;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="protocol_8h.html#af69ee7ecb46dcc1e45b23782f1a31595">  146</a></span>&#160;  uint32_t <a class="code" href="protocol_8h.html#af69ee7ecb46dcc1e45b23782f1a31595">cnt_max</a>      :24;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}<a class="code" href="protocol_8h.html#af384a303b1bacfa14d98e307b89ab50f">pkt_read_settings_reply</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol_8h.html#af4dbaa67faa1955cc026c2d3f21db50e">protocol_init</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol_8h.html#ad20a74cfd716d7aa7431a5426124b185">protocol_parse_data</a>(<a class="code" href="group__uarts.html#gade254df27f4cf8ba2f9ae87df2e5ecf3">uart_name_t</a> <a class="code" href="protocol_8h.html#a77d5d17787037bbb21347a684a46d947">name</a>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol_8h.html#ac2b6b418bb6fab6202d2cac02e64c137">protocol_autosend_data</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  u8 <a class="code" href="protocol_8h.html#a6764d9864b9d0e3c5d0f7e71f14495c1">getDevAdr</a> ();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif // __PROTOCOL_H</span></div>
+<div class="ttc" id="protocol_8h_html_afd11ffd1d1ba34b9619fdffad21880d0"><div class="ttname"><a href="protocol_8h.html#afd11ffd1d1ba34b9619fdffad21880d0">sensor_amplify</a></div><div class="ttdeci">char sensor_amplify</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00095">protocol.h:95</a></div></div>
+<div class="ttc" id="protocol_8h_html_a45b4b0a88e1fb108cf933cee23bebf4b"><div class="ttname"><a href="protocol_8h.html#a45b4b0a88e1fb108cf933cee23bebf4b">n_before</a></div><div class="ttdeci">uint16_t n_before</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00110">protocol.h:110</a></div></div>
+<div class="ttc" id="protocol_8h_html_a12abb5aa427f42bd919624d9d094e660"><div class="ttname"><a href="protocol_8h.html#a12abb5aa427f42bd919624d9d094e660">PAGE_BUF_LEN</a></div><div class="ttdeci">#define PAGE_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00036">protocol.h:36</a></div></div>
+<div class="ttc" id="protocol_8h_html_acd39578c1186d44c92359c1bd27c04c4"><div class="ttname"><a href="protocol_8h.html#acd39578c1186d44c92359c1bd27c04c4">cnt_ref_h</a></div><div class="ttdeci">uint8_t cnt_ref_h</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00124">protocol.h:124</a></div></div>
+<div class="ttc" id="protocol_8h_html_a6764d9864b9d0e3c5d0f7e71f14495c1"><div class="ttname"><a href="protocol_8h.html#a6764d9864b9d0e3c5d0f7e71f14495c1">getDevAdr</a></div><div class="ttdeci">u8 getDevAdr()</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8c_source.html#l00047">protocol.c:47</a></div></div>
+<div class="ttc" id="protocol_8h_html_a8e01cb1c012dedbf3a9ac96165c82b53"><div class="ttname"><a href="protocol_8h.html#a8e01cb1c012dedbf3a9ac96165c82b53">cnt_ref_curr</a></div><div class="ttdeci">uint32_t cnt_ref_curr</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00105">protocol.h:105</a></div></div>
+<div class="ttc" id="protocol_8h_html_ac2b6b418bb6fab6202d2cac02e64c137"><div class="ttname"><a href="protocol_8h.html#ac2b6b418bb6fab6202d2cac02e64c137">protocol_autosend_data</a></div><div class="ttdeci">void protocol_autosend_data()</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8c_source.html#l00143">protocol.c:143</a></div></div>
+<div class="ttc" id="protocol_8h_html_a57f43dc985e480cc7dbf7a2b700e1053"><div class="ttname"><a href="protocol_8h.html#a57f43dc985e480cc7dbf7a2b700e1053">protocol_page_N0_t</a></div><div class="ttdeci">__packed struct @5 protocol_page_N0_t</div></div>
+<div class="ttc" id="protocol_8h_html_a71aa6bf2268a292d4f2e49b965465b48"><div class="ttname"><a href="protocol_8h.html#a71aa6bf2268a292d4f2e49b965465b48">n_page</a></div><div class="ttdeci">uint8_t n_page</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00085">protocol.h:85</a></div></div>
+<div class="ttc" id="protocol_8h_html_abbbd0f0226405af96fe0b290a56d6f15"><div class="ttname"><a href="protocol_8h.html#abbbd0f0226405af96fe0b290a56d6f15">n_max</a></div><div class="ttdeci">uint16_t n_max</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00144">protocol.h:144</a></div></div>
+<div class="ttc" id="protocol_8h_html_a74b1b3f539460e465f48091aa758cce9"><div class="ttname"><a href="protocol_8h.html#a74b1b3f539460e465f48091aa758cce9">t_c</a></div><div class="ttdeci">int8_t t_c</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00078">protocol.h:78</a></div></div>
+<div class="ttc" id="protocol_8h_html_a7f3e4bdcd46d77222235d4afb9e6b927"><div class="ttname"><a href="protocol_8h.html#a7f3e4bdcd46d77222235d4afb9e6b927">n_after</a></div><div class="ttdeci">uint16_t n_after</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00111">protocol.h:111</a></div></div>
+<div class="ttc" id="protocol_8h_html_a2751a233d953f6b60d43c831780ea7ec"><div class="ttname"><a href="protocol_8h.html#a2751a233d953f6b60d43c831780ea7ec">protocol_page_N2_t</a></div><div class="ttdeci">__packed struct @6 protocol_page_N2_t</div></div>
+<div class="ttc" id="protocol_8h_html_a8d8b34426f358b94dd27b8d3f825017c"><div class="ttname"><a href="protocol_8h.html#a8d8b34426f358b94dd27b8d3f825017c">APP_VER_LEN</a></div><div class="ttdeci">#define APP_VER_LEN</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00040">protocol.h:40</a></div></div>
+<div class="ttc" id="main_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div></div>
+<div class="ttc" id="protocol_8h_html_a6125677f9244866bb9c443dc00c370d9"><div class="ttname"><a href="protocol_8h.html#a6125677f9244866bb9c443dc00c370d9">sw_ver</a></div><div class="ttdeci">uint8_t sw_ver[11]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00119">protocol.h:119</a></div></div>
+<div class="ttc" id="protocol_8h_html_a214160d8bbd3596616a2647b0ad72d4d"><div class="ttname"><a href="protocol_8h.html#a214160d8bbd3596616a2647b0ad72d4d">cnt_main_m</a></div><div class="ttdeci">uint8_t cnt_main_m</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00122">protocol.h:122</a></div></div>
+<div class="ttc" id="protocol_8h_html_a34519b9bdc1db5aa50039149681ed97e"><div class="ttname"><a href="protocol_8h.html#a34519b9bdc1db5aa50039149681ed97e">protocol_read_page_reply_t</a></div><div class="ttdeci">__packed struct @4 protocol_read_page_reply_t</div></div>
+<div class="ttc" id="protocol_8h_html_ac9f6e0d7f13955269a2606ba839f0296"><div class="ttname"><a href="protocol_8h.html#ac9f6e0d7f13955269a2606ba839f0296">flg_autotuning</a></div><div class="ttdeci">uint8_t flg_autotuning</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00120">protocol.h:120</a></div></div>
+<div class="ttc" id="protocol_8h_html_a7a6db7c78ae2acf13f1387ea876ba9a8"><div class="ttname"><a href="protocol_8h.html#a7a6db7c78ae2acf13f1387ea876ba9a8">interval</a></div><div class="ttdeci">uint8_t interval</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00141">protocol.h:141</a></div></div>
+<div class="ttc" id="protocol_8h_html_a8553c1b5aa6dbb5d3156072d7b97a083"><div class="ttname"><a href="protocol_8h.html#a8553c1b5aa6dbb5d3156072d7b97a083">cnt_main_l</a></div><div class="ttdeci">uint8_t cnt_main_l</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00123">protocol.h:123</a></div></div>
+<div class="ttc" id="protocol_8h_html_aee39d5c6dcbedd496b5a0527dd4063cf"><div class="ttname"><a href="protocol_8h.html#aee39d5c6dcbedd496b5a0527dd4063cf">program_version</a></div><div class="ttdeci">uint8_t program_version[11]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00139">protocol.h:139</a></div></div>
+<div class="ttc" id="protocol_8h_html_a43c20e5424886cb41c1ba88aa77336ba"><div class="ttname"><a href="protocol_8h.html#a43c20e5424886cb41c1ba88aa77336ba">SENSOR_NAME_LEN</a></div><div class="ttdeci">#define SENSOR_NAME_LEN</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00043">protocol.h:43</a></div></div>
+<div class="ttc" id="protocol_8h_html_af384a303b1bacfa14d98e307b89ab50f"><div class="ttname"><a href="protocol_8h.html#af384a303b1bacfa14d98e307b89ab50f">pkt_read_settings_reply</a></div><div class="ttdeci">__packed struct @8 pkt_read_settings_reply</div></div>
+<div class="ttc" id="protocol_8h_html_a1c1c3f5f6955699ef21d59082822868e"><div class="ttname"><a href="protocol_8h.html#a1c1c3f5f6955699ef21d59082822868e">device_name</a></div><div class="ttdeci">uint8_t device_name[16]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00138">protocol.h:138</a></div></div>
+<div class="ttc" id="protocol_8h_html_ab160b3b26f2610469e9a3a32d1d8e0da"><div class="ttname"><a href="protocol_8h.html#ab160b3b26f2610469e9a3a32d1d8e0da">cnt_main_pure</a></div><div class="ttdeci">uint32_t cnt_main_pure</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00104">protocol.h:104</a></div></div>
+<div class="ttc" id="protocol_8h_html_af5105c72a61e60d3b44670de20e0c3fb"><div class="ttname"><a href="protocol_8h.html#af5105c72a61e60d3b44670de20e0c3fb">addr</a></div><div class="ttdeci">uint8_t addr</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00071">protocol.h:71</a></div></div>
+<div class="ttc" id="protocol_8h_html_a5342d16879c2715a6a990e9b000bf352"><div class="ttname"><a href="protocol_8h.html#a5342d16879c2715a6a990e9b000bf352">cnt_min</a></div><div class="ttdeci">uint32_t cnt_min</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00145">protocol.h:145</a></div></div>
+<div class="ttc" id="protocol_8h_html_a8c1f65cf0a62769cb4acfc28f23821de"><div class="ttname"><a href="protocol_8h.html#a8c1f65cf0a62769cb4acfc28f23821de">cnt_main_h</a></div><div class="ttdeci">uint8_t cnt_main_h</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00121">protocol.h:121</a></div></div>
+<div class="ttc" id="protocol_8h_html_a178001af5d88119bfaca14c362aed00c"><div class="ttname"><a href="protocol_8h.html#a178001af5d88119bfaca14c362aed00c">sensor_type</a></div><div class="ttdeci">char sensor_type</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00094">protocol.h:94</a></div></div>
+<div class="ttc" id="protocol_8h_html_a42857788f41cb792240eddf327761417"><div class="ttname"><a href="protocol_8h.html#a42857788f41cb792240eddf327761417">rel_level</a></div><div class="ttdeci">uint16_t rel_level</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00079">protocol.h:79</a></div></div>
+<div class="ttc" id="protocol_8h_html_abc3e3cc908477a2b52344a2a5dfcdb5f"><div class="ttname"><a href="protocol_8h.html#abc3e3cc908477a2b52344a2a5dfcdb5f">protocol_binary_telemetry_t</a></div><div class="ttdeci">__packed struct @3 protocol_binary_telemetry_t</div></div>
+<div class="ttc" id="protocol_8h_html_acf4a7a7457f3d922d7118075fc1a300b"><div class="ttname"><a href="protocol_8h.html#acf4a7a7457f3d922d7118075fc1a300b">prefix</a></div><div class="ttdeci">uint8_t prefix</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00070">protocol.h:70</a></div></div>
+<div class="ttc" id="protocol_8h_html_ab351af9a8aef9b938e1ae34337b388ed"><div class="ttname"><a href="protocol_8h.html#ab351af9a8aef9b938e1ae34337b388ed">cnt_ref_pure</a></div><div class="ttdeci">uint32_t cnt_ref_pure</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00103">protocol.h:103</a></div></div>
+<div class="ttc" id="protocol_8h_html_a54c45659da472e371d46841202776574"><div class="ttname"><a href="protocol_8h.html#a54c45659da472e371d46841202776574">cnt_ref_l</a></div><div class="ttdeci">uint8_t cnt_ref_l</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00126">protocol.h:126</a></div></div>
+<div class="ttc" id="protocol_8h_html_a638e4503e0ae6ce655b7ad2e17e8f0ad"><div class="ttname"><a href="protocol_8h.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">value</a></div><div class="ttdeci">uint8_t value</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00073">protocol.h:73</a></div></div>
+<div class="ttc" id="protocol_8h_html_a972a1abe0f13b9b3298b4a0bdb03346d"><div class="ttname"><a href="protocol_8h.html#a972a1abe0f13b9b3298b4a0bdb03346d">ref_sensivity</a></div><div class="ttdeci">uint8_t ref_sensivity</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00128">protocol.h:128</a></div></div>
+<div class="ttc" id="protocol_8h_html_a53f19d09e000917418746a4da0e2435a"><div class="ttname"><a href="protocol_8h.html#a53f19d09e000917418746a4da0e2435a">serial_number</a></div><div class="ttdeci">uint64_t serial_number</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00096">protocol.h:96</a></div></div>
+<div class="ttc" id="protocol_8h_html_a21d1848f0fd71b7ae14ab7f3d5e811ef"><div class="ttname"><a href="protocol_8h.html#a21d1848f0fd71b7ae14ab7f3d5e811ef">uid</a></div><div class="ttdeci">char uid[DEVICE_UID_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00093">protocol.h:93</a></div></div>
+<div class="ttc" id="protocol_8h_html_a1cce511603a3192836063b55cdb092c7"><div class="ttname"><a href="protocol_8h.html#a1cce511603a3192836063b55cdb092c7">diff_eps</a></div><div class="ttdeci">int16_t diff_eps</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00101">protocol.h:101</a></div></div>
+<div class="ttc" id="group__uarts_html_gade254df27f4cf8ba2f9ae87df2e5ecf3"><div class="ttname"><a href="group__uarts.html#gade254df27f4cf8ba2f9ae87df2e5ecf3">uart_name_t</a></div><div class="ttdeci">uart_name_t</div><div class="ttdef"><b>Definition:</b> <a href="usart_8h_source.html#l00015">usart.h:15</a></div></div>
+<div class="ttc" id="protocol_8h_html_a04bfdfbe7c7ad21551e63f3c5e69e48d"><div class="ttname"><a href="protocol_8h.html#a04bfdfbe7c7ad21551e63f3c5e69e48d">cnt_ref_m</a></div><div class="ttdeci">uint8_t cnt_ref_m</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00125">protocol.h:125</a></div></div>
+<div class="ttc" id="protocol_8h_html_a94a0e9b1a87b872f648bdc10666c8299"><div class="ttname"><a href="protocol_8h.html#a94a0e9b1a87b872f648bdc10666c8299">data</a></div><div class="ttdeci">uint8_t data[PAGE_BUF_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00086">protocol.h:86</a></div></div>
+<div class="ttc" id="protocol_8h_html_a77d5d17787037bbb21347a684a46d947"><div class="ttname"><a href="protocol_8h.html#a77d5d17787037bbb21347a684a46d947">name</a></div><div class="ttdeci">char name[SENSOR_NAME_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00091">protocol.h:91</a></div></div>
+<div class="ttc" id="protocol_8h_html_af69ee7ecb46dcc1e45b23782f1a31595"><div class="ttname"><a href="protocol_8h.html#af69ee7ecb46dcc1e45b23782f1a31595">cnt_max</a></div><div class="ttdeci">uint32_t cnt_max</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00146">protocol.h:146</a></div></div>
+<div class="ttc" id="protocol_8h_html_af4dbaa67faa1955cc026c2d3f21db50e"><div class="ttname"><a href="protocol_8h.html#af4dbaa67faa1955cc026c2d3f21db50e">protocol_init</a></div><div class="ttdeci">void protocol_init()</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8c_source.html#l00051">protocol.c:51</a></div></div>
+<div class="ttc" id="protocol_8h_html_ae66c46400e7b8f58abc684c335bcfebb"><div class="ttname"><a href="protocol_8h.html#ae66c46400e7b8f58abc684c335bcfebb">coef_corr</a></div><div class="ttdeci">int16_t coef_corr</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00102">protocol.h:102</a></div></div>
+<div class="ttc" id="protocol_8h_html_ae736c76f828d86ac506d260fb291c7b4"><div class="ttname"><a href="protocol_8h.html#ae736c76f828d86ac506d260fb291c7b4">DEVICE_UID_LEN</a></div><div class="ttdeci">#define DEVICE_UID_LEN</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00041">protocol.h:41</a></div></div>
+<div class="ttc" id="protocol_8h_html_a37e90f5e3bd99fac2021fb3a326607d4"><div class="ttname"><a href="protocol_8h.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a></div><div class="ttdeci">uint8_t mode</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00140">protocol.h:140</a></div></div>
+<div class="ttc" id="protocol_8h_html_a33514194148c873e1ccda8b3e0d502bb"><div class="ttname"><a href="protocol_8h.html#a33514194148c873e1ccda8b3e0d502bb">cnt_corr</a></div><div class="ttdeci">uint32_t cnt_corr</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00107">protocol.h:107</a></div></div>
+<div class="ttc" id="protocol_8h_html_a4d43e8212bdc9dbee866506f04effcea"><div class="ttname"><a href="protocol_8h.html#a4d43e8212bdc9dbee866506f04effcea">cmd</a></div><div class="ttdeci">uint8_t cmd</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00072">protocol.h:72</a></div></div>
+<div class="ttc" id="protocol_8h_html_ab9c4d9f5b0b0626d2159db7d29e90f10"><div class="ttname"><a href="protocol_8h.html#ab9c4d9f5b0b0626d2159db7d29e90f10">flg_need_to_init</a></div><div class="ttdeci">uint8_t flg_need_to_init</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00108">protocol.h:108</a></div></div>
+<div class="ttc" id="protocol_8h_html_a4a834a11994bab65098368a30c8a03aa"><div class="ttname"><a href="protocol_8h.html#a4a834a11994bab65098368a30c8a03aa">last_error</a></div><div class="ttdeci">uint8_t last_error</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00130">protocol.h:130</a></div></div>
+<div class="ttc" id="protocol_8h_html_ac01cfaa2f10809f433db0c10d2833635"><div class="ttname"><a href="protocol_8h.html#ac01cfaa2f10809f433db0c10d2833635">freq_val</a></div><div class="ttdeci">uint16_t freq_val</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00080">protocol.h:80</a></div></div>
+<div class="ttc" id="protocol_8h_html_a64d67c7a0daa7db501c94c8c3a47cef5"><div class="ttname"><a href="protocol_8h.html#a64d67c7a0daa7db501c94c8c3a47cef5">temperature</a></div><div class="ttdeci">uint8_t temperature</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00109">protocol.h:109</a></div></div>
+<div class="ttc" id="protocol_8h_html_acf844f87b347a607b281c948aa440a9c"><div class="ttname"><a href="protocol_8h.html#acf844f87b347a607b281c948aa440a9c">n_min</a></div><div class="ttdeci">uint16_t n_min</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00143">protocol.h:143</a></div></div>
+<div class="ttc" id="protocol_8h_html_a1a5f7a498606464600bafe7183d5489d"><div class="ttname"><a href="protocol_8h.html#a1a5f7a498606464600bafe7183d5489d">app_ver</a></div><div class="ttdeci">char app_ver[APP_VER_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00092">protocol.h:92</a></div></div>
+<div class="ttc" id="protocol_8h_html_aa0b9e9933a12af57fec02a633ad4a405"><div class="ttname"><a href="protocol_8h.html#aa0b9e9933a12af57fec02a633ad4a405">protocol_read_dbgi_reply_t</a></div><div class="ttdeci">__packed struct @7 protocol_read_dbgi_reply_t</div></div>
+<div class="ttc" id="protocol_8h_html_ab2ba03af2c1e938b0a12d3b2cf0c5e2b"><div class="ttname"><a href="protocol_8h.html#ab2ba03af2c1e938b0a12d3b2cf0c5e2b">tsc_value</a></div><div class="ttdeci">uint16_t tsc_value</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00112">protocol.h:112</a></div></div>
+<div class="ttc" id="protocol_8h_html_a1d127017fb298b889f4ba24752d08b8e"><div class="ttname"><a href="protocol_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00117">protocol.h:117</a></div></div>
+<div class="ttc" id="protocol_8h_html_ad085bc4bd319bfd6724deae0c256b408"><div class="ttname"><a href="protocol_8h.html#ad085bc4bd319bfd6724deae0c256b408">protocol_request_t</a></div><div class="ttdeci">__packed struct @2 protocol_request_t</div></div>
+<div class="ttc" id="protocol_8h_html_a129e7daf0561d4325e803d56f11d994e"><div class="ttname"><a href="protocol_8h.html#a129e7daf0561d4325e803d56f11d994e">coef_recalc</a></div><div class="ttdeci">uint32_t coef_recalc</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00127">protocol.h:127</a></div></div>
+<div class="ttc" id="protocol_8h_html_ad20a74cfd716d7aa7431a5426124b185"><div class="ttname"><a href="protocol_8h.html#ad20a74cfd716d7aa7431a5426124b185">protocol_parse_data</a></div><div class="ttdeci">void protocol_parse_data(uart_name_t name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8c_source.html#l00119">protocol.c:119</a></div></div>
+<div class="ttc" id="protocol_8h_html_a8faeb0d3e4d469b22e0b7da528143b77"><div class="ttname"><a href="protocol_8h.html#a8faeb0d3e4d469b22e0b7da528143b77">cnt_main_curr</a></div><div class="ttdeci">uint32_t cnt_main_curr</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00106">protocol.h:106</a></div></div>
+<div class="ttc" id="protocol_8h_html_abc8c60c4d7037a6736ea0d19cda64cfe"><div class="ttname"><a href="protocol_8h.html#abc8c60c4d7037a6736ea0d19cda64cfe">filter_length</a></div><div class="ttdeci">uint8_t filter_length</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00142">protocol.h:142</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="protocol_8h.html">protocol.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

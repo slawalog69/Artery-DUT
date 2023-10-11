@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Прерывания модуля подсчета частоты FrqCounter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group__irq__tim__fr__cnt.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Прерывания модуля подсчета частоты FrqCounter<div class="ingroups"><a class="el" href="group__interrupts.html">Прерывания</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga844551f70214b73c0a81fc1439ba01ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__tim__fr__cnt.html#ga844551f70214b73c0a81fc1439ba01ca">TIM_Slave_CC_IRQHandler</a>&#160;&#160;&#160;TMR2_GLOBAL_IRQHandler</td></tr>
+<tr class="separator:ga844551f70214b73c0a81fc1439ba01ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4504431f89c05d8271dc548919e3bfd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__tim__fr__cnt.html#ga4504431f89c05d8271dc548919e3bfd2">TIM_EDGE_IRQn</a>&#160;&#160;&#160;TMR1_CH_IRQn</td></tr>
+<tr class="separator:ga4504431f89c05d8271dc548919e3bfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcb6fd6b24d4b006cd0bf4b0f109f57f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__tim__fr__cnt.html#gafcb6fd6b24d4b006cd0bf4b0f109f57f">TIM_EDGE_CC_IRQHandler</a>&#160;&#160;&#160;TMR1_CH_IRQHandler</td></tr>
+<tr class="separator:gafcb6fd6b24d4b006cd0bf4b0f109f57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gaf114425019a3c536748600172cf9636b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__tim__fr__cnt.html#gaf114425019a3c536748600172cf9636b">TIM_EDGE_CC_IRQHandler</a> (void)</td></tr>
+<tr class="separator:gaf114425019a3c536748600172cf9636b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga600c1cf490d6b7350e1e331192d8946c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__tim__fr__cnt.html#ga600c1cf490d6b7350e1e331192d8946c">TIM_Slave_CC_IRQHandler</a> (void)</td></tr>
+<tr class="separator:ga600c1cf490d6b7350e1e331192d8946c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10d48755f3a7b8df44fbb3695c3d7c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__tim__fr__cnt.html#ga10d48755f3a7b8df44fbb3695c3d7c6b">FrqCounter::SlaveTimOvfCallback</a> ()</td></tr>
+<tr class="separator:ga10d48755f3a7b8df44fbb3695c3d7c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga735e39228d01978a001dddeee3f02ff6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__tim__fr__cnt.html#ga735e39228d01978a001dddeee3f02ff6">FrqCounter::IC_CaptureCallback</a> ()</td></tr>
+<tr class="separator:ga735e39228d01978a001dddeee3f02ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="gafcb6fd6b24d4b006cd0bf4b0f109f57f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM_EDGE_CC_IRQHandler&#160;&#160;&#160;TMR1_CH_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_frq_counter_8h_source.html">FrqCounter.h</a> строка <a class="el" href="_frq_counter_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ga4504431f89c05d8271dc548919e3bfd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM_EDGE_IRQn&#160;&#160;&#160;TMR1_CH_IRQn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_frq_counter_8h_source.html">FrqCounter.h</a> строка <a class="el" href="_frq_counter_8h_source.html#l00018">18</a></p>
+
+<p>Используется в <a class="el" href="_frq_counter_8cpp_source.html#l00014">FrqCounter::TIM_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga844551f70214b73c0a81fc1439ba01ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM_Slave_CC_IRQHandler&#160;&#160;&#160;TMR2_GLOBAL_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_frq_counter_8h_source.html">FrqCounter.h</a> строка <a class="el" href="_frq_counter_8h_source.html#l00017">17</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ga735e39228d01978a001dddeee3f02ff6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrqCounter::IC_CaptureCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_frq_counter_8cpp_source.html">FrqCounter.cpp</a> строка <a class="el" href="_frq_counter_8cpp_source.html#l00217">217</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="_frq_counter_8h_source.html#l00053">END_COUNT_EDGE</a>, <a class="el" href="_frq_counter_8h_source.html#l00077">FrqCounter::htimEdgCnt</a>, <a class="el" href="_frq_counter_8h_source.html#l00076">FrqCounter::htimSlave</a>, <a class="el" href="_frq_counter_8h_source.html#l00057">TIM_HandleTypeDef::Instance</a>, <a class="el" href="_frq_counter_8h_source.html#l00060">TIM_HandleTypeDef::State</a> и <a class="el" href="_frq_counter_8h_source.html#l00069">FrqCounter::uwIC2Value</a>.</p>
+
+<p>Используется в <a class="el" href="_frq_counter_8cpp_source.html#l00244">TIM_EDGE_CC_IRQHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                     { </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  u32 tIsts = <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;ists;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  u32 tIden = <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;iden;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">if</span> (((tIsts &amp; TMR_C2_FLAG) != 0) &amp;&amp; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      ((tIden &amp;  TMR_C2_INT ) != 0)){ </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">htimSlave</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;ctrl1_bit.tmren =  0; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;ctrl1_bit.tmren =  0;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <a class="code" href="class_frq_counter.html#a15cb2bad71fd198aa00b9410544aab28">uwIC2Value</a> =  <a class="code" href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">htimSlave</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;cval  ;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;iden =0;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#a67d24105e9f75ce52d699acb96de9a6a">State</a> = <a class="code" href="group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa74658085115b3e66394ccd2fc5a6985b">END_COUNT_EDGE</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">if</span> (((tIsts &amp; TMR_C1_FLAG) != 0) &amp;&amp; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      ((tIden &amp;  TMR_C1_INT) != 0)) { </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;iden   = (TMR_C2_INT);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;cval  = 0;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;ists  = 0; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">//        htimSlave.Instance-&gt;iden  =  TMR_OVF_INT;</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <a class="code" href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">htimEdgCnt</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;ists  = 0; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
+<div class="ttc" id="class_frq_counter_html_ad767ccbc8805a5cb6d07e1032e530ec7"><div class="ttname"><a href="class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7">FrqCounter::htimEdgCnt</a></div><div class="ttdeci">TIM_HandleTypeDef htimEdgCnt</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00077">FrqCounter.h:77</a></div></div>
+<div class="ttc" id="class_frq_counter_html_a5574ff54dc308f70c35b56f43e366f4c"><div class="ttname"><a href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">FrqCounter::htimSlave</a></div><div class="ttdeci">TIM_HandleTypeDef htimSlave</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00076">FrqCounter.h:76</a></div></div>
+<div class="ttc" id="class_frq_counter_html_a15cb2bad71fd198aa00b9410544aab28"><div class="ttname"><a href="class_frq_counter.html#a15cb2bad71fd198aa00b9410544aab28">FrqCounter::uwIC2Value</a></div><div class="ttdeci">u32 uwIC2Value</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00069">FrqCounter.h:69</a></div></div>
+<div class="ttc" id="struct_t_i_m___handle_type_def_html_ab4ea2395c80daa7e0659c4b0a3e13be8"><div class="ttname"><a href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">TIM_HandleTypeDef::Instance</a></div><div class="ttdeci">tmr_type * Instance</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00057">FrqCounter.h:57</a></div></div>
+<div class="ttc" id="struct_t_i_m___handle_type_def_html_a67d24105e9f75ce52d699acb96de9a6a"><div class="ttname"><a href="struct_t_i_m___handle_type_def.html#a67d24105e9f75ce52d699acb96de9a6a">TIM_HandleTypeDef::State</a></div><div class="ttdeci">__IO TIM_StateTypeDef State</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00060">FrqCounter.h:60</a></div></div>
+<div class="ttc" id="group___fr_cnt_html_ggaa7d52449ac647e86a45b6bb44b6ef8ffa74658085115b3e66394ccd2fc5a6985b"><div class="ttname"><a href="group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa74658085115b3e66394ccd2fc5a6985b">END_COUNT_EDGE</a></div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00053">FrqCounter.h:53</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga10d48755f3a7b8df44fbb3695c3d7c6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrqCounter::SlaveTimOvfCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_frq_counter_8cpp_source.html">FrqCounter.cpp</a> строка <a class="el" href="_frq_counter_8cpp_source.html#l00205">205</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="_frq_counter_8h_source.html#l00076">FrqCounter::htimSlave</a> и <a class="el" href="_frq_counter_8h_source.html#l00057">TIM_HandleTypeDef::Instance</a>.</p>
+
+<p>Используется в <a class="el" href="_frq_counter_8cpp_source.html#l00249">TIM_Slave_CC_IRQHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                      { </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  u32 tIsts =  <a class="code" href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">htimSlave</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;ists;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  u32 tIden =  <a class="code" href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">htimSlave</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;iden;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">if</span> (((tIsts &amp; TMR_OVF_FLAG ) != 0) &amp;&amp; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    ((tIden &amp;  TMR_OVF_INT  ) != 0)){</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <a class="code" href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">htimSlave</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;ists = 0;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <a class="code" href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">htimSlave</a>.<a class="code" href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">Instance</a>-&gt;iden = 0;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
+<div class="ttc" id="class_frq_counter_html_a5574ff54dc308f70c35b56f43e366f4c"><div class="ttname"><a href="class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c">FrqCounter::htimSlave</a></div><div class="ttdeci">TIM_HandleTypeDef htimSlave</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00076">FrqCounter.h:76</a></div></div>
+<div class="ttc" id="struct_t_i_m___handle_type_def_html_ab4ea2395c80daa7e0659c4b0a3e13be8"><div class="ttname"><a href="struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8">TIM_HandleTypeDef::Instance</a></div><div class="ttdeci">tmr_type * Instance</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8h_source.html#l00057">FrqCounter.h:57</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gaf114425019a3c536748600172cf9636b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIM_EDGE_CC_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_frq_counter_8cpp_source.html">FrqCounter.cpp</a> строка <a class="el" href="_frq_counter_8cpp_source.html#l00244">244</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="_frq_counter_8cpp_source.html#l00217">FrqCounter::IC_CaptureCallback()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; <a class="code" href="group___fr_cnt.html#ga05cb2b5846b9c1d134deeead695ac507">FrCnter</a>.<a class="code" href="group__irq__tim__fr__cnt.html#ga735e39228d01978a001dddeee3f02ff6">IC_CaptureCallback</a>();</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+<div class="ttc" id="group___fr_cnt_html_ga05cb2b5846b9c1d134deeead695ac507"><div class="ttname"><a href="group___fr_cnt.html#ga05cb2b5846b9c1d134deeead695ac507">FrCnter</a></div><div class="ttdeci">FrqCounter FrCnter</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8cpp_source.html#l00007">FrqCounter.cpp:7</a></div></div>
+<div class="ttc" id="group__irq__tim__fr__cnt_html_ga735e39228d01978a001dddeee3f02ff6"><div class="ttname"><a href="group__irq__tim__fr__cnt.html#ga735e39228d01978a001dddeee3f02ff6">FrqCounter::IC_CaptureCallback</a></div><div class="ttdeci">void IC_CaptureCallback()</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8cpp_source.html#l00217">FrqCounter.cpp:217</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga600c1cf490d6b7350e1e331192d8946c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIM_Slave_CC_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_frq_counter_8cpp_source.html">FrqCounter.cpp</a> строка <a class="el" href="_frq_counter_8cpp_source.html#l00249">249</a></p>
+
+<p>Перекрестные ссылки <a class="el" href="_frq_counter_8cpp_source.html#l00205">FrqCounter::SlaveTimOvfCallback()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; <a class="code" href="group___fr_cnt.html#ga05cb2b5846b9c1d134deeead695ac507">FrCnter</a>.<a class="code" href="group__irq__tim__fr__cnt.html#ga10d48755f3a7b8df44fbb3695c3d7c6b">SlaveTimOvfCallback</a>();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
+<div class="ttc" id="group___fr_cnt_html_ga05cb2b5846b9c1d134deeead695ac507"><div class="ttname"><a href="group___fr_cnt.html#ga05cb2b5846b9c1d134deeead695ac507">FrCnter</a></div><div class="ttdeci">FrqCounter FrCnter</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8cpp_source.html#l00007">FrqCounter.cpp:7</a></div></div>
+<div class="ttc" id="group__irq__tim__fr__cnt_html_ga10d48755f3a7b8df44fbb3695c3d7c6b"><div class="ttname"><a href="group__irq__tim__fr__cnt.html#ga10d48755f3a7b8df44fbb3695c3d7c6b">FrqCounter::SlaveTimOvfCallback</a></div><div class="ttdeci">void SlaveTimOvfCallback()</div><div class="ttdef"><b>Definition:</b> <a href="_frq_counter_8cpp_source.html#l00205">FrqCounter.cpp:205</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл tsc.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('tsc_8c_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tsc.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tsc_8c.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tsc_8h.html">tsc.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;gpio.h&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* USER CODE BEGIN 0 */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// константы для порогов взяты из примера и требует коррекции</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="tsc_8c.html#a5a602e82fcdab4ae4530076fb0f6bd60">   42</a></span>&#160;<span class="preprocessor">#define TSCx_MIN_THRESHOLD        1000</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="tsc_8c.html#a3d50a7de06130864f1d5149c71da9d8d">   43</a></span>&#160;<span class="preprocessor">#define TSCx_LOW_MAXTHRESHOLD     1290</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="tsc_8c.html#a47aa3fb0cf17b47635c38db22d689beb">   44</a></span>&#160;<span class="preprocessor">#define TSCx_MEDIUM_MAXTHRESHOLD  1270</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="tsc_8c.html#aabbd4c180868bad6587c68776f07f7f9">   45</a></span>&#160;<span class="preprocessor">#define TSCx_HIGH_MAXTHRESHOLD    1245</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/* Array used to store the acquisition value */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="tsc_8c.html#adb60f21109f8c4cd42ccc9d70a167f54">   48</a></span>&#160;<span class="keyword">static</span> __IO uint32_t <a class="code" href="tsc_8c.html#adb60f21109f8c4cd42ccc9d70a167f54">TSC_acquisition_value</a>[<a class="code" href="tsc_8h.html#aeb7e9c0c926cf4bd79f4d93e58d96ce8">TSC_CHAN_QNT</a>];</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="tsc_8c.html#abb3499f6f1639a521ef64d3e3bc42125">   49</a></span>&#160;<span class="keyword">const</span> uint32_t <a class="code" href="tsc_8c.html#abb3499f6f1639a521ef64d3e3bc42125">TSC_Channel_IO</a>[] = </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  TSC_GROUP6_IO4, <span class="comment">// SENS1</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  TSC_GROUP6_IO3, <span class="comment">// SENS2</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  TSC_GROUP6_IO2  <span class="comment">// C_REF</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* USER CODE END 0 */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="tsc_8h.html#a899fab719d80961a63b5fb70ad4aa6ab">   58</a></span>&#160;TSC_HandleTypeDef <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/* TSC init function */</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="tsc_8h.html#ab8f5b6f679b228152e65fa25bcfae24f">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="tsc_8c.html#ab8f5b6f679b228152e65fa25bcfae24f">MX_TSC_Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Instance = TSC;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.CTPulseHighLength = TSC_CTPH_1CYCLE;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.CTPulseLowLength = TSC_CTPL_1CYCLE;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.SpreadSpectrum = DISABLE;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.SpreadSpectrumDeviation = 1;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.SpreadSpectrumPrescaler = TSC_SS_PRESC_DIV1;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.PulseGeneratorPrescaler = TSC_PG_PRESC_DIV64;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.MaxCountValue = TSC_MCV_4095;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.IODefaultMode = TSC_IODEF_IN_FLOAT;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.SynchroPinPolarity = TSC_SYNC_POLARITY_FALLING;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.AcquisitionMode = TSC_ACQ_MODE_NORMAL;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.ChannelIOs = TSC_GROUP6_IO2|TSC_GROUP6_IO3|TSC_GROUP6_IO4;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.SamplingIOs = TSC_GROUP6_IO1;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">if</span> (HAL_TSC_Init(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>) != HAL_OK)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="dac_8h.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="tsc_8c.html#a33a8ff29ddb6c279e55c261338f618be">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="tsc_8c.html#a33a8ff29ddb6c279e55c261338f618be">HAL_TSC_MspInit</a>(TSC_HandleTypeDef* tscHandle)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  GPIO_InitTypeDef GPIO_InitStruct;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">if</span>(tscHandle-&gt;Instance==TSC)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">/* USER CODE BEGIN TSC_MspInit 0 */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">/* USER CODE END TSC_MspInit 0 */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">/* Peripheral clock enable */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    __HAL_RCC_TSC_CLK_ENABLE();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    GPIO_InitStruct.Pin = C_SAMPLE_Pin;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    GPIO_InitStruct.Pull = GPIO_NOPULL;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    GPIO_InitStruct.Alternate = GPIO_AF3_TSC;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    HAL_GPIO_Init(C_SAMPLE_GPIO_Port, &amp;GPIO_InitStruct);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    GPIO_InitStruct.Pin = C_REF_Pin|SENS2_Pin|SENS1_Pin;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    GPIO_InitStruct.Pull = GPIO_NOPULL;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    GPIO_InitStruct.Alternate = GPIO_AF3_TSC;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    HAL_GPIO_Init(GPIOB, &amp;GPIO_InitStruct);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">/* USER CODE BEGIN TSC_MspInit 1 */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">/* USER CODE END TSC_MspInit 1 */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="tsc_8c.html#ae968710c28a213c2571dbe8226823052">  124</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="tsc_8c.html#ae968710c28a213c2571dbe8226823052">HAL_TSC_MspDeInit</a>(TSC_HandleTypeDef* tscHandle)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">if</span>(tscHandle-&gt;Instance==TSC)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="comment">/* USER CODE BEGIN TSC_MspDeInit 0 */</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="comment">/* USER CODE END TSC_MspDeInit 0 */</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">/* Peripheral clock disable */</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    __HAL_RCC_TSC_CLK_DISABLE();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    HAL_GPIO_DeInit(GPIOB, C_SAMPLE_Pin|C_REF_Pin|SENS2_Pin|SENS1_Pin);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="comment">/* USER CODE BEGIN TSC_MspDeInit 1 */</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">/* USER CODE END TSC_MspDeInit 1 */</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;} </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">/* USER CODE BEGIN 1 */</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="tsc_8h.html#a73e81dcf50ad54c1f9792b5e8973a7fd">  150</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="tsc_8c.html#a73e81dcf50ad54c1f9792b5e8973a7fd">tsc_measure</a>(uint32_t chan_io)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="comment">/*##-2- Discharge the touch-sensing IOs ##################################*/</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="comment">/* Must be done before each acquisition */</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  __HAL_TSC_CLOSE_ANALOG_SWITCH(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>, TSC_GROUP6_IO3|TSC_GROUP6_IO2|TSC_GROUP6_IO4);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  __HAL_TSC_SET_IODEF_INFLOAT(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  HAL_Delay(1); <span class="comment">/* 1 ms is more than enough to discharge all capacitors */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="comment">/* ##-3- Config IO channel ############################*/</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  TSC_IOConfigTypeDef tsc_io_config; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  tsc_io_config.ChannelIOs = <a class="code" href="tsc_8c.html#abb3499f6f1639a521ef64d3e3bc42125">TSC_Channel_IO</a>[chan_io];</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  tsc_io_config.SamplingIOs = <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.SamplingIOs;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  tsc_io_config.ShieldIOs = <a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>.Init.ShieldIOs;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  HAL_TSC_IOConfig(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>, &amp;tsc_io_config);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordflow">if</span> (HAL_TSC_Start(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>) != HAL_OK)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="dac_8h.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">/*##-4- Wait for the end of acquisition ##################################*/</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="comment">/*  Before starting a new acquisition, you need to check the current state of</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">      the peripheral; if it’s busy you need to wait for the end of current</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">      acquisition before starting a new one. */</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">while</span> (HAL_TSC_GetState(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>) == HAL_TSC_STATE_BUSY)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">/* For simplicity reasons, this example is just waiting till the end of the</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">       acquisition, but application may perform other tasks while acquisition</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">       operation is ongoing. */</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  }  </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;   </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="comment">/*##-5- Clear flags ######################################################*/</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  __HAL_TSC_CLEAR_FLAG(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>, (TSC_FLAG_EOA | TSC_FLAG_MCE));</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="comment">/*##-6- Check if the acquisition is correct (no max count) ###############*/</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">if</span> (HAL_TSC_GroupGetStatus(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>, TSC_GROUP6_IDX) == TSC_GROUP_COMPLETED)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">/*##-7- Store the acquisition value ####################################*/</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="tsc_8c.html#adb60f21109f8c4cd42ccc9d70a167f54">TSC_acquisition_value</a>[chan_io] = HAL_TSC_GroupGetValue(&amp;<a class="code" href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a>, TSC_GROUP6_IDX);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="tsc_8h.html#af27ac7cd9448494c58a679863eda8c5e">  193</a></span>&#160;uint32_t <a class="code" href="tsc_8c.html#af27ac7cd9448494c58a679863eda8c5e">TSC_get_counter</a>(uint32_t chan_io)</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="tsc_8c.html#adb60f21109f8c4cd42ccc9d70a167f54">TSC_acquisition_value</a>[chan_io];</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">/* USER CODE END 1 */</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/</span></div>
+<div class="ttc" id="tsc_8c_html_af27ac7cd9448494c58a679863eda8c5e"><div class="ttname"><a href="tsc_8c.html#af27ac7cd9448494c58a679863eda8c5e">TSC_get_counter</a></div><div class="ttdeci">uint32_t TSC_get_counter(uint32_t chan_io)</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00193">tsc.c:193</a></div></div>
+<div class="ttc" id="tsc_8c_html_abb3499f6f1639a521ef64d3e3bc42125"><div class="ttname"><a href="tsc_8c.html#abb3499f6f1639a521ef64d3e3bc42125">TSC_Channel_IO</a></div><div class="ttdeci">const uint32_t TSC_Channel_IO[]</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00049">tsc.c:49</a></div></div>
+<div class="ttc" id="tsc_8c_html_a33a8ff29ddb6c279e55c261338f618be"><div class="ttname"><a href="tsc_8c.html#a33a8ff29ddb6c279e55c261338f618be">HAL_TSC_MspInit</a></div><div class="ttdeci">void HAL_TSC_MspInit(TSC_HandleTypeDef *tscHandle)</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00086">tsc.c:86</a></div></div>
+<div class="ttc" id="dac_8h_html_a1730ffe1e560465665eb47d9264826f9"><div class="ttname"><a href="dac_8h.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a></div><div class="ttdeci">void Error_Handler(void)</div></div>
+<div class="ttc" id="tsc_8h_html_aeb7e9c0c926cf4bd79f4d93e58d96ce8"><div class="ttname"><a href="tsc_8h.html#aeb7e9c0c926cf4bd79f4d93e58d96ce8">TSC_CHAN_QNT</a></div><div class="ttdeci">#define TSC_CHAN_QNT</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8h_source.html#l00055">tsc.h:55</a></div></div>
+<div class="ttc" id="tsc_8c_html_a899fab719d80961a63b5fb70ad4aa6ab"><div class="ttname"><a href="tsc_8c.html#a899fab719d80961a63b5fb70ad4aa6ab">htsc</a></div><div class="ttdeci">TSC_HandleTypeDef htsc</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00058">tsc.c:58</a></div></div>
+<div class="ttc" id="tsc_8h_html"><div class="ttname"><a href="tsc_8h.html">tsc.h</a></div></div>
+<div class="ttc" id="tsc_8c_html_ab8f5b6f679b228152e65fa25bcfae24f"><div class="ttname"><a href="tsc_8c.html#ab8f5b6f679b228152e65fa25bcfae24f">MX_TSC_Init</a></div><div class="ttdeci">void MX_TSC_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00061">tsc.c:61</a></div></div>
+<div class="ttc" id="tsc_8c_html_ae968710c28a213c2571dbe8226823052"><div class="ttname"><a href="tsc_8c.html#ae968710c28a213c2571dbe8226823052">HAL_TSC_MspDeInit</a></div><div class="ttdeci">void HAL_TSC_MspDeInit(TSC_HandleTypeDef *tscHandle)</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00124">tsc.c:124</a></div></div>
+<div class="ttc" id="tsc_8c_html_adb60f21109f8c4cd42ccc9d70a167f54"><div class="ttname"><a href="tsc_8c.html#adb60f21109f8c4cd42ccc9d70a167f54">TSC_acquisition_value</a></div><div class="ttdeci">static __IO uint32_t TSC_acquisition_value[TSC_CHAN_QNT]</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00048">tsc.c:48</a></div></div>
+<div class="ttc" id="tsc_8c_html_a73e81dcf50ad54c1f9792b5e8973a7fd"><div class="ttname"><a href="tsc_8c.html#a73e81dcf50ad54c1f9792b5e8973a7fd">tsc_measure</a></div><div class="ttdeci">void tsc_measure(uint32_t chan_io)</div><div class="ttdef"><b>Definition:</b> <a href="tsc_8c_source.html#l00150">tsc.c:150</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4e45e7f38e871bf255180c453797d969.html">trsh</a></li><li class="navelem"><a class="el" href="tsc_8c.html">tsc.c</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

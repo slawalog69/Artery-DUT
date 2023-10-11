@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл adc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('adc_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">adc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="adc_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/* Define to prevent recursive inclusion -------------------------------------*/</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __adc_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __adc_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span> </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3">   22</a></span>&#160;  <a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3">ADC_CHAN_5V</a> = 0,   <span class="comment">// ADC_CH1</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="comment">//ADC_DMA_BUF_CHAN_24V  1   // ADC_CH5</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">   24</a></span>&#160;  <a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">ADC_CHAN_VIN</a>,   <span class="comment">// ADC_CH8</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16">   25</a></span>&#160;  <a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16">ADC_CHAN_TEMP</a>, </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">   26</a></span>&#160;  <a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <a class="code" href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604">eNameAdcChan</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="adc_8h.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8h.html#aca7f21e220653e353491bceced7c5df3">MX_ADC_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* USER CODE BEGIN Prototypes */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> uint8_t <a class="code" href="adc_8h.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> uint8_t <a class="code" href="adc_8h.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8h.html#a1e942fcd91f79d49e4ddb8d7e9d3ef95">adc_init</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8h.html#abbdf00751151037e391e08af10e6c32f">adc_start_measurement</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">float</span>  <a class="code" href="adc_8h.html#a34e1e9110324f01b4989f9ae20e78ea3">adc_get_temperature</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">float</span> <a class="code" href="adc_8h.html#a8f5aca45aeaaa858b948f222a283de3d">adc_get_5V_value</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">float</span>  <a class="code" href="adc_8h.html#aef6315e93267dfb4d7a563274ebe7e0a">adc_get_Vin_value</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8h.html#a7b6fac3d670a4860ebec8a961d5c4a73">DMA1_Channel1_IRQHandler</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8h.html#a60e6c52e9c85bed2858e41a4fa6eaa54">adc_measure_temperature</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8h.html#a26b3ea071e2c8eb556ad968241906a61">adc_measure_All</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* USER CODE END Prototypes */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*__ adc_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/</span></div>
+<div class="ttc" id="adc_8h_html_a34e1e9110324f01b4989f9ae20e78ea3"><div class="ttname"><a href="adc_8h.html#a34e1e9110324f01b4989f9ae20e78ea3">adc_get_temperature</a></div><div class="ttdeci">float adc_get_temperature()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00202">adc.c:202</a></div></div>
+<div class="ttc" id="adc_8h_html_a60e6c52e9c85bed2858e41a4fa6eaa54"><div class="ttname"><a href="adc_8h.html#a60e6c52e9c85bed2858e41a4fa6eaa54">adc_measure_temperature</a></div><div class="ttdeci">void adc_measure_temperature()</div></div>
+<div class="ttc" id="adc_8h_html_aca7f21e220653e353491bceced7c5df3"><div class="ttname"><a href="adc_8h.html#aca7f21e220653e353491bceced7c5df3">MX_ADC_Init</a></div><div class="ttdeci">void MX_ADC_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00121">adc.c:121</a></div></div>
+<div class="ttc" id="adc_8h_html_abbdf00751151037e391e08af10e6c32f"><div class="ttname"><a href="adc_8h.html#abbdf00751151037e391e08af10e6c32f">adc_start_measurement</a></div><div class="ttdeci">void adc_start_measurement()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00293">adc.c:293</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a2aae213c103a3ab746b2310b56e48b3b">ADC_DMA_BUF_QNT_CHANS</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00026">adc.h:26</a></div></div>
+<div class="ttc" id="adc_8h_html_a1e942fcd91f79d49e4ddb8d7e9d3ef95"><div class="ttname"><a href="adc_8h.html#a1e942fcd91f79d49e4ddb8d7e9d3ef95">adc_init</a></div><div class="ttdeci">void adc_init()</div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ae616ba07e6e32cb67feaccb7ce824d16">ADC_CHAN_TEMP</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00025">adc.h:25</a></div></div>
+<div class="ttc" id="main_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div></div>
+<div class="ttc" id="adc_8h_html_a5c917a92605cca17bb7f46e715b7cba9"><div class="ttname"><a href="adc_8h.html#a5c917a92605cca17bb7f46e715b7cba9">adc_data_ready</a></div><div class="ttdeci">volatile uint8_t adc_data_ready</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00031">adc.c:31</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604a3932b67d213ded8ca9c35cfcd4ac5eb3">ADC_CHAN_5V</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00022">adc.h:22</a></div></div>
+<div class="ttc" id="adc_8h_html_a8f5aca45aeaaa858b948f222a283de3d"><div class="ttname"><a href="adc_8h.html#a8f5aca45aeaaa858b948f222a283de3d">adc_get_5V_value</a></div><div class="ttdeci">float adc_get_5V_value()</div></div>
+<div class="ttc" id="adc_8h_html_afb0eae5f694683479707fe13cf76ae5b"><div class="ttname"><a href="adc_8h.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a></div><div class="ttdeci">volatile uint8_t adc_low_power</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00034">adc.c:34</a></div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604">eNameAdcChan</a></div><div class="ttdeci">eNameAdcChan</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00021">adc.h:21</a></div></div>
+<div class="ttc" id="adc_8h_html_a26b3ea071e2c8eb556ad968241906a61"><div class="ttname"><a href="adc_8h.html#a26b3ea071e2c8eb556ad968241906a61">adc_measure_All</a></div><div class="ttdeci">void adc_measure_All()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00050">adc.c:50</a></div></div>
+<div class="ttc" id="adc_8h_html_a7b6fac3d670a4860ebec8a961d5c4a73"><div class="ttname"><a href="adc_8h.html#a7b6fac3d670a4860ebec8a961d5c4a73">DMA1_Channel1_IRQHandler</a></div><div class="ttdeci">void DMA1_Channel1_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00302">adc.c:302</a></div></div>
+<div class="ttc" id="adc_8h_html_aef6315e93267dfb4d7a563274ebe7e0a"><div class="ttname"><a href="adc_8h.html#aef6315e93267dfb4d7a563274ebe7e0a">adc_get_Vin_value</a></div><div class="ttdeci">float adc_get_Vin_value()</div></div>
+<div class="ttc" id="adc_8h_html_afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748"><div class="ttname"><a href="adc_8h.html#afb2bb65c480c7a4db8ec600c44016604ac6ded6ddd6005bea508e961ac4130748">ADC_CHAN_VIN</a></div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00024">adc.h:24</a></div></div>
+<div class="ttc" id="adc_8h_html_a1730ffe1e560465665eb47d9264826f9"><div class="ttname"><a href="adc_8h.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a></div><div class="ttdeci">void Error_Handler(void)</div><div class="ttdoc">This function is executed in case of error occurrence. </div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00133">main.c:133</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="adc_8h.html">adc.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

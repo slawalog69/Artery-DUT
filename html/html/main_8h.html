@@ -1,0 +1,1013 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Файл main.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('main_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл main.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="printf_8h_source.html">printf.h</a>&quot;</code><br />
+<code>#include &quot;at32f415.h&quot;</code><br />
+<code>#include &quot;string.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="adc_8h_source.html">adc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="usart_8h_source.html">usart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gpio_8h_source.html">gpio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="error_8h_source.html">error.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crc_8h_source.html">crc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ext__mem_8h_source.html">ext_mem.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="init_8h_source.html">init.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="measurement_8h_source.html">measurement.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="protocol_8h_source.html">protocol.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="at32f415__clock_8h_source.html">at32f415_clock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_frq_counter_8h_source.html">FrqCounter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_z_b25_v_q16_8h_source.html">ZB25VQ16.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="wdt_8h_source.html">wdt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_read_protection_8h_source.html">ReadProtection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="update__boot_8h_source.html">update_boot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="values___cl_8h_source.html">values_Cl.h</a>&quot;</code><br />
+</div>
+<p><a href="main_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ab4954c9de15c0d429b75674056507aa1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ab4954c9de15c0d429b75674056507aa1">DBG_CTRL_FREEZE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:ab4954c9de15c0d429b75674056507aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">-set DEBUG_CTRL FREEZE (e.g. TIM1 TIM2 WDT )  <a href="#ab4954c9de15c0d429b75674056507aa1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab4954c9de15c0d429b75674056507aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e7f6d2e6f9562085d52802e1585059"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a68e7f6d2e6f9562085d52802e1585059">LL_READ_PROTECT</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memdesc:a68e7f6d2e6f9562085d52802e1585059"><td class="mdescLeft">&#160;</td><td class="mdescRight">-ignore Low level protect readflash  <a href="#a68e7f6d2e6f9562085d52802e1585059">Подробнее...</a><br /></td></tr>
+<tr class="separator:a68e7f6d2e6f9562085d52802e1585059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726de13554aefa6f295b9d4259c9e887"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a726de13554aefa6f295b9d4259c9e887">PRINTF_DBG_START_BRD</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a726de13554aefa6f295b9d4259c9e887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b25587a619d27daefffdd15c2ccbbc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a1b25587a619d27daefffdd15c2ccbbc8">USE_PRINTF</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="memdesc:a1b25587a619d27daefffdd15c2ccbbc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">use printf func on state RS-232  <a href="#a1b25587a619d27daefffdd15c2ccbbc8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1b25587a619d27daefffdd15c2ccbbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14140cf8fb5e7eae320eed524bcb0595"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a14140cf8fb5e7eae320eed524bcb0595">UPDATE_BOOT</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memdesc:a14140cf8fb5e7eae320eed524bcb0595"><td class="mdescLeft">&#160;</td><td class="mdescRight">ignore control update boot  <a href="#a14140cf8fb5e7eae320eed524bcb0595">Подробнее...</a><br /></td></tr>
+<tr class="separator:a14140cf8fb5e7eae320eed524bcb0595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32a6341e433677bd4f04ce02e16fcef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ab32a6341e433677bd4f04ce02e16fcef">DBG_FREEZE</a>&#160;&#160;&#160;(<a class="el" href="main_8h.html#ab4954c9de15c0d429b75674056507aa1">DBG_CTRL_FREEZE</a> | <a class="el" href="main_8h.html#a68e7f6d2e6f9562085d52802e1585059">LL_READ_PROTECT</a> | <a class="el" href="main_8h.html#a14140cf8fb5e7eae320eed524bcb0595">UPDATE_BOOT</a> )</td></tr>
+<tr class="memdesc:ab32a6341e433677bd4f04ce02e16fcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">DBG_FREEZE - битовая маска для отладки (вкл\ выкл разного функционала  <a href="#ab32a6341e433677bd4f04ce02e16fcef">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab32a6341e433677bd4f04ce02e16fcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac748e3e41461406c8b4f0748a0691652"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ac748e3e41461406c8b4f0748a0691652">QNT_VECTORS</a>&#160;&#160;&#160;92</td></tr>
+<tr class="separator:ac748e3e41461406c8b4f0748a0691652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204326d5b1a65434c3c36deee3eac276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a204326d5b1a65434c3c36deee3eac276">VERS_ADDR</a>&#160;&#160;&#160;(<a class="el" href="main_8h.html#ac748e3e41461406c8b4f0748a0691652">QNT_VECTORS</a>*4)</td></tr>
+<tr class="separator:a204326d5b1a65434c3c36deee3eac276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfb38891de91ea47387e4f83bd248de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#abdfb38891de91ea47387e4f83bd248de">ADC_5V_WDT_HI</a>&#160;&#160;&#160;4036</td></tr>
+<tr class="separator:abdfb38891de91ea47387e4f83bd248de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5772d0e6c9e55cd56e0d7702555ebf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ace5772d0e6c9e55cd56e0d7702555ebf">ADC_5V_WDT_LO</a>&#160;&#160;&#160;3683</td></tr>
+<tr class="separator:ace5772d0e6c9e55cd56e0d7702555ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712016883c8758bc2d2b7378aa403f8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a712016883c8758bc2d2b7378aa403f8c">ADC_VIN_Pin</a>&#160;&#160;&#160;GPIO_PINS_0</td></tr>
+<tr class="separator:a712016883c8758bc2d2b7378aa403f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c087780f75b5e01dfdd1d221bded117"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a2c087780f75b5e01dfdd1d221bded117">ADC_VIN_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="separator:a2c087780f75b5e01dfdd1d221bded117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb5fe8738e6b19b5479da60668372dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#abfb5fe8738e6b19b5479da60668372dd">RS232_TX_Pin</a>&#160;&#160;&#160;GPIO_PINS_10</td></tr>
+<tr class="separator:abfb5fe8738e6b19b5479da60668372dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52156f353d041e6ea7d8a0ba9afb4ddd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a52156f353d041e6ea7d8a0ba9afb4ddd">RS232_TX_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="separator:a52156f353d041e6ea7d8a0ba9afb4ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5409007c74bc59e4fe850e2b65ef52d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#af5409007c74bc59e4fe850e2b65ef52d">CRM_GPIO_RS232_TX_PERIPH_CLOCK</a>&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td></tr>
+<tr class="separator:af5409007c74bc59e4fe850e2b65ef52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047e1624760aa8b1025e7f151fd27b8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a047e1624760aa8b1025e7f151fd27b8b">RS232_RX_Pin</a>&#160;&#160;&#160;GPIO_PINS_11</td></tr>
+<tr class="separator:a047e1624760aa8b1025e7f151fd27b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3244f8f343a755a3d384a7b1aa493b7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a3244f8f343a755a3d384a7b1aa493b7a">RS232_RX_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="separator:a3244f8f343a755a3d384a7b1aa493b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3c0c7e393b80364cad917a8f72c5df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a1a3c0c7e393b80364cad917a8f72c5df">CRM_GPIO_RS232_RX_PERIPH_CLOCK</a>&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td></tr>
+<tr class="separator:a1a3c0c7e393b80364cad917a8f72c5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210bd26e9112687b18228c39b6f8d646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a210bd26e9112687b18228c39b6f8d646">MISO_F_Pin</a>&#160;&#160;&#160;GPIO_PINS_6</td></tr>
+<tr class="separator:a210bd26e9112687b18228c39b6f8d646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e2b9fab0c624f74f6fbe2315a9a6ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a47e2b9fab0c624f74f6fbe2315a9a6ca">MISO_F_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:a47e2b9fab0c624f74f6fbe2315a9a6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af137b016200168d55a3d6e3b57688c4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#af137b016200168d55a3d6e3b57688c4e">MOSI_F_Pin</a>&#160;&#160;&#160;GPIO_PINS_7</td></tr>
+<tr class="separator:af137b016200168d55a3d6e3b57688c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1446092b38d3d7a6d3aae553484faad6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a1446092b38d3d7a6d3aae553484faad6">MOSI_F_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:a1446092b38d3d7a6d3aae553484faad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798afccada8086b724276dee78f58dbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a798afccada8086b724276dee78f58dbd">SCK_F_Pin</a>&#160;&#160;&#160;GPIO_PINS_5</td></tr>
+<tr class="separator:a798afccada8086b724276dee78f58dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c3eee05966e097970aefcffd246a15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a80c3eee05966e097970aefcffd246a15">SCK_F_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:a80c3eee05966e097970aefcffd246a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be080c76f101a8ab08fd971ba1ff9c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a3be080c76f101a8ab08fd971ba1ff9c5">CRM_GPIO_SCK_F_PERIPH_CLOCK</a>&#160;&#160;&#160;CRM_GPIOA_PERIPH_CLOCK</td></tr>
+<tr class="separator:a3be080c76f101a8ab08fd971ba1ff9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f36f07ed8a93355ca2303bb4798857d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a5f36f07ed8a93355ca2303bb4798857d">CS_F_Pin</a>&#160;&#160;&#160;GPIO_PINS_3</td></tr>
+<tr class="separator:a5f36f07ed8a93355ca2303bb4798857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba446784076ee62f01e2fde311e3db07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aba446784076ee62f01e2fde311e3db07">CS_F_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:aba446784076ee62f01e2fde311e3db07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba2b312e0c1cbafbe4792187b295697"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a3ba2b312e0c1cbafbe4792187b295697">CRM_GPIO_CS_PERIPH_CLOCK</a>&#160;&#160;&#160;CRM_GPIOA_PERIPH_CLOCK</td></tr>
+<tr class="separator:a3ba2b312e0c1cbafbe4792187b295697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381cd5b903b0556325e30046406cabf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a381cd5b903b0556325e30046406cabf0">ADC_5V_Pin</a>&#160;&#160;&#160;GPIO_PINS_1</td></tr>
+<tr class="separator:a381cd5b903b0556325e30046406cabf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b13ea3511b0286e049b6974bec0f02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#af3b13ea3511b0286e049b6974bec0f02">ADC_5V_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="separator:af3b13ea3511b0286e049b6974bec0f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0bb41c46bfe0b9d58f2290092ef37d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#acf0bb41c46bfe0b9d58f2290092ef37d">SW_MAIN_REF_Pin</a>&#160;&#160;&#160;GPIO_PINS_9</td></tr>
+<tr class="separator:acf0bb41c46bfe0b9d58f2290092ef37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4808dd423875d5c22f8d3368bb2ff1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ace4808dd423875d5c22f8d3368bb2ff1">SW_MAIN_REF_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:ace4808dd423875d5c22f8d3368bb2ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d7b83b264f6bb5e52f8d7d006e396a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ab5d7b83b264f6bb5e52f8d7d006e396a">RS485_RE_Pin</a>&#160;&#160;&#160;GPIO_PINS_11</td></tr>
+<tr class="separator:ab5d7b83b264f6bb5e52f8d7d006e396a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b56665f8b448f779a1d9cd8e9f7d671"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a5b56665f8b448f779a1d9cd8e9f7d671">RS485_RE_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:a5b56665f8b448f779a1d9cd8e9f7d671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59e10713e28d2925436043c35cecd6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#af59e10713e28d2925436043c35cecd6e">RS485_DE_Pin</a>&#160;&#160;&#160;GPIO_PINS_12</td></tr>
+<tr class="separator:af59e10713e28d2925436043c35cecd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed428bd39090205f89119c3dcfb20f26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aed428bd39090205f89119c3dcfb20f26">RS485_DE_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:aed428bd39090205f89119c3dcfb20f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b8ebec42963ed46bd2401878227663"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a16b8ebec42963ed46bd2401878227663">CRM_GPIO_RS485_RE_DE_PERIPH_CLOCK</a>&#160;&#160;&#160;CRM_GPIOA_PERIPH_CLOCK</td></tr>
+<tr class="separator:a16b8ebec42963ed46bd2401878227663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab635ac383d4e81692e018fb73febf5f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ab635ac383d4e81692e018fb73febf5f1">RS485_TX_Pin</a>&#160;&#160;&#160;GPIO_PINS_6</td></tr>
+<tr class="separator:ab635ac383d4e81692e018fb73febf5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942a7f576d7a6eb12e336c6c5d94826b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a942a7f576d7a6eb12e336c6c5d94826b">RS485_TX_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="separator:a942a7f576d7a6eb12e336c6c5d94826b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c90e4e898e9909bc769fa16ef5da60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ab3c90e4e898e9909bc769fa16ef5da60">CRM_GPIO_RS485_TX_PERIPH_CLOCK</a>&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td></tr>
+<tr class="separator:ab3c90e4e898e9909bc769fa16ef5da60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08984c13e0171c5c7ee5a910bd265115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a08984c13e0171c5c7ee5a910bd265115">RS485_RX_Pin</a>&#160;&#160;&#160;GPIO_PINS_7</td></tr>
+<tr class="separator:a08984c13e0171c5c7ee5a910bd265115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934296ef07692dfdd5be4ff9abbe0a4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a934296ef07692dfdd5be4ff9abbe0a4e">RS485_RX_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="separator:a934296ef07692dfdd5be4ff9abbe0a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18edc7df1ce9a66f74a558bf05e98d9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a18edc7df1ce9a66f74a558bf05e98d9e">CRM_GPIO_RS485_RX_PERIPH_CLOCK</a>&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td></tr>
+<tr class="separator:a18edc7df1ce9a66f74a558bf05e98d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5229af48d378ec5984043a8a7ab11c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ad5229af48d378ec5984043a8a7ab11c2">MAIN_PROGRAM_START_ADDRESS</a>&#160;&#160;&#160;(uint32_t)0x08003000</td></tr>
+<tr class="separator:ad5229af48d378ec5984043a8a7ab11c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af551c10ba95caea76eabe37f6b2368a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#af551c10ba95caea76eabe37f6b2368a9">MAIN_PROGRAM_END_ADDRESS</a>&#160;&#160;&#160;(uint32_t)0x0800FFFF</td></tr>
+<tr class="separator:af551c10ba95caea76eabe37f6b2368a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8759ff766c4ef5982b1917f3a29f87e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ac8759ff766c4ef5982b1917f3a29f87e">COEF_SCALE</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:ac8759ff766c4ef5982b1917f3a29f87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a6f02dcbcb242506e90bb437bfce41ac4"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a6f02dcbcb242506e90bb437bfce41ac4">err_init</a></td></tr>
+<tr class="separator:a6f02dcbcb242506e90bb437bfce41ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e527d2508ed998007e4d656b1a1e07"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="settings_8h.html#a80ee00c40c89bbd68710d2e8b8d83b3f">settings_sensor_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a21e527d2508ed998007e4d656b1a1e07">SETTING_SENSOR_DEFAULT</a></td></tr>
+<tr class="separator:a21e527d2508ed998007e4d656b1a1e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="af3b13ea3511b0286e049b6974bec0f02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_5V_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00105">105</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00071">ADC_gpio_config()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a381cd5b903b0556325e30046406cabf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_5V_Pin&#160;&#160;&#160;GPIO_PINS_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00104">104</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00071">ADC_gpio_config()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdfb38891de91ea47387e4f83bd248de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_5V_WDT_HI&#160;&#160;&#160;4036</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00077">77</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ace5772d0e6c9e55cd56e0d7702555ebf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_5V_WDT_LO&#160;&#160;&#160;3683</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00078">78</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a2c087780f75b5e01dfdd1d221bded117"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_VIN_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00081">81</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00071">ADC_gpio_config()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a712016883c8758bc2d2b7378aa403f8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_VIN_Pin&#160;&#160;&#160;GPIO_PINS_0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00080">80</a></p>
+
+<p>Используется в <a class="el" href="adc_8c_source.html#l00071">ADC_gpio_config()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8759ff766c4ef5982b1917f3a29f87e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COEF_SCALE&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00188">188</a></p>
+
+<p>Используется в <a class="el" href="_auto_cal_8cpp_source.html#l00006">auto_tune()</a>, <a class="el" href="measurement_8c_source.html#l00163">mb_calc_hold_reg_coef_corr()</a> и <a class="el" href="measurement_8c_source.html#l00446">measure_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ba2b312e0c1cbafbe4792187b295697"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_GPIO_CS_PERIPH_CLOCK&#160;&#160;&#160;CRM_GPIOA_PERIPH_CLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00102">102</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1a3c0c7e393b80364cad917a8f72c5df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_GPIO_RS232_RX_PERIPH_CLOCK&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00089">89</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00126">MX_USART2_UART_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5409007c74bc59e4fe850e2b65ef52d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_GPIO_RS232_TX_PERIPH_CLOCK&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00085">85</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00126">MX_USART2_UART_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16b8ebec42963ed46bd2401878227663"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_GPIO_RS485_RE_DE_PERIPH_CLOCK&#160;&#160;&#160;CRM_GPIOA_PERIPH_CLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00171">171</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18edc7df1ce9a66f74a558bf05e98d9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_GPIO_RS485_RX_PERIPH_CLOCK&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00180">180</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3c90e4e898e9909bc769fa16ef5da60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_GPIO_RS485_TX_PERIPH_CLOCK&#160;&#160;&#160;CRM_GPIOB_PERIPH_CLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00176">176</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3be080c76f101a8ab08fd971ba1ff9c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_GPIO_SCK_F_PERIPH_CLOCK&#160;&#160;&#160;CRM_GPIOA_PERIPH_CLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00098">98</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aba446784076ee62f01e2fde311e3db07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CS_F_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00101">101</a></p>
+
+<p>Используется в <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f36f07ed8a93355ca2303bb4798857d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CS_F_Pin&#160;&#160;&#160;GPIO_PINS_3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00100">100</a></p>
+
+<p>Используется в <a class="el" href="gpio_8c_source.html#l00033">MX_GPIO_Init()</a> и <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4954c9de15c0d429b75674056507aa1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBG_CTRL_FREEZE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-set DEBUG_CTRL FREEZE (e.g. TIM1 TIM2 WDT ) </p>
+<p>File Name : <a class="el" href="main_8h.html">main.h</a> Description : This file contains the common defines of the application </p>
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ab32a6341e433677bd4f04ce02e16fcef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBG_FREEZE&#160;&#160;&#160;(<a class="el" href="main_8h.html#ab4954c9de15c0d429b75674056507aa1">DBG_CTRL_FREEZE</a> | <a class="el" href="main_8h.html#a68e7f6d2e6f9562085d52802e1585059">LL_READ_PROTECT</a> | <a class="el" href="main_8h.html#a14140cf8fb5e7eae320eed524bcb0595">UPDATE_BOOT</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DBG_FREEZE - битовая маска для отладки (вкл\ выкл разного функционала </p>
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a68e7f6d2e6f9562085d52802e1585059"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LL_READ_PROTECT&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-ignore Low level protect readflash </p>
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<a class="anchor" id="af551c10ba95caea76eabe37f6b2368a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAIN_PROGRAM_END_ADDRESS&#160;&#160;&#160;(uint32_t)0x0800FFFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00184">184</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad5229af48d378ec5984043a8a7ab11c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAIN_PROGRAM_START_ADDRESS&#160;&#160;&#160;(uint32_t)0x08003000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00183">183</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a47e2b9fab0c624f74f6fbe2315a9a6ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MISO_F_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00092">92</a></p>
+
+<p>Используется в <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a210bd26e9112687b18228c39b6f8d646"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MISO_F_Pin&#160;&#160;&#160;GPIO_PINS_6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00091">91</a></p>
+
+<p>Используется в <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1446092b38d3d7a6d3aae553484faad6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOSI_F_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00094">94</a></p>
+
+<p>Используется в <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af137b016200168d55a3d6e3b57688c4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOSI_F_Pin&#160;&#160;&#160;GPIO_PINS_7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00093">93</a></p>
+
+<p>Используется в <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a726de13554aefa6f295b9d4259c9e887"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRINTF_DBG_START_BRD&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<ul>
+<li>printf &amp; LED func on START BOARD </li>
+</ul>
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ac748e3e41461406c8b4f0748a0691652"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QNT_VECTORS&#160;&#160;&#160;92</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00072">72</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a3244f8f343a755a3d384a7b1aa493b7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS232_RX_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00088">88</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00126">MX_USART2_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a047e1624760aa8b1025e7f151fd27b8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS232_RX_Pin&#160;&#160;&#160;GPIO_PINS_11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00087">87</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00126">MX_USART2_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52156f353d041e6ea7d8a0ba9afb4ddd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS232_TX_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00084">84</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00126">MX_USART2_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfb5fe8738e6b19b5479da60668372dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS232_TX_Pin&#160;&#160;&#160;GPIO_PINS_10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00083">83</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00126">MX_USART2_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed428bd39090205f89119c3dcfb20f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_DE_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00170">170</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a>, <a class="el" href="usart_8c_source.html#l00244">Switch_485_Tx()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af59e10713e28d2925436043c35cecd6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_DE_Pin&#160;&#160;&#160;GPIO_PINS_12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00169">169</a></p>
+
+<p>Используется в <a class="el" href="gpio_8c_source.html#l00033">MX_GPIO_Init()</a>, <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a>, <a class="el" href="usart_8c_source.html#l00240">Switch_485_Rx()</a>, <a class="el" href="usart_8c_source.html#l00244">Switch_485_Tx()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b56665f8b448f779a1d9cd8e9f7d671"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_RE_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00168">168</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a>, <a class="el" href="usart_8c_source.html#l00240">Switch_485_Rx()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5d7b83b264f6bb5e52f8d7d006e396a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_RE_Pin&#160;&#160;&#160;GPIO_PINS_11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00167">167</a></p>
+
+<p>Используется в <a class="el" href="gpio_8c_source.html#l00033">MX_GPIO_Init()</a>, <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a>, <a class="el" href="usart_8c_source.html#l00240">Switch_485_Rx()</a>, <a class="el" href="usart_8c_source.html#l00244">Switch_485_Tx()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a934296ef07692dfdd5be4ff9abbe0a4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_RX_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00179">179</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08984c13e0171c5c7ee5a910bd265115"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_RX_Pin&#160;&#160;&#160;GPIO_PINS_7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00178">178</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a942a7f576d7a6eb12e336c6c5d94826b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_TX_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00175">175</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab635ac383d4e81692e018fb73febf5f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS485_TX_Pin&#160;&#160;&#160;GPIO_PINS_6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00174">174</a></p>
+
+<p>Используется в <a class="el" href="usart_8c_source.html#l00076">MX_USART1_UART_Init()</a> и <a class="el" href="usart_8c_source.html#l00167">UART_MspDeInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80c3eee05966e097970aefcffd246a15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCK_F_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00097">97</a></p>
+
+<p>Используется в <a class="el" href="gpio_8c_source.html#l00033">MX_GPIO_Init()</a> и <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a798afccada8086b724276dee78f58dbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCK_F_Pin&#160;&#160;&#160;GPIO_PINS_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00096">96</a></p>
+
+<p>Используется в <a class="el" href="gpio_8c_source.html#l00033">MX_GPIO_Init()</a> и <a class="el" href="_z_b25_v_q16_8c_source.html#l00031">ZB25_Fl_spi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace4808dd423875d5c22f8d3368bb2ff1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SW_MAIN_REF_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00157">157</a></p>
+
+<p>Используется в <a class="el" href="gpio_8c_source.html#l00142">gpio_switch_to_main_channel()</a>, <a class="el" href="gpio_8c_source.html#l00149">gpio_switch_to_ref_channel()</a> и <a class="el" href="gpio_8c_source.html#l00033">MX_GPIO_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf0bb41c46bfe0b9d58f2290092ef37d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SW_MAIN_REF_Pin&#160;&#160;&#160;GPIO_PINS_9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00156">156</a></p>
+
+<p>Используется в <a class="el" href="gpio_8c_source.html#l00142">gpio_switch_to_main_channel()</a>, <a class="el" href="gpio_8c_source.html#l00149">gpio_switch_to_ref_channel()</a> и <a class="el" href="gpio_8c_source.html#l00033">MX_GPIO_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14140cf8fb5e7eae320eed524bcb0595"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UPDATE_BOOT&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ignore control update boot </p>
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1b25587a619d27daefffdd15c2ccbbc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_PRINTF&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>use printf func on state RS-232 </p>
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00025">25</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a204326d5b1a65434c3c36deee3eac276"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VERS_ADDR&#160;&#160;&#160;(<a class="el" href="main_8h.html#ac748e3e41461406c8b4f0748a0691652">QNT_VECTORS</a>*4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00073">73</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a class="anchor" id="a6f02dcbcb242506e90bb437bfce41ac4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 err_init</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="init_8c_source.html">init.c</a> строка <a class="el" href="init_8c_source.html#l00017">17</a></p>
+
+<p>Используется в <a class="el" href="init_8c_source.html#l00018">init_board()</a>, <a class="el" href="main_8c_source.html#l00031">main()</a> и <a class="el" href="measurement_8c_source.html#l00446">measure_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21e527d2508ed998007e4d656b1a1e07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="settings_8h.html#a80ee00c40c89bbd68710d2e8b8d83b3f">settings_sensor_t</a> SETTING_SENSOR_DEFAULT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="settings_8c_source.html">settings.c</a> строка <a class="el" href="settings_8c_source.html#l00252">252</a></p>
+
+<p>Используется в <a class="el" href="init_8c_source.html#l00018">init_board()</a>, <a class="el" href="settings_8c_source.html#l00294">settings_init()</a> и <a class="el" href="settings_8c_source.html#l00424">settings_sensor_set_default()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="main_8h.html">main.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

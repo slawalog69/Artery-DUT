@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('main_8c_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8c.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/* Private function prototypes -----------------------------------------------*/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef USE_ONE_WIRE </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;OneWireCl.h&gt;</span> </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__uarts.html#ga1730ffe1e560465665eb47d9264826f9">Error_Handler</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="main_8c.html#acc671290b5619f665db2942b0af181e4">TermTask</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span>   <span class="keywordtype">void</span> <a class="code" href="main_8c.html#a9a7c90233650f834ee18a724653ce6f1">tmp_ADC_Init</a>(<span class="keywordtype">void</span>);  </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="main_8c.html#a28ef6205afa0cb4a3c8164388eaf109b">   19</a></span>&#160;u16 <a class="code" href="main_8c.html#a28ef6205afa0cb4a3c8164388eaf109b">adc1_val</a>;  </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="main_8c.html#a8c544e37da78c6e54765f617f612bae8">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8c.html#a8c544e37da78c6e54765f617f612bae8">MPVC_Config</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{  </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  crm_periph_clock_enable(CRM_PWC_PERIPH_CLOCK, TRUE);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  pwc_pvm_level_select(PWC_PVM_VOLTAGE_2V9);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  pwc_power_voltage_monitor_enable(TRUE);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   31</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{  </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="at32f415__clock_8h.html#a58d5ba05020fc08f0c6b6e3fbd32281c">system_clock_config</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if (DBG_FREEZE &amp;  DBG_CTRL_FREEZE )</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  *((u32*) DEBUG_CTRL) |= 0x00000D00; <span class="comment">// TIM1 TIM2 WDT DBG_FRIEZE</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if ((DBG_FREEZE &amp; UPDATE_BOOT)==0)  </span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="update__boot_8h.html#a41ece62abf4e3583d923fe8c55bdbd20">is_need_to_update_boot</a>()) {   </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="update__boot_8h.html#a5d26cecc95d3f0e4e6737607fc10e373">do_update_boot</a>(); </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  } </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if ((DBG_FREEZE &amp;  LL_READ_PROTECT )==0)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  u8 r =  <a class="code" href="_read_protection_8c.html#ae8aa0c0c35264596ffdcae4b333757f4">flash_access_protection</a>(0);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">/* Initialize all configured peripherals */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="gpio_8h.html#ac724e431d2af879252de35615be2bdea">MX_GPIO_Init</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="main_8c.html#a8c544e37da78c6e54765f617f612bae8">MPVC_Config</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="init_8h.html#a8ed9dd5e9c9e940055fc2fda0bb4d220">init_board</a>(); </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifdef Digit_CAN   </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="group__dig__can.html#ga66fb1afc38a18e2017873a9e5207ac43">m_CAN</a>.<a class="code" href="group__dig__can.html#gad33fee403b194a64c66a5788a6349705">config</a>();  </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="wdt_8h.html#a6e3d181b3ee9322654b6b2ced4e6ce62">wdt_init</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#if (DBG_FREEZE &amp; PRINTF_DBG_START_BRD  )</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">/* configure led in at_start_board */</span> </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="init_8h.html#ab45b100ec64e584d291bf1798f0f52cf">uart_print_init</a>(921600);   </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;usart printf example \r\n&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef USE_ONE_WIRE   </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   mRUN_OW.Run_OWCl_INI();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif               </span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   u8 time_fill_OWire = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   s32 OW_Temperature =0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">while</span> (1){      </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="at32f415__clock_8h.html#af5d82ef790f7fb49d587defe009e4a9b">clock_timer</a>.<a class="code" href="structclock__timer__t.html#ab9438f71cbc572ead4e04cba8c3c7a89">flg_event_one_second</a>)  {  </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="main_8h.html#a6f02dcbcb242506e90bb437bfce41ac4">err_init</a> &amp; 1 == 0)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="log_8h.html#a778071c30eede7fb061b4f0a94927bf4">log_write_service</a>(); </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="at32f415__clock_8h.html#af5d82ef790f7fb49d587defe009e4a9b">clock_timer</a>.<a class="code" href="structclock__timer__t.html#acb6bb7926ff1c8d756b8951f9bfef3f9">flg_event_periodic</a>) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="protocol_8h.html#ac2b6b418bb6fab6202d2cac02e64c137">protocol_autosend_data</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="at32f415__clock_8h.html#af5d82ef790f7fb49d587defe009e4a9b">clock_timer</a>.<a class="code" href="structclock__timer__t.html#acb6bb7926ff1c8d756b8951f9bfef3f9">flg_event_periodic</a> = 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      } </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef Digit_CAN  </span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="_can_8h.html#aaecc696ade8842ba6ac6bc36d5b47fe1">iniDash_Display_mess</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="_can_8h.html#a6ac0117ace6a9ce096bc3d761f389513">make_pgn65276</a>(4096,<a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#a3d7cf3707ff26b824a60e6d8f4dc2964">relative_level</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="group__dig__can.html#ga66fb1afc38a18e2017873a9e5207ac43">m_CAN</a>. can_transmit_data((u32)<a class="code" href="_can_8h.html#af71c11a473fa094522bc35dd7f848e22">Dash_Display_mess</a>.<a class="code" href="struct_pgn_mess.html#a0c2d8a88b38206c7c21b3caa8a9b40ef">u</a>.<a class="code" href="struct_pgn_mess.html#a7c10c5643207c259ff7e7c0518086372">adrr</a>,<a class="code" href="_can_8h.html#af71c11a473fa094522bc35dd7f848e22">Dash_Display_mess</a>.<a class="code" href="struct_pgn_mess.html#af31e1bda4f4688cd7013f5acba66c697">data</a> ,8); </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      time_fill_OWire = 1;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="at32f415__clock_8h.html#af5d82ef790f7fb49d587defe009e4a9b">clock_timer</a>.<a class="code" href="structclock__timer__t.html#ab9438f71cbc572ead4e04cba8c3c7a89">flg_event_one_second</a> = 0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="at32f415__clock_8h.html#af5d82ef790f7fb49d587defe009e4a9b">clock_timer</a>.<a class="code" href="structclock__timer__t.html#aa0abdac4bb41a96aa0e6350c75976234">flg_event_100_msec</a>) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="at32f415__clock_8h.html#af5d82ef790f7fb49d587defe009e4a9b">clock_timer</a>.<a class="code" href="structclock__timer__t.html#aa0abdac4bb41a96aa0e6350c75976234">flg_event_100_msec</a> = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="adc_8h.html#a26b3ea071e2c8eb556ad968241906a61">adc_measure_All</a>();  </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="adc_8h.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a>){ </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="measurement_8h.html#adffd3499fe89bb6359e7a0e67aab19cb">measure_channels</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifdef USE_ONE_WIRE</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span>(time_fill_OWire){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      time_fill_OWire = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      mRUN_OW.OW_Task() ;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      OW_Temperature = mRUN_OW.GetOneWireTemp(0, 0);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif      </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#ifndef Digit_CAN     </span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="protocol_8h.html#ad20a74cfd716d7aa7431a5426124b185">protocol_parse_data</a>(<a class="code" href="group__uarts.html#ggade254df27f4cf8ba2f9ae87df2e5ecf3a17ec828a427341ae4267c3c827ca4104">RS232</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="protocol_8h.html#ad20a74cfd716d7aa7431a5426124b185">protocol_parse_data</a>(<a class="code" href="group__uarts.html#ggade254df27f4cf8ba2f9ae87df2e5ecf3a5f3c300be3cf695e81290fbc18088d17">RS485</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#aa566607a8c58c7e84cf42f4731bcf0b7">flg_need_to_store</a>)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="settings_8h.html#ad49c69beade1df81952891bd528d09a2">settings_algo_store_coef_corr</a>(<a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#a618bc854fe5dc6dff98e800eeca676c0">coef_corr</a>) != 0)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#a0ee3b00a44bfdd995147bb4f1fa1e0c9">last_error</a> |= 0x04;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>.<a class="code" href="structmeas__state__t.html#aa566607a8c58c7e84cf42f4731bcf0b7">flg_need_to_store</a> = 0;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }   </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="group__uarts.html#ga1730ffe1e560465665eb47d9264826f9">  133</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__uarts.html#ga1730ffe1e560465665eb47d9264826f9">Error_Handler</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{ <span class="keywordflow">while</span>(1) </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#ifdef Digit_CAN </span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#define spn96 96</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#define spn96_OFFSET_BIT  8</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#define pgn65276 0xFEFC</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#define own_Priority 0x18</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#define own_Addr 0x45</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<a class="code" href="struct_pgn_mess.html">PgnMess</a>  <a class="code" href="_can_8h.html#af71c11a473fa094522bc35dd7f848e22">Dash_Display_mess</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_can_8h.html#aaecc696ade8842ba6ac6bc36d5b47fe1">iniDash_Display_mess</a>(){</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  Dash_Display_mess.<a class="code" href="struct_pgn_mess.html#a0c2d8a88b38206c7c21b3caa8a9b40ef">u</a>.<a class="code" href="struct_pgn_mess.html#ade57dd8e396ccb167db466957d12f187">Id</a>.priority = own_Priority;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  Dash_Display_mess.<a class="code" href="struct_pgn_mess.html#a0c2d8a88b38206c7c21b3caa8a9b40ef">u</a>.<a class="code" href="struct_pgn_mess.html#ade57dd8e396ccb167db466957d12f187">Id</a>.PGN = pgn65276;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  Dash_Display_mess.<a class="code" href="struct_pgn_mess.html#a0c2d8a88b38206c7c21b3caa8a9b40ef">u</a>.<a class="code" href="struct_pgn_mess.html#ade57dd8e396ccb167db466957d12f187">Id</a>.Addr = own_Addr;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  memset(Dash_Display_mess.<a class="code" href="struct_pgn_mess.html#af31e1bda4f4688cd7013f5acba66c697">data</a>,0,8); </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_can_8h.html#a6ac0117ace6a9ce096bc3d761f389513">make_pgn65276</a>(u16 Range, u16 Level_N){</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  u8 Val = Level_N * 250 / Range;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  Dash_Display_mess.<a class="code" href="struct_pgn_mess.html#af31e1bda4f4688cd7013f5acba66c697">data</a>[1] = Val;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/</span></div>
+<div class="ttc" id="printf_8h_html_a3cb9f0894fab1c8fbb0753c9c7c2a8d9"><div class="ttname"><a href="printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a></div><div class="ttdeci">#define printf</div><div class="ttdef"><b>Definition:</b> <a href="printf_8h_source.html#l00060">printf.h:60</a></div></div>
+<div class="ttc" id="structclock__timer__t_html_aa0abdac4bb41a96aa0e6350c75976234"><div class="ttname"><a href="structclock__timer__t.html#aa0abdac4bb41a96aa0e6350c75976234">clock_timer_t::flg_event_100_msec</a></div><div class="ttdeci">volatile uint8_t flg_event_100_msec</div><div class="ttdef"><b>Definition:</b> <a href="at32f415__clock_8h_source.html#l00028">at32f415_clock.h:28</a></div></div>
+<div class="ttc" id="protocol_8h_html_ac2b6b418bb6fab6202d2cac02e64c137"><div class="ttname"><a href="protocol_8h.html#ac2b6b418bb6fab6202d2cac02e64c137">protocol_autosend_data</a></div><div class="ttdeci">void protocol_autosend_data()</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8c_source.html#l00143">protocol.c:143</a></div></div>
+<div class="ttc" id="group__dig__can_html_gad33fee403b194a64c66a5788a6349705"><div class="ttname"><a href="group__dig__can.html#gad33fee403b194a64c66a5788a6349705">can_cl::config</a></div><div class="ttdeci">void config(void)</div><div class="ttdoc">инициализация экземпляра класса </div><div class="ttdef"><b>Definition:</b> <a href="_can_8cpp_source.html#l00094">Can.cpp:94</a></div></div>
+<div class="ttc" id="struct_pgn_mess_html_ade57dd8e396ccb167db466957d12f187"><div class="ttname"><a href="struct_pgn_mess.html#ade57dd8e396ccb167db466957d12f187">PgnMess::Id</a></div><div class="ttdeci">__id Id</div><div class="ttdef"><b>Definition:</b> <a href="_can_8h_source.html#l00065">Can.h:65</a></div></div>
+<div class="ttc" id="structclock__timer__t_html_acb6bb7926ff1c8d756b8951f9bfef3f9"><div class="ttname"><a href="structclock__timer__t.html#acb6bb7926ff1c8d756b8951f9bfef3f9">clock_timer_t::flg_event_periodic</a></div><div class="ttdeci">volatile uint8_t flg_event_periodic</div><div class="ttdef"><b>Definition:</b> <a href="at32f415__clock_8h_source.html#l00029">at32f415_clock.h:29</a></div></div>
+<div class="ttc" id="group__uarts_html_ggade254df27f4cf8ba2f9ae87df2e5ecf3a17ec828a427341ae4267c3c827ca4104"><div class="ttname"><a href="group__uarts.html#ggade254df27f4cf8ba2f9ae87df2e5ecf3a17ec828a427341ae4267c3c827ca4104">RS232</a></div><div class="ttdef"><b>Definition:</b> <a href="usart_8h_source.html#l00018">usart.h:18</a></div></div>
+<div class="ttc" id="_can_8h_html_aaecc696ade8842ba6ac6bc36d5b47fe1"><div class="ttname"><a href="_can_8h.html#aaecc696ade8842ba6ac6bc36d5b47fe1">iniDash_Display_mess</a></div><div class="ttdeci">void iniDash_Display_mess()</div></div>
+<div class="ttc" id="main_8c_html_a8c544e37da78c6e54765f617f612bae8"><div class="ttname"><a href="main_8c.html#a8c544e37da78c6e54765f617f612bae8">MPVC_Config</a></div><div class="ttdeci">void MPVC_Config(void)</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00022">main.c:22</a></div></div>
+<div class="ttc" id="group__dig__can_html_ga66fb1afc38a18e2017873a9e5207ac43"><div class="ttname"><a href="group__dig__can.html#ga66fb1afc38a18e2017873a9e5207ac43">m_CAN</a></div><div class="ttdeci">can_cl m_CAN</div><div class="ttdef"><b>Definition:</b> <a href="_can_8cpp_source.html#l00011">Can.cpp:11</a></div></div>
+<div class="ttc" id="group__uarts_html_ga1730ffe1e560465665eb47d9264826f9"><div class="ttname"><a href="group__uarts.html#ga1730ffe1e560465665eb47d9264826f9">Error_Handler</a></div><div class="ttdeci">void Error_Handler(void)</div><div class="ttdoc">This function is executed in case of error occurrence. </div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00133">main.c:133</a></div></div>
+<div class="ttc" id="main_8c_html_acc671290b5619f665db2942b0af181e4"><div class="ttname"><a href="main_8c.html#acc671290b5619f665db2942b0af181e4">TermTask</a></div><div class="ttdeci">void TermTask(void)</div></div>
+<div class="ttc" id="_can_8h_html_a6ac0117ace6a9ce096bc3d761f389513"><div class="ttname"><a href="_can_8h.html#a6ac0117ace6a9ce096bc3d761f389513">make_pgn65276</a></div><div class="ttdeci">void make_pgn65276(u16 Range, u16 Level_N)</div></div>
+<div class="ttc" id="structclock__timer__t_html_ab9438f71cbc572ead4e04cba8c3c7a89"><div class="ttname"><a href="structclock__timer__t.html#ab9438f71cbc572ead4e04cba8c3c7a89">clock_timer_t::flg_event_one_second</a></div><div class="ttdeci">volatile uint8_t flg_event_one_second</div><div class="ttdef"><b>Definition:</b> <a href="at32f415__clock_8h_source.html#l00027">at32f415_clock.h:27</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a618bc854fe5dc6dff98e800eeca676c0"><div class="ttname"><a href="structmeas__state__t.html#a618bc854fe5dc6dff98e800eeca676c0">meas_state_t::coef_corr</a></div><div class="ttdeci">int32_t coef_corr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00110">measurement.h:110</a></div></div>
+<div class="ttc" id="main_8h_html_a6f02dcbcb242506e90bb437bfce41ac4"><div class="ttname"><a href="main_8h.html#a6f02dcbcb242506e90bb437bfce41ac4">err_init</a></div><div class="ttdeci">u8 err_init</div><div class="ttdef"><b>Definition:</b> <a href="init_8c_source.html#l00017">init.c:17</a></div></div>
+<div class="ttc" id="main_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a0ee3b00a44bfdd995147bb4f1fa1e0c9"><div class="ttname"><a href="structmeas__state__t.html#a0ee3b00a44bfdd995147bb4f1fa1e0c9">meas_state_t::last_error</a></div><div class="ttdeci">uint8_t last_error</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00136">measurement.h:136</a></div></div>
+<div class="ttc" id="struct_pgn_mess_html"><div class="ttname"><a href="struct_pgn_mess.html">PgnMess</a></div><div class="ttdef"><b>Definition:</b> <a href="_can_8h_source.html#l00063">Can.h:63</a></div></div>
+<div class="ttc" id="update__boot_8h_html_a5d26cecc95d3f0e4e6737607fc10e373"><div class="ttname"><a href="update__boot_8h.html#a5d26cecc95d3f0e4e6737607fc10e373">do_update_boot</a></div><div class="ttdeci">void do_update_boot()</div><div class="ttdef"><b>Definition:</b> <a href="update__boot_8c_source.html#l00020">update_boot.c:20</a></div></div>
+<div class="ttc" id="main_8c_html_a28ef6205afa0cb4a3c8164388eaf109b"><div class="ttname"><a href="main_8c.html#a28ef6205afa0cb4a3c8164388eaf109b">adc1_val</a></div><div class="ttdeci">u16 adc1_val</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00019">main.c:19</a></div></div>
+<div class="ttc" id="_read_protection_8c_html_ae8aa0c0c35264596ffdcae4b333757f4"><div class="ttname"><a href="_read_protection_8c.html#ae8aa0c0c35264596ffdcae4b333757f4">flash_access_protection</a></div><div class="ttdeci">u8 flash_access_protection()</div><div class="ttdef"><b>Definition:</b> <a href="_read_protection_8c_source.html#l00063">ReadProtection.c:63</a></div></div>
+<div class="ttc" id="init_8h_html_a8ed9dd5e9c9e940055fc2fda0bb4d220"><div class="ttname"><a href="init_8h.html#a8ed9dd5e9c9e940055fc2fda0bb4d220">init_board</a></div><div class="ttdeci">void init_board()</div><div class="ttdef"><b>Definition:</b> <a href="init_8c_source.html#l00018">init.c:18</a></div></div>
+<div class="ttc" id="_can_8h_html_af71c11a473fa094522bc35dd7f848e22"><div class="ttname"><a href="_can_8h.html#af71c11a473fa094522bc35dd7f848e22">Dash_Display_mess</a></div><div class="ttdeci">PgnMess Dash_Display_mess</div></div>
+<div class="ttc" id="adc_8h_html_afb0eae5f694683479707fe13cf76ae5b"><div class="ttname"><a href="adc_8h.html#afb0eae5f694683479707fe13cf76ae5b">adc_low_power</a></div><div class="ttdeci">volatile uint8_t adc_low_power</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00034">adc.c:34</a></div></div>
+<div class="ttc" id="wdt_8h_html_a6e3d181b3ee9322654b6b2ced4e6ce62"><div class="ttname"><a href="wdt_8h.html#a6e3d181b3ee9322654b6b2ced4e6ce62">wdt_init</a></div><div class="ttdeci">void wdt_init()</div><div class="ttdef"><b>Definition:</b> <a href="wdt_8c_source.html#l00005">wdt.c:5</a></div></div>
+<div class="ttc" id="measurement_8h_html_a98d9e6a2868eae8714e26828e86c5028"><div class="ttname"><a href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a></div><div class="ttdeci">meas_state_t meas_state</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00095">measurement.c:95</a></div></div>
+<div class="ttc" id="adc_8h_html_a26b3ea071e2c8eb556ad968241906a61"><div class="ttname"><a href="adc_8h.html#a26b3ea071e2c8eb556ad968241906a61">adc_measure_All</a></div><div class="ttdeci">void adc_measure_All()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00050">adc.c:50</a></div></div>
+<div class="ttc" id="settings_8h_html_ad49c69beade1df81952891bd528d09a2"><div class="ttname"><a href="settings_8h.html#ad49c69beade1df81952891bd528d09a2">settings_algo_store_coef_corr</a></div><div class="ttdeci">int settings_algo_store_coef_corr(uint16_t coef_corr)</div><div class="ttdef"><b>Definition:</b> <a href="settings_8c_source.html#l00509">settings.c:509</a></div></div>
+<div class="ttc" id="group__uarts_html_ggade254df27f4cf8ba2f9ae87df2e5ecf3a5f3c300be3cf695e81290fbc18088d17"><div class="ttname"><a href="group__uarts.html#ggade254df27f4cf8ba2f9ae87df2e5ecf3a5f3c300be3cf695e81290fbc18088d17">RS485</a></div><div class="ttdef"><b>Definition:</b> <a href="usart_8h_source.html#l00020">usart.h:20</a></div></div>
+<div class="ttc" id="struct_pgn_mess_html_a0c2d8a88b38206c7c21b3caa8a9b40ef"><div class="ttname"><a href="struct_pgn_mess.html#a0c2d8a88b38206c7c21b3caa8a9b40ef">PgnMess::u</a></div><div class="ttdeci">union PgnMess::@1 u</div></div>
+<div class="ttc" id="main_8c_html_a9a7c90233650f834ee18a724653ce6f1"><div class="ttname"><a href="main_8c.html#a9a7c90233650f834ee18a724653ce6f1">tmp_ADC_Init</a></div><div class="ttdeci">void tmp_ADC_Init(void)</div></div>
+<div class="ttc" id="gpio_8h_html_ac724e431d2af879252de35615be2bdea"><div class="ttname"><a href="gpio_8h.html#ac724e431d2af879252de35615be2bdea">MX_GPIO_Init</a></div><div class="ttdeci">void MX_GPIO_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00033">gpio.c:33</a></div></div>
+<div class="ttc" id="struct_pgn_mess_html_a7c10c5643207c259ff7e7c0518086372"><div class="ttname"><a href="struct_pgn_mess.html#a7c10c5643207c259ff7e7c0518086372">PgnMess::adrr</a></div><div class="ttdeci">u32 adrr</div><div class="ttdef"><b>Definition:</b> <a href="_can_8h_source.html#l00066">Can.h:66</a></div></div>
+<div class="ttc" id="init_8h_html_ab45b100ec64e584d291bf1798f0f52cf"><div class="ttname"><a href="init_8h.html#ab45b100ec64e584d291bf1798f0f52cf">uart_print_init</a></div><div class="ttdeci">void uart_print_init(uint32_t baudrate)</div></div>
+<div class="ttc" id="structmeas__state__t_html_aa566607a8c58c7e84cf42f4731bcf0b7"><div class="ttname"><a href="structmeas__state__t.html#aa566607a8c58c7e84cf42f4731bcf0b7">meas_state_t::flg_need_to_store</a></div><div class="ttdeci">uint8_t flg_need_to_store</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00131">measurement.h:131</a></div></div>
+<div class="ttc" id="struct_pgn_mess_html_af31e1bda4f4688cd7013f5acba66c697"><div class="ttname"><a href="struct_pgn_mess.html#af31e1bda4f4688cd7013f5acba66c697">PgnMess::data</a></div><div class="ttdeci">u8 data[8]</div><div class="ttdef"><b>Definition:</b> <a href="_can_8h_source.html#l00068">Can.h:68</a></div></div>
+<div class="ttc" id="log_8h_html_a778071c30eede7fb061b4f0a94927bf4"><div class="ttname"><a href="log_8h.html#a778071c30eede7fb061b4f0a94927bf4">log_write_service</a></div><div class="ttdeci">log_error_t log_write_service()</div><div class="ttdef"><b>Definition:</b> <a href="log_8c_source.html#l00109">log.c:109</a></div></div>
+<div class="ttc" id="at32f415__clock_8h_html_a58d5ba05020fc08f0c6b6e3fbd32281c"><div class="ttname"><a href="at32f415__clock_8h.html#a58d5ba05020fc08f0c6b6e3fbd32281c">system_clock_config</a></div><div class="ttdeci">void system_clock_config(void)</div><div class="ttdoc">system clock config program </div><div class="ttdef"><b>Definition:</b> <a href="at32f415__clock_8c_source.html#l00100">at32f415_clock.c:100</a></div></div>
+<div class="ttc" id="measurement_8h_html_adffd3499fe89bb6359e7a0e67aab19cb"><div class="ttname"><a href="measurement_8h.html#adffd3499fe89bb6359e7a0e67aab19cb">measure_channels</a></div><div class="ttdeci">void measure_channels()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00524">measurement.c:524</a></div></div>
+<div class="ttc" id="update__boot_8h_html_a41ece62abf4e3583d923fe8c55bdbd20"><div class="ttname"><a href="update__boot_8h.html#a41ece62abf4e3583d923fe8c55bdbd20">is_need_to_update_boot</a></div><div class="ttdeci">int is_need_to_update_boot()</div><div class="ttdef"><b>Definition:</b> <a href="update__boot_8c_source.html#l00014">update_boot.c:14</a></div></div>
+<div class="ttc" id="main_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00031">main.c:31</a></div></div>
+<div class="ttc" id="at32f415__clock_8h_html_af5d82ef790f7fb49d587defe009e4a9b"><div class="ttname"><a href="at32f415__clock_8h.html#af5d82ef790f7fb49d587defe009e4a9b">clock_timer</a></div><div class="ttdeci">clock_timer_t clock_timer</div><div class="ttdef"><b>Definition:</b> <a href="at32f415__clock_8c_source.html#l00016">at32f415_clock.c:16</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a3d7cf3707ff26b824a60e6d8f4dc2964"><div class="ttname"><a href="structmeas__state__t.html#a3d7cf3707ff26b824a60e6d8f4dc2964">meas_state_t::relative_level</a></div><div class="ttdeci">uint32_t relative_level</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00103">measurement.h:103</a></div></div>
+<div class="ttc" id="protocol_8h_html_ad20a74cfd716d7aa7431a5426124b185"><div class="ttname"><a href="protocol_8h.html#ad20a74cfd716d7aa7431a5426124b185">protocol_parse_data</a></div><div class="ttdeci">void protocol_parse_data(uart_name_t name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8c_source.html#l00119">protocol.c:119</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

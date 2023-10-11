@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['sensivity',['sensivity',['../structmeas__state__t.html#aaccc864feb5dea743403f385ba5f3684',1,'meas_state_t::sensivity()'],['../settings_8h.html#af4090f91398941855a61244af8c01e15',1,'sensivity():&#160;settings.h']]],
+  ['sensivitypersent',['SensivityPersent',['../classvalues___cl.html#a3778ede664bd9ca25c7c233be8beb266',1,'values_Cl']]],
+  ['sensor_5famplifier',['SENSOR_AMPLIFIER',['../protocol_8c.html#af3190254c0cf0a6ed62fd43dbe0b095c',1,'protocol.c']]],
+  ['sensor_5famplify',['sensor_amplify',['../protocol_8h.html#afd11ffd1d1ba34b9619fdffad21880d0',1,'protocol.h']]],
+  ['sensor_5fname',['sensor_name',['../protocol_8c.html#a6bc5d17638ca02c2bd4bd495d45f700b',1,'protocol.c']]],
+  ['sensor_5ftype',['sensor_type',['../protocol_8h.html#a178001af5d88119bfaca14c362aed00c',1,'sensor_type():&#160;protocol.h'],['../protocol_8c.html#ae234959f22935b83db62fd4f64361968',1,'SENSOR_TYPE():&#160;protocol.c']]],
+  ['serial_5fnum',['serial_num',['../settings_8h.html#a0d157ed25e5336dbd4296ef3b38bdb52',1,'serial_num():&#160;settings.c'],['../settings_8c.html#a0d157ed25e5336dbd4296ef3b38bdb52',1,'serial_num():&#160;settings.c']]],
+  ['serial_5fnum_5fbuf',['serial_num_buf',['../protocol_8c.html#a5e272581ff8fafebc337b81090b3e4f3',1,'protocol.c']]],
+  ['serial_5fnumber',['serial_number',['../protocol_8h.html#a53f19d09e000917418746a4da0e2435a',1,'protocol.h']]],
+  ['setting_5fsensor_5fdefault',['SETTING_SENSOR_DEFAULT',['../main_8h.html#a21e527d2508ed998007e4d656b1a1e07',1,'SETTING_SENSOR_DEFAULT():&#160;settings.c'],['../settings_8c.html#a21e527d2508ed998007e4d656b1a1e07',1,'SETTING_SENSOR_DEFAULT():&#160;settings.c']]],
+  ['settings_5falgo',['settings_algo',['../settings_8c.html#a8084fd9b43e2ae95d2de0a2372379f88',1,'settings.c']]],
+  ['settings_5fsensor',['settings_sensor',['../settings_8h.html#a7066b71dc479c732e96e9ba954f11b0b',1,'settings_sensor():&#160;settings.c'],['../settings_8c.html#a7066b71dc479c732e96e9ba954f11b0b',1,'settings_sensor():&#160;settings.c']]],
+  ['signature',['signature',['../settings_8h.html#a78963c1ed5ab32c4ac2e81797f484e0f',1,'settings.h']]],
+  ['spi_5fflash_5fsize',['spi_flash_size',['../_z_b25_v_q16_8c.html#ad4efb7b6900d5fd24eedc6e1640604fc',1,'ZB25VQ16.c']]],
+  ['standard_5fid',['standard_id',['../structcan__tx__msg__tdef.html#a6be5b4ddef29ced9a7f308fb5168b700',1,'can_tx_msg_tdef']]],
+  ['start_5ftime',['start_time',['../structmeas__state__t.html#a0ced1b2e73ae110f1523cd593ee8e64f',1,'meas_state_t']]],
+  ['state',['State',['../struct_t_i_m___handle_type_def.html#a67d24105e9f75ce52d699acb96de9a6a',1,'TIM_HandleTypeDef']]],
+  ['state_5f485',['STATE_485',['../group__uarts.html#ga054ecf21b70441570744dca4207d6c75',1,'usart.c']]],
+  ['stop_5fbits',['STOP_BITS',['../structuart__handler__t.html#a6f9eb3887a6e12714a8dba4cdce2e407',1,'uart_handler_t']]],
+  ['sw_5fver',['sw_ver',['../protocol_8h.html#a6125677f9244866bb9c443dc00c370d9',1,'protocol.h']]],
+  ['sys_5ftime',['sys_time',['../settings_8h.html#a9b3d9614a4d8c28506dfb62672409f15',1,'settings.h']]],
+  ['system_5fcore_5fclock',['system_core_clock',['../group___a_t32_f415__system__private__variables.html#ga9caad977b9d8bb40e2f81ad1b90a795b',1,'system_at32f415.c']]]
+];

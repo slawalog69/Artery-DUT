@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл measurement.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('measurement_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">measurement.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="measurement_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//#ifndef __MEASUREMENT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//#define __MEASUREMENT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//#define MAX_FILTER_LENGTH   30</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//typedef struct</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  uint32_t cnt_pure;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//  uint32_t cnt_curr;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  uint32_t cnt_empty;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//  uint32_t cnt_full;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//  uint8_t error_counter;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//  uint8_t error_flg;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//}meas_chan_t;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//typedef struct</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//  meas_chan_t chan_main;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//  meas_chan_t chan_ref;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//  uint32_t relative_level;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//  uint32_t current_level;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//  uint32_t cnt_t;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//  uint16_t frequence;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//  uint32_t start_time;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//  int16_t coef_corr;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//  int16_t diff_eps;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//  int32_t dcnt_main_curr;  </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//  int32_t dcnt_C3_curr;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//  int32_t dcnt_C1_curr;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//  int32_t dcnt_C1_full;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//  int32_t coef_array[10];</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//  int curr_coef_count;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//  uint16_t levels[MAX_FILTER_LENGTH];</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//  uint16_t filtered;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//  uint8_t filter_started;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//  uint8_t measurement_counter;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//  float  temperature;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//  float power5v;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//  float powerVin;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//  eNumCHAN last_chan;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//  uint8_t flg_need_to_calc_delta;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//  uint8_t flg_need_to_meas;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//  uint8_t flg_need_to_store;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//  uint8_t flg_need_to_init;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//  uint8_t flg_autotuning;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//  uint8_t flg_data_latch;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//  uint8_t last_error;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//  uint8_t sensivity;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//}meas_state_t;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//typedef struct</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//    uint16_t relative_level;    // в процентах множитель 0,1 смещение 0</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//    int16_t coef_corr;         // в процентах множитель 0,1 смещение 0</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//    int16_t temperature_corr;  // в процентах множитель 0,1 смещение 0</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//} mb_hold_reg_t;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//extern meas_state_t meas_state;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//extern mb_hold_reg_t mb_hold_reg;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//void measure_init();</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//void measure_channels();</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//void measure_temperature();</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//void measure_All();</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//void measurement_reinit_filter();</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//#endif // __MEASUREMENT_H</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifndef __MEASUREMENT_H</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define __MEASUREMENT_H</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760c">   76</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760cad1b4e4db0b4ae2f31109bb1d18f6083d">   77</a></span>&#160;  <a class="code" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760cad1b4e4db0b4ae2f31109bb1d18f6083d">CHAN_UNKNOWN</a> =  0,</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760cac5955048803510ba9d623d7eb1f10e18">   78</a></span>&#160; <a class="code" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760cac5955048803510ba9d623d7eb1f10e18">CHAN_REF</a>,     <span class="comment">//     1</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760ca1f8bb00af53ffc44aad6341dea156a4d">   79</a></span>&#160; <a class="code" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760ca1f8bb00af53ffc44aad6341dea156a4d">CHAN_MAIN</a>    <span class="comment">//     2</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}<a class="code" href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760c">eNumCHAN</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="measurement_8h.html#a572bb6b66d4ce59cf1c69cf571cd2cac">   83</a></span>&#160;<span class="preprocessor">#define MAX_FILTER_LENGTH 451 //** Очень надо сгладим все = 200+ MAX_FILTER_LENGTH*2</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="measurement_8h.html#ae4bfed92441869a94a084b3fbe064825">   84</a></span>&#160;<span class="preprocessor">#define MAX_CONST_FILTER_LENGTH 150 //** постоянная фильтрация 200</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="measurement_8h.html#a15541f16706d7ff8336dacf190b8ddd8">   85</a></span>&#160;<span class="preprocessor">#define MAX_VAR_FILTER_LENGTH 300 //** постоянная фильтрация</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="measurement_8h.html#a1d19ee96ce185c272b8a92af39cb84d8">   86</a></span>&#160;<span class="preprocessor">#define MAX_COEF_FILTER_LENGTH 50 //** фильтрация коэфициэнта коррекции, по результатм испытаний на бензовозе</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//#define NUM_CHK_AUTOTUNE_THRESHOLD 3 //*** количество повторов проверки превшения порога нечувствительности</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structmeas__chan__t.html">   89</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structmeas__chan__t.html#a2f3c953dd991d2d311d5c4ba5a9739b8">   91</a></span>&#160;  uint32_t <a class="code" href="structmeas__chan__t.html#a2f3c953dd991d2d311d5c4ba5a9739b8">cnt_pure</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structmeas__chan__t.html#a8e0246e1c68f9e2c056f1b2a7632a556">   92</a></span>&#160;  uint32_t <a class="code" href="structmeas__chan__t.html#a8e0246e1c68f9e2c056f1b2a7632a556">cnt_curr</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structmeas__chan__t.html#a319b726f0db35b62f51e67fb534e4836">   93</a></span>&#160;  uint32_t <a class="code" href="structmeas__chan__t.html#a319b726f0db35b62f51e67fb534e4836">cnt_empty</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structmeas__chan__t.html#a2df5c0ac17dfaeca4a2a7d2445b79490">   94</a></span>&#160;  uint32_t <a class="code" href="structmeas__chan__t.html#a2df5c0ac17dfaeca4a2a7d2445b79490">cnt_full</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structmeas__chan__t.html#a4d577f8e5e6fbe887cb4e27d0b0c8fdb">   95</a></span>&#160;  uint8_t <a class="code" href="structmeas__chan__t.html#a4d577f8e5e6fbe887cb4e27d0b0c8fdb">error_counter</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structmeas__chan__t.html#a78d366983dfd18630b9581ff29638e84">   96</a></span>&#160;  uint8_t <a class="code" href="structmeas__chan__t.html#a78d366983dfd18630b9581ff29638e84">error_flg</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}<a class="code" href="structmeas__chan__t.html">meas_chan_t</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="structmeas__state__t.html">   99</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a4ddd1bd5aceb1634559af917473ba9df">  101</a></span>&#160;  <a class="code" href="structmeas__chan__t.html">meas_chan_t</a> <a class="code" href="structmeas__state__t.html#a4ddd1bd5aceb1634559af917473ba9df">chan_main</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#abc39f5c3625f6a11446e7fee244133a4">  102</a></span>&#160;  <a class="code" href="structmeas__chan__t.html">meas_chan_t</a> <a class="code" href="structmeas__state__t.html#abc39f5c3625f6a11446e7fee244133a4">chan_ref</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a3d7cf3707ff26b824a60e6d8f4dc2964">  103</a></span>&#160;  uint32_t <a class="code" href="structmeas__state__t.html#a3d7cf3707ff26b824a60e6d8f4dc2964">relative_level</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a102daa476dba1b6f8e709797c7e4615f">  104</a></span>&#160;  uint32_t <a class="code" href="structmeas__state__t.html#a102daa476dba1b6f8e709797c7e4615f">current_level</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#acea04a22b6336d9665236902d2f8d417">  105</a></span>&#160;  uint32_t <a class="code" href="structmeas__state__t.html#acea04a22b6336d9665236902d2f8d417">cnt_t</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a9152f0d0ed1a8f7a623bdc7a9b9a0655">  106</a></span>&#160;  uint32_t <a class="code" href="structmeas__state__t.html#a9152f0d0ed1a8f7a623bdc7a9b9a0655">cnt_t_last_prd_chk</a>; <span class="comment">// значение уровня основного канала компенсированное по температуре DIFF_CALC_PERIOD сек назад</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a80e7457fbffd0c592e9a7e07dc63dd73">  107</a></span>&#160;  uint32_t <a class="code" href="structmeas__state__t.html#a80e7457fbffd0c592e9a7e07dc63dd73">dcnt_main_thresh</a>;  <span class="comment">// для целей отладки</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a290cd5efbd4dd1bd95289eb862143c31">  108</a></span>&#160;  uint16_t <a class="code" href="structmeas__state__t.html#a290cd5efbd4dd1bd95289eb862143c31">frequence</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a0ced1b2e73ae110f1523cd593ee8e64f">  109</a></span>&#160;  uint32_t <a class="code" href="structmeas__state__t.html#a0ced1b2e73ae110f1523cd593ee8e64f">start_time</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a618bc854fe5dc6dff98e800eeca676c0">  110</a></span>&#160;  int32_t <a class="code" href="structmeas__state__t.html#a618bc854fe5dc6dff98e800eeca676c0">coef_corr</a>;<span class="comment">//**</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a0b837b0d9a9ab9655015e7f795d77070">  111</a></span>&#160;  int32_t <a class="code" href="structmeas__state__t.html#a0b837b0d9a9ab9655015e7f795d77070">diff_eps</a>;<span class="comment">//**</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a837f8198c2279a371520cc11d257944b">  112</a></span>&#160;  int32_t <a class="code" href="structmeas__state__t.html#a837f8198c2279a371520cc11d257944b">dcnt_main_curr</a>;  </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#adfd3532d87d0ee2524625b2ff89bce17">  113</a></span>&#160;  int32_t <a class="code" href="structmeas__state__t.html#adfd3532d87d0ee2524625b2ff89bce17">dcnt_C3_curr</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a1a2c735c57bd0dd4d505a29882f86aa6">  114</a></span>&#160;  int32_t <a class="code" href="structmeas__state__t.html#a1a2c735c57bd0dd4d505a29882f86aa6">dcnt_C1_curr</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a37444688b51b45cbd65a02894e8dc0b1">  115</a></span>&#160;  int32_t <a class="code" href="structmeas__state__t.html#a37444688b51b45cbd65a02894e8dc0b1">dcnt_C1_full</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a8fc43f1ac47159ffece13f8dde29b17f">  116</a></span>&#160;  int32_t coef_array[<a class="code" href="measurement_8h.html#a1d19ee96ce185c272b8a92af39cb84d8">MAX_COEF_FILTER_LENGTH</a>];</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a2362104fe7b8a7bf5e8ca645978bfa27">  117</a></span>&#160;  int32_t <a class="code" href="structmeas__state__t.html#a2362104fe7b8a7bf5e8ca645978bfa27">curr_coef_count</a>;<span class="comment">//**</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a9a630a53a1b0bc5aa2b00742a06f1a0a">  118</a></span>&#160;  uint16_t levels[<a class="code" href="measurement_8h.html#a572bb6b66d4ce59cf1c69cf571cd2cac">MAX_FILTER_LENGTH</a>];</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a7607c17e4f5a0a3f4df377f6fc6e3450">  119</a></span>&#160;  uint16_t <a class="code" href="structmeas__state__t.html#a7607c17e4f5a0a3f4df377f6fc6e3450">filtered</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#acafc5a660a0103845ca5464fddba6fff">  120</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#acafc5a660a0103845ca5464fddba6fff">filter_started</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a2d602fb40c03c3003fb13f328d7375ff">  121</a></span>&#160;  uint16_t <a class="code" href="structmeas__state__t.html#a2d602fb40c03c3003fb13f328d7375ff">measurement_counter</a>; <span class="comment">//**</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a787050de06c5e511c102b72f210fff10">  122</a></span>&#160;  int8_t <a class="code" href="structmeas__state__t.html#a787050de06c5e511c102b72f210fff10">temperature_pure</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#af250a20fcf627bffcc942a1e27b08b72">  124</a></span>&#160;  <span class="keywordtype">float</span>  <a class="code" href="structmeas__state__t.html#af250a20fcf627bffcc942a1e27b08b72">temperature</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a47dc8d62abed2ab3a106653a7e24e9a1">  125</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structmeas__state__t.html#a47dc8d62abed2ab3a106653a7e24e9a1">power5v</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#aac9d80b579acc5c4620485b809e2e76b">  126</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structmeas__state__t.html#aac9d80b579acc5c4620485b809e2e76b">powerVin</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a7483d34cf982e0e8964edc843551b81a">  127</a></span>&#160;  int8_t <a class="code" href="structmeas__state__t.html#a7483d34cf982e0e8964edc843551b81a">temperature_corr</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#ab2ee7e0fde18c522cd9ff2bf4325a275">  128</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#ab2ee7e0fde18c522cd9ff2bf4325a275">last_chan</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a970f3ea44fa9b12acdc335873b9c7563">  129</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#a970f3ea44fa9b12acdc335873b9c7563">flg_need_to_calc_delta</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#aab72db04c3e1504e9a5d30a6b885544f">  130</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#aab72db04c3e1504e9a5d30a6b885544f">flg_need_to_meas</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#aa566607a8c58c7e84cf42f4731bcf0b7">  131</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#aa566607a8c58c7e84cf42f4731bcf0b7">flg_need_to_store</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#afb1cf5e207ad5c1da9149a8cbfe0954a">  132</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#afb1cf5e207ad5c1da9149a8cbfe0954a">flg_need_to_init</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a2a1c3574aea5d864fc14913d9972e4f0">  133</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#a2a1c3574aea5d864fc14913d9972e4f0">flg_autotuning</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a3ec9cd4edf7c193477b6fd1e21f373e4">  134</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#a3ec9cd4edf7c193477b6fd1e21f373e4">flg_autotuning_temp_trsh</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#af657b27171216333ebc67b5d2a406d3f">  135</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#af657b27171216333ebc67b5d2a406d3f">flg_data_latch</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#a0ee3b00a44bfdd995147bb4f1fa1e0c9">  136</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#a0ee3b00a44bfdd995147bb4f1fa1e0c9">last_error</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#aaccc864feb5dea743403f385ba5f3684">  137</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#aaccc864feb5dea743403f385ba5f3684">sensivity</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="structmeas__state__t.html#aaebff1e21a06d6582588f4cb9edce721">  138</a></span>&#160;  uint8_t <a class="code" href="structmeas__state__t.html#aaebff1e21a06d6582588f4cb9edce721">last_req</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}<a class="code" href="structmeas__state__t.html">meas_state_t</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="structmb__hold__reg__t.html">  140</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="structmb__hold__reg__t.html#a80d15e8aa3338e3c868e9080c6a8d9be">  142</a></span>&#160;    uint16_t <a class="code" href="structmb__hold__reg__t.html#a80d15e8aa3338e3c868e9080c6a8d9be">relative_level</a>;    <span class="comment">// в процентах множитель 0,1 смещение 0</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="structmb__hold__reg__t.html#a87435ae5f9c2fae0c5c237cd279235c5">  143</a></span>&#160;    int16_t <a class="code" href="structmb__hold__reg__t.html#a87435ae5f9c2fae0c5c237cd279235c5">coef_corr</a>;         <span class="comment">// в процентах множитель 0,1 смещение 0</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="structmb__hold__reg__t.html#a7ee22b20fe1923d2a513e92a5fec111e">  144</a></span>&#160;    int16_t <a class="code" href="structmb__hold__reg__t.html#a7ee22b20fe1923d2a513e92a5fec111e">temperature_corr</a>;  <span class="comment">// в процентах множитель 0,1 смещение 0</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;} <a class="code" href="structmb__hold__reg__t.html">mb_hold_reg_t</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">extern</span> <a class="code" href="structmeas__state__t.html">meas_state_t</a> <a class="code" href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">extern</span> <a class="code" href="structmb__hold__reg__t.html">mb_hold_reg_t</a> <a class="code" href="measurement_8h.html#af4ae29ac919b5c639c55d926d38c4228">mb_hold_reg</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">void</span> <a class="code" href="measurement_8h.html#a09a433388d9dc055224eb629a7076d97">measure_preinit</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">void</span> <a class="code" href="measurement_8h.html#a2b87bc99a732db6555f335f55a78562d">measure_init</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">void</span> <a class="code" href="measurement_8h.html#adffd3499fe89bb6359e7a0e67aab19cb">measure_channels</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">//void measure_temperature();</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">void</span> <a class="code" href="measurement_8h.html#ac712dcb24a688dfc87e217e6fb5d83f6">measurement_reinit_filter</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">void</span> <a class="code" href="measurement_8h.html#a65f9e814e216c38ae6d6e243d42a640b">mb_calc_hold_reg_coef_corr</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">//void measure_All();</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;u32 <a class="code" href="measurement_8h.html#a2856f63bdc10b8828381ed9640ced762">auto_tune</a>(); </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;int8_t <a class="code" href="measurement_8h.html#a77a474a55fa8c91ae995cbb824dd5cd7">measure_calc_corr_temperature</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif // __MEASUREMENT_H</span></div>
+<div class="ttc" id="measurement_8h_html_a572bb6b66d4ce59cf1c69cf571cd2cac"><div class="ttname"><a href="measurement_8h.html#a572bb6b66d4ce59cf1c69cf571cd2cac">MAX_FILTER_LENGTH</a></div><div class="ttdeci">#define MAX_FILTER_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00083">measurement.h:83</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_abc39f5c3625f6a11446e7fee244133a4"><div class="ttname"><a href="structmeas__state__t.html#abc39f5c3625f6a11446e7fee244133a4">meas_state_t::chan_ref</a></div><div class="ttdeci">meas_chan_t chan_ref</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00102">measurement.h:102</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a2a1c3574aea5d864fc14913d9972e4f0"><div class="ttname"><a href="structmeas__state__t.html#a2a1c3574aea5d864fc14913d9972e4f0">meas_state_t::flg_autotuning</a></div><div class="ttdeci">uint8_t flg_autotuning</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00133">measurement.h:133</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a9152f0d0ed1a8f7a623bdc7a9b9a0655"><div class="ttname"><a href="structmeas__state__t.html#a9152f0d0ed1a8f7a623bdc7a9b9a0655">meas_state_t::cnt_t_last_prd_chk</a></div><div class="ttdeci">uint32_t cnt_t_last_prd_chk</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00106">measurement.h:106</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a970f3ea44fa9b12acdc335873b9c7563"><div class="ttname"><a href="structmeas__state__t.html#a970f3ea44fa9b12acdc335873b9c7563">meas_state_t::flg_need_to_calc_delta</a></div><div class="ttdeci">uint8_t flg_need_to_calc_delta</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00129">measurement.h:129</a></div></div>
+<div class="ttc" id="structmeas__chan__t_html_a2df5c0ac17dfaeca4a2a7d2445b79490"><div class="ttname"><a href="structmeas__chan__t.html#a2df5c0ac17dfaeca4a2a7d2445b79490">meas_chan_t::cnt_full</a></div><div class="ttdeci">uint32_t cnt_full</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00094">measurement.h:94</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a2362104fe7b8a7bf5e8ca645978bfa27"><div class="ttname"><a href="structmeas__state__t.html#a2362104fe7b8a7bf5e8ca645978bfa27">meas_state_t::curr_coef_count</a></div><div class="ttdeci">int32_t curr_coef_count</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00117">measurement.h:117</a></div></div>
+<div class="ttc" id="measurement_8h_html_a961b1c1c80336ca346630802c7b3760cad1b4e4db0b4ae2f31109bb1d18f6083d"><div class="ttname"><a href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760cad1b4e4db0b4ae2f31109bb1d18f6083d">CHAN_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00077">measurement.h:77</a></div></div>
+<div class="ttc" id="measurement_8h_html_a961b1c1c80336ca346630802c7b3760cac5955048803510ba9d623d7eb1f10e18"><div class="ttname"><a href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760cac5955048803510ba9d623d7eb1f10e18">CHAN_REF</a></div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00078">measurement.h:78</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_afb1cf5e207ad5c1da9149a8cbfe0954a"><div class="ttname"><a href="structmeas__state__t.html#afb1cf5e207ad5c1da9149a8cbfe0954a">meas_state_t::flg_need_to_init</a></div><div class="ttdeci">uint8_t flg_need_to_init</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00132">measurement.h:132</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a4ddd1bd5aceb1634559af917473ba9df"><div class="ttname"><a href="structmeas__state__t.html#a4ddd1bd5aceb1634559af917473ba9df">meas_state_t::chan_main</a></div><div class="ttdeci">meas_chan_t chan_main</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00101">measurement.h:101</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a3ec9cd4edf7c193477b6fd1e21f373e4"><div class="ttname"><a href="structmeas__state__t.html#a3ec9cd4edf7c193477b6fd1e21f373e4">meas_state_t::flg_autotuning_temp_trsh</a></div><div class="ttdeci">uint8_t flg_autotuning_temp_trsh</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00134">measurement.h:134</a></div></div>
+<div class="ttc" id="measurement_8h_html_af4ae29ac919b5c639c55d926d38c4228"><div class="ttname"><a href="measurement_8h.html#af4ae29ac919b5c639c55d926d38c4228">mb_hold_reg</a></div><div class="ttdeci">mb_hold_reg_t mb_hold_reg</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00096">measurement.c:96</a></div></div>
+<div class="ttc" id="structmeas__state__t_html"><div class="ttname"><a href="structmeas__state__t.html">meas_state_t</a></div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00099">measurement.h:99</a></div></div>
+<div class="ttc" id="structmb__hold__reg__t_html_a80d15e8aa3338e3c868e9080c6a8d9be"><div class="ttname"><a href="structmb__hold__reg__t.html#a80d15e8aa3338e3c868e9080c6a8d9be">mb_hold_reg_t::relative_level</a></div><div class="ttdeci">uint16_t relative_level</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00142">measurement.h:142</a></div></div>
+<div class="ttc" id="structmeas__chan__t_html_a2f3c953dd991d2d311d5c4ba5a9739b8"><div class="ttname"><a href="structmeas__chan__t.html#a2f3c953dd991d2d311d5c4ba5a9739b8">meas_chan_t::cnt_pure</a></div><div class="ttdeci">uint32_t cnt_pure</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00091">measurement.h:91</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a837f8198c2279a371520cc11d257944b"><div class="ttname"><a href="structmeas__state__t.html#a837f8198c2279a371520cc11d257944b">meas_state_t::dcnt_main_curr</a></div><div class="ttdeci">int32_t dcnt_main_curr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00112">measurement.h:112</a></div></div>
+<div class="ttc" id="structmb__hold__reg__t_html_a87435ae5f9c2fae0c5c237cd279235c5"><div class="ttname"><a href="structmb__hold__reg__t.html#a87435ae5f9c2fae0c5c237cd279235c5">mb_hold_reg_t::coef_corr</a></div><div class="ttdeci">int16_t coef_corr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00143">measurement.h:143</a></div></div>
+<div class="ttc" id="measurement_8h_html_a65f9e814e216c38ae6d6e243d42a640b"><div class="ttname"><a href="measurement_8h.html#a65f9e814e216c38ae6d6e243d42a640b">mb_calc_hold_reg_coef_corr</a></div><div class="ttdeci">void mb_calc_hold_reg_coef_corr()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00163">measurement.c:163</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a80e7457fbffd0c592e9a7e07dc63dd73"><div class="ttname"><a href="structmeas__state__t.html#a80e7457fbffd0c592e9a7e07dc63dd73">meas_state_t::dcnt_main_thresh</a></div><div class="ttdeci">uint32_t dcnt_main_thresh</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00107">measurement.h:107</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a618bc854fe5dc6dff98e800eeca676c0"><div class="ttname"><a href="structmeas__state__t.html#a618bc854fe5dc6dff98e800eeca676c0">meas_state_t::coef_corr</a></div><div class="ttdeci">int32_t coef_corr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00110">measurement.h:110</a></div></div>
+<div class="ttc" id="structmb__hold__reg__t_html_a7ee22b20fe1923d2a513e92a5fec111e"><div class="ttname"><a href="structmb__hold__reg__t.html#a7ee22b20fe1923d2a513e92a5fec111e">mb_hold_reg_t::temperature_corr</a></div><div class="ttdeci">int16_t temperature_corr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00144">measurement.h:144</a></div></div>
+<div class="ttc" id="structmeas__chan__t_html_a4d577f8e5e6fbe887cb4e27d0b0c8fdb"><div class="ttname"><a href="structmeas__chan__t.html#a4d577f8e5e6fbe887cb4e27d0b0c8fdb">meas_chan_t::error_counter</a></div><div class="ttdeci">uint8_t error_counter</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00095">measurement.h:95</a></div></div>
+<div class="ttc" id="main_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a0ee3b00a44bfdd995147bb4f1fa1e0c9"><div class="ttname"><a href="structmeas__state__t.html#a0ee3b00a44bfdd995147bb4f1fa1e0c9">meas_state_t::last_error</a></div><div class="ttdeci">uint8_t last_error</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00136">measurement.h:136</a></div></div>
+<div class="ttc" id="measurement_8h_html_ac712dcb24a688dfc87e217e6fb5d83f6"><div class="ttname"><a href="measurement_8h.html#ac712dcb24a688dfc87e217e6fb5d83f6">measurement_reinit_filter</a></div><div class="ttdeci">void measurement_reinit_filter()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00405">measurement.c:405</a></div></div>
+<div class="ttc" id="structmeas__chan__t_html"><div class="ttname"><a href="structmeas__chan__t.html">meas_chan_t</a></div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00089">measurement.h:89</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a102daa476dba1b6f8e709797c7e4615f"><div class="ttname"><a href="structmeas__state__t.html#a102daa476dba1b6f8e709797c7e4615f">meas_state_t::current_level</a></div><div class="ttdeci">uint32_t current_level</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00104">measurement.h:104</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_aac9d80b579acc5c4620485b809e2e76b"><div class="ttname"><a href="structmeas__state__t.html#aac9d80b579acc5c4620485b809e2e76b">meas_state_t::powerVin</a></div><div class="ttdeci">float powerVin</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00126">measurement.h:126</a></div></div>
+<div class="ttc" id="structmb__hold__reg__t_html"><div class="ttname"><a href="structmb__hold__reg__t.html">mb_hold_reg_t</a></div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00140">measurement.h:140</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_acafc5a660a0103845ca5464fddba6fff"><div class="ttname"><a href="structmeas__state__t.html#acafc5a660a0103845ca5464fddba6fff">meas_state_t::filter_started</a></div><div class="ttdeci">uint8_t filter_started</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00120">measurement.h:120</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a7483d34cf982e0e8964edc843551b81a"><div class="ttname"><a href="structmeas__state__t.html#a7483d34cf982e0e8964edc843551b81a">meas_state_t::temperature_corr</a></div><div class="ttdeci">int8_t temperature_corr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00127">measurement.h:127</a></div></div>
+<div class="ttc" id="measurement_8h_html_a961b1c1c80336ca346630802c7b3760ca1f8bb00af53ffc44aad6341dea156a4d"><div class="ttname"><a href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760ca1f8bb00af53ffc44aad6341dea156a4d">CHAN_MAIN</a></div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00079">measurement.h:79</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_aab72db04c3e1504e9a5d30a6b885544f"><div class="ttname"><a href="structmeas__state__t.html#aab72db04c3e1504e9a5d30a6b885544f">meas_state_t::flg_need_to_meas</a></div><div class="ttdeci">uint8_t flg_need_to_meas</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00130">measurement.h:130</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_af250a20fcf627bffcc942a1e27b08b72"><div class="ttname"><a href="structmeas__state__t.html#af250a20fcf627bffcc942a1e27b08b72">meas_state_t::temperature</a></div><div class="ttdeci">float temperature</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00124">measurement.h:124</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a7607c17e4f5a0a3f4df377f6fc6e3450"><div class="ttname"><a href="structmeas__state__t.html#a7607c17e4f5a0a3f4df377f6fc6e3450">meas_state_t::filtered</a></div><div class="ttdeci">uint16_t filtered</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00119">measurement.h:119</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a0b837b0d9a9ab9655015e7f795d77070"><div class="ttname"><a href="structmeas__state__t.html#a0b837b0d9a9ab9655015e7f795d77070">meas_state_t::diff_eps</a></div><div class="ttdeci">int32_t diff_eps</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00111">measurement.h:111</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a2d602fb40c03c3003fb13f328d7375ff"><div class="ttname"><a href="structmeas__state__t.html#a2d602fb40c03c3003fb13f328d7375ff">meas_state_t::measurement_counter</a></div><div class="ttdeci">uint16_t measurement_counter</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00121">measurement.h:121</a></div></div>
+<div class="ttc" id="measurement_8h_html_a961b1c1c80336ca346630802c7b3760c"><div class="ttname"><a href="measurement_8h.html#a961b1c1c80336ca346630802c7b3760c">eNumCHAN</a></div><div class="ttdeci">eNumCHAN</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00076">measurement.h:76</a></div></div>
+<div class="ttc" id="measurement_8h_html_a98d9e6a2868eae8714e26828e86c5028"><div class="ttname"><a href="measurement_8h.html#a98d9e6a2868eae8714e26828e86c5028">meas_state</a></div><div class="ttdeci">meas_state_t meas_state</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00095">measurement.c:95</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a37444688b51b45cbd65a02894e8dc0b1"><div class="ttname"><a href="structmeas__state__t.html#a37444688b51b45cbd65a02894e8dc0b1">meas_state_t::dcnt_C1_full</a></div><div class="ttdeci">int32_t dcnt_C1_full</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00115">measurement.h:115</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_aaccc864feb5dea743403f385ba5f3684"><div class="ttname"><a href="structmeas__state__t.html#aaccc864feb5dea743403f385ba5f3684">meas_state_t::sensivity</a></div><div class="ttdeci">uint8_t sensivity</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00137">measurement.h:137</a></div></div>
+<div class="ttc" id="structmeas__chan__t_html_a8e0246e1c68f9e2c056f1b2a7632a556"><div class="ttname"><a href="structmeas__chan__t.html#a8e0246e1c68f9e2c056f1b2a7632a556">meas_chan_t::cnt_curr</a></div><div class="ttdeci">uint32_t cnt_curr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00092">measurement.h:92</a></div></div>
+<div class="ttc" id="measurement_8h_html_a2856f63bdc10b8828381ed9640ced762"><div class="ttname"><a href="measurement_8h.html#a2856f63bdc10b8828381ed9640ced762">auto_tune</a></div><div class="ttdeci">u32 auto_tune()</div><div class="ttdef"><b>Definition:</b> <a href="_auto_cal_8cpp_source.html#l00006">AutoCal.cpp:6</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a787050de06c5e511c102b72f210fff10"><div class="ttname"><a href="structmeas__state__t.html#a787050de06c5e511c102b72f210fff10">meas_state_t::temperature_pure</a></div><div class="ttdeci">int8_t temperature_pure</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00122">measurement.h:122</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a1a2c735c57bd0dd4d505a29882f86aa6"><div class="ttname"><a href="structmeas__state__t.html#a1a2c735c57bd0dd4d505a29882f86aa6">meas_state_t::dcnt_C1_curr</a></div><div class="ttdeci">int32_t dcnt_C1_curr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00114">measurement.h:114</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_ab2ee7e0fde18c522cd9ff2bf4325a275"><div class="ttname"><a href="structmeas__state__t.html#ab2ee7e0fde18c522cd9ff2bf4325a275">meas_state_t::last_chan</a></div><div class="ttdeci">uint8_t last_chan</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00128">measurement.h:128</a></div></div>
+<div class="ttc" id="measurement_8h_html_a1d19ee96ce185c272b8a92af39cb84d8"><div class="ttname"><a href="measurement_8h.html#a1d19ee96ce185c272b8a92af39cb84d8">MAX_COEF_FILTER_LENGTH</a></div><div class="ttdeci">#define MAX_COEF_FILTER_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00086">measurement.h:86</a></div></div>
+<div class="ttc" id="structmeas__chan__t_html_a78d366983dfd18630b9581ff29638e84"><div class="ttname"><a href="structmeas__chan__t.html#a78d366983dfd18630b9581ff29638e84">meas_chan_t::error_flg</a></div><div class="ttdeci">uint8_t error_flg</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00096">measurement.h:96</a></div></div>
+<div class="ttc" id="structmeas__chan__t_html_a319b726f0db35b62f51e67fb534e4836"><div class="ttname"><a href="structmeas__chan__t.html#a319b726f0db35b62f51e67fb534e4836">meas_chan_t::cnt_empty</a></div><div class="ttdeci">uint32_t cnt_empty</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00093">measurement.h:93</a></div></div>
+<div class="ttc" id="measurement_8h_html_a09a433388d9dc055224eb629a7076d97"><div class="ttname"><a href="measurement_8h.html#a09a433388d9dc055224eb629a7076d97">measure_preinit</a></div><div class="ttdeci">void measure_preinit()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00437">measurement.c:437</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_aa566607a8c58c7e84cf42f4731bcf0b7"><div class="ttname"><a href="structmeas__state__t.html#aa566607a8c58c7e84cf42f4731bcf0b7">meas_state_t::flg_need_to_store</a></div><div class="ttdeci">uint8_t flg_need_to_store</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00131">measurement.h:131</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a0ced1b2e73ae110f1523cd593ee8e64f"><div class="ttname"><a href="structmeas__state__t.html#a0ced1b2e73ae110f1523cd593ee8e64f">meas_state_t::start_time</a></div><div class="ttdeci">uint32_t start_time</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00109">measurement.h:109</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_af657b27171216333ebc67b5d2a406d3f"><div class="ttname"><a href="structmeas__state__t.html#af657b27171216333ebc67b5d2a406d3f">meas_state_t::flg_data_latch</a></div><div class="ttdeci">uint8_t flg_data_latch</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00135">measurement.h:135</a></div></div>
+<div class="ttc" id="measurement_8h_html_adffd3499fe89bb6359e7a0e67aab19cb"><div class="ttname"><a href="measurement_8h.html#adffd3499fe89bb6359e7a0e67aab19cb">measure_channels</a></div><div class="ttdeci">void measure_channels()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00524">measurement.c:524</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a47dc8d62abed2ab3a106653a7e24e9a1"><div class="ttname"><a href="structmeas__state__t.html#a47dc8d62abed2ab3a106653a7e24e9a1">meas_state_t::power5v</a></div><div class="ttdeci">float power5v</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00125">measurement.h:125</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_aaebff1e21a06d6582588f4cb9edce721"><div class="ttname"><a href="structmeas__state__t.html#aaebff1e21a06d6582588f4cb9edce721">meas_state_t::last_req</a></div><div class="ttdeci">uint8_t last_req</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00138">measurement.h:138</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_adfd3532d87d0ee2524625b2ff89bce17"><div class="ttname"><a href="structmeas__state__t.html#adfd3532d87d0ee2524625b2ff89bce17">meas_state_t::dcnt_C3_curr</a></div><div class="ttdeci">int32_t dcnt_C3_curr</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00113">measurement.h:113</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a3d7cf3707ff26b824a60e6d8f4dc2964"><div class="ttname"><a href="structmeas__state__t.html#a3d7cf3707ff26b824a60e6d8f4dc2964">meas_state_t::relative_level</a></div><div class="ttdeci">uint32_t relative_level</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00103">measurement.h:103</a></div></div>
+<div class="ttc" id="measurement_8h_html_a77a474a55fa8c91ae995cbb824dd5cd7"><div class="ttname"><a href="measurement_8h.html#a77a474a55fa8c91ae995cbb824dd5cd7">measure_calc_corr_temperature</a></div><div class="ttdeci">int8_t measure_calc_corr_temperature()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00649">measurement.c:649</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_acea04a22b6336d9665236902d2f8d417"><div class="ttname"><a href="structmeas__state__t.html#acea04a22b6336d9665236902d2f8d417">meas_state_t::cnt_t</a></div><div class="ttdeci">uint32_t cnt_t</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00105">measurement.h:105</a></div></div>
+<div class="ttc" id="structmeas__state__t_html_a290cd5efbd4dd1bd95289eb862143c31"><div class="ttname"><a href="structmeas__state__t.html#a290cd5efbd4dd1bd95289eb862143c31">meas_state_t::frequence</a></div><div class="ttdeci">uint16_t frequence</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8h_source.html#l00108">measurement.h:108</a></div></div>
+<div class="ttc" id="measurement_8h_html_a2b87bc99a732db6555f335f55a78562d"><div class="ttname"><a href="measurement_8h.html#a2b87bc99a732db6555f335f55a78562d">measure_init</a></div><div class="ttdeci">void measure_init()</div><div class="ttdef"><b>Definition:</b> <a href="measurement_8c_source.html#l00446">measurement.c:446</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="measurement_8h.html">measurement.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

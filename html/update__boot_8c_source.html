@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл update_boot.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('update__boot_8c_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">update_boot.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="update__boot_8c.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//#include &quot;update_boot.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bootloader__image_8h.html">bootloader_image.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="update__boot_8c.html#a69b3b382418140a2a538c8f6b208109f">    4</a></span>&#160;<span class="preprocessor">#define USER_DATA_DEFAULT   0x00FF00FF</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="update__boot_8c.html#a5bfcb79c5096b79947b8f83c51914e7e">    5</a></span>&#160;<span class="preprocessor">#define USER_DATA_B101      0x00FF00B1</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="update__boot_8c.html#aa4ac8dce892248685664a1bc5cbc1975">    6</a></span>&#160;<span class="preprocessor">#define USER_DATA_B102      0x00FF00B2</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="update__boot_8c.html#a99809dd1267a17cbc14f83506cd2b744">    7</a></span>&#160;<span class="preprocessor">#define USER_DATA_B103      0x00FF00B3</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="update__boot_8c.html#af5764474b00520a12bf0e69a35f1b162">    8</a></span>&#160;<span class="preprocessor">#define USER_DATA_B104      0x00FF00B4</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// версия загрузчика вывернута наоборот, т.к. в загрузчике это uint8_t bootloader_version[4]</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="update__boot_8c.html#aad513f34a91525a4eaa08cfc8883f398">   11</a></span>&#160;<span class="preprocessor">#define BOOT_VER_OK     0x0600020C</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="update__boot_8c.html#a7cb368b554d1759b5c12c7fc3ea3323a">   12</a></span>&#160;<span class="preprocessor">#define BOOT_VER_ADDR   0x08000170</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="update__boot_8c.html#a41ece62abf4e3583d923fe8c55bdbd20">   14</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="update__boot_8c.html#a41ece62abf4e3583d923fe8c55bdbd20">is_need_to_update_boot</a>()</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  uint32_t boot_ver = *((uint32_t *)<a class="code" href="update__boot_8c.html#a7cb368b554d1759b5c12c7fc3ea3323a">BOOT_VER_ADDR</a>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">return</span> (boot_ver == <a class="code" href="update__boot_8c.html#aad513f34a91525a4eaa08cfc8883f398">BOOT_VER_OK</a>) ? 0 : 1;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="update__boot_8c.html#a5d26cecc95d3f0e4e6737607fc10e373">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="update__boot_8c.html#a5d26cecc95d3f0e4e6737607fc10e373">do_update_boot</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#if (!(DBG_FREEZE &amp;  UPDATE_BOOT))  </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  uint32_t wrp_page = ~(uint32_t)(READ_REG(FLASH-&gt;WRPR));</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">if</span> (wrp_page)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// сначала снимем защиту от записи, после этого произойдет перезагрузка</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    HAL_FLASH_Unlock();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    HAL_FLASH_OB_Unlock();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    HAL_FLASHEx_OBErase();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    HAL_FLASH_OB_Launch();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {    </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// стирание области загрузчика</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    FLASH_EraseInitTypeDef EraseInit;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    FLASH_OBProgramInitTypeDef OBInit;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    uint32_t EraseError = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    EraseInit.NbPages = 12;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    EraseInit.PageAddress = FLASH_BASE;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    EraseInit.TypeErase = FLASH_TYPEERASE_PAGES;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    HAL_FLASH_Unlock();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    HAL_FLASHEx_Erase(&amp;EraseInit, &amp;EraseError);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// запись нового загрузчика</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    uint32_t len = <a class="code" href="bootloader__image_8h.html#ac493f05d8a64f4719f4aa1a1635e8087">get_len_of_boot_image</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    uint32_t <a class="code" href="protocol_8h.html#af5105c72a61e60d3b44670de20e0c3fb">addr</a> = FLASH_BASE;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    uint32_t <a class="code" href="protocol_8h.html#a94a0e9b1a87b872f648bdc10666c8299">data</a> = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> *p_data = <a class="code" href="bootloader__image_8h.html#a0a97b8cdbaef27e4bbdff0969a0fdd99">get_pointer_to_boot_image</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span> (len)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span> ((len % 1024) == 0)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      data = *p_data++;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, data);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      addr += 4;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      len -= (len &lt; 4) ? len : 4;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// активация защиты от записи и изменение USER DATA в OPTION BYTE</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    HAL_FLASHEx_OBGetConfig(&amp;OBInit);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    OBInit.OptionType = OPTIONBYTE_WRP | OPTIONBYTE_DATA;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    OBInit.WRPState = OB_WRPSTATE_ENABLE;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    OBInit.WRPPage = (OB_WRP_PAGES0TO3 | OB_WRP_PAGES4TO7 | OB_WRP_PAGES8TO11);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    OBInit.DATAData = (<a class="code" href="update__boot_8c.html#af5764474b00520a12bf0e69a35f1b162">USER_DATA_B104</a> &amp; 0xFF);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    OBInit.DATAAddress = OB_DATA_ADDRESS_DATA0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    HAL_FLASH_OB_Unlock();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    HAL_FLASHEx_OBProgram(&amp;OBInit);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    HAL_FLASH_OB_Launch();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }  </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="ttc" id="update__boot_8c_html_a5d26cecc95d3f0e4e6737607fc10e373"><div class="ttname"><a href="update__boot_8c.html#a5d26cecc95d3f0e4e6737607fc10e373">do_update_boot</a></div><div class="ttdeci">void do_update_boot()</div><div class="ttdef"><b>Definition:</b> <a href="update__boot_8c_source.html#l00020">update_boot.c:20</a></div></div>
+<div class="ttc" id="update__boot_8c_html_a41ece62abf4e3583d923fe8c55bdbd20"><div class="ttname"><a href="update__boot_8c.html#a41ece62abf4e3583d923fe8c55bdbd20">is_need_to_update_boot</a></div><div class="ttdeci">int is_need_to_update_boot()</div><div class="ttdef"><b>Definition:</b> <a href="update__boot_8c_source.html#l00014">update_boot.c:14</a></div></div>
+<div class="ttc" id="main_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div></div>
+<div class="ttc" id="update__boot_8c_html_af5764474b00520a12bf0e69a35f1b162"><div class="ttname"><a href="update__boot_8c.html#af5764474b00520a12bf0e69a35f1b162">USER_DATA_B104</a></div><div class="ttdeci">#define USER_DATA_B104</div><div class="ttdef"><b>Definition:</b> <a href="update__boot_8c_source.html#l00008">update_boot.c:8</a></div></div>
+<div class="ttc" id="bootloader__image_8h_html_ac493f05d8a64f4719f4aa1a1635e8087"><div class="ttname"><a href="bootloader__image_8h.html#ac493f05d8a64f4719f4aa1a1635e8087">get_len_of_boot_image</a></div><div class="ttdeci">unsigned long get_len_of_boot_image()</div><div class="ttdef"><b>Definition:</b> <a href="bootloader__image_8c_source.html#l01031">bootloader_image.c:1031</a></div></div>
+<div class="ttc" id="protocol_8h_html_af5105c72a61e60d3b44670de20e0c3fb"><div class="ttname"><a href="protocol_8h.html#af5105c72a61e60d3b44670de20e0c3fb">addr</a></div><div class="ttdeci">uint8_t addr</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00071">protocol.h:71</a></div></div>
+<div class="ttc" id="bootloader__image_8h_html_a0a97b8cdbaef27e4bbdff0969a0fdd99"><div class="ttname"><a href="bootloader__image_8h.html#a0a97b8cdbaef27e4bbdff0969a0fdd99">get_pointer_to_boot_image</a></div><div class="ttdeci">unsigned long * get_pointer_to_boot_image()</div><div class="ttdef"><b>Definition:</b> <a href="bootloader__image_8c_source.html#l01036">bootloader_image.c:1036</a></div></div>
+<div class="ttc" id="wdt_8h_html_a1fd115669e84cefafd0e2b8c698d72cc"><div class="ttname"><a href="wdt_8h.html#a1fd115669e84cefafd0e2b8c698d72cc">wdt_refresh</a></div><div class="ttdeci">void wdt_refresh()</div><div class="ttdef"><b>Definition:</b> <a href="wdt_8c_source.html#l00039">wdt.c:39</a></div></div>
+<div class="ttc" id="protocol_8h_html_a94a0e9b1a87b872f648bdc10666c8299"><div class="ttname"><a href="protocol_8h.html#a94a0e9b1a87b872f648bdc10666c8299">data</a></div><div class="ttdeci">uint8_t data[PAGE_BUF_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00086">protocol.h:86</a></div></div>
+<div class="ttc" id="update__boot_8c_html_a7cb368b554d1759b5c12c7fc3ea3323a"><div class="ttname"><a href="update__boot_8c.html#a7cb368b554d1759b5c12c7fc3ea3323a">BOOT_VER_ADDR</a></div><div class="ttdeci">#define BOOT_VER_ADDR</div><div class="ttdef"><b>Definition:</b> <a href="update__boot_8c_source.html#l00012">update_boot.c:12</a></div></div>
+<div class="ttc" id="bootloader__image_8h_html"><div class="ttname"><a href="bootloader__image_8h.html">bootloader_image.h</a></div></div>
+<div class="ttc" id="update__boot_8c_html_aad513f34a91525a4eaa08cfc8883f398"><div class="ttname"><a href="update__boot_8c.html#aad513f34a91525a4eaa08cfc8883f398">BOOT_VER_OK</a></div><div class="ttdeci">#define BOOT_VER_OK</div><div class="ttdef"><b>Definition:</b> <a href="update__boot_8c_source.html#l00011">update_boot.c:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="update__boot_8c.html">update_boot.c</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

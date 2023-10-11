@@ -1,0 +1,55 @@
+var group___fr_cnt =
+[
+    [ "TIM_HandleTypeDef", "struct_t_i_m___handle_type_def.html", [
+      [ "Instance", "struct_t_i_m___handle_type_def.html#ab4ea2395c80daa7e0659c4b0a3e13be8", null ],
+      [ "Lock", "struct_t_i_m___handle_type_def.html#afb93556bacbc7a811c234b9a6d8e1165", null ],
+      [ "State", "struct_t_i_m___handle_type_def.html#a67d24105e9f75ce52d699acb96de9a6a", null ]
+    ] ],
+    [ "FrqCounter", "class_frq_counter.html", [
+      [ "FrqCounter", "class_frq_counter.html#a3372100517b099238fce69f16e253eb5", null ],
+      [ "CheckEnd_Count", "class_frq_counter.html#aac4dee56a0eb2e9377605664d8240cfb", null ],
+      [ "FrqCounter_reinit", "class_frq_counter.html#a0d243406858f214661d130b5428fb744", null ],
+      [ "GetFreq", "class_frq_counter.html#ae0e2265bea133bf031f268e34ab5a990", null ],
+      [ "GetTimeSlaveCnt", "class_frq_counter.html#a94176e8b1f05f4578f4301d86f044578", null ],
+      [ "IC_CaptureCallback", "group__irq__tim__fr__cnt.html#ga735e39228d01978a001dddeee3f02ff6", null ],
+      [ "IC_FreqCalc", "class_frq_counter.html#a2cfdf94a1255d97c26e14cc92ad3f3bb", null ],
+      [ "IsReady", "class_frq_counter.html#a6e687c2b63dfca1f1edb7f363e849ff4", null ],
+      [ "Set_CalibrK", "class_frq_counter.html#a839b0fc7fa57e670c86b7fb1041189ef", null ],
+      [ "Set_OffSet", "class_frq_counter.html#a7b73f71559a529b08116a379cc1e927a", null ],
+      [ "Set_RefEdge", "class_frq_counter.html#ac7f0d4a52b7fa78fdf6f64d1b2e272b7", null ],
+      [ "SlaveTimOvfCallback", "group__irq__tim__fr__cnt.html#ga10d48755f3a7b8df44fbb3695c3d7c6b", null ],
+      [ "StartFrcounter", "class_frq_counter.html#ad80acec00e53ae6602dc97c28e880be6", null ],
+      [ "TIM_EDGE_Inp_Init", "class_frq_counter.html#a671045da0179c0afced1b814054612ad", null ],
+      [ "TIM_IC_MspDeInit", "class_frq_counter.html#acf61d3987d9730acf1bec58c28db5c76", null ],
+      [ "TIM_Init", "class_frq_counter.html#acb2c54dcf1f1a0051d74bff2c50790e5", null ],
+      [ "TIM_Time_Slave_Init", "class_frq_counter.html#ac3187e54145e21197fdc2317f834fd3f", null ],
+      [ "CalibrK", "class_frq_counter.html#a7fa0205783d2b8794e17213cf7e4f3ce", null ],
+      [ "htimEdgCnt", "class_frq_counter.html#ad767ccbc8805a5cb6d07e1032e530ec7", null ],
+      [ "htimSlave", "class_frq_counter.html#a5574ff54dc308f70c35b56f43e366f4c", null ],
+      [ "Offset", "class_frq_counter.html#a94df0599d801573e107b5558cde3d821", null ],
+      [ "RefEdge", "class_frq_counter.html#a32fe9de43759a7a4da7766adc6375009", null ],
+      [ "TimSlaveCLCK", "class_frq_counter.html#ac06a68bb87187e37c875c0932b23beaa", null ],
+      [ "uwFrequency", "class_frq_counter.html#a6755ac9243da49f9fab86d725acd331a", null ],
+      [ "uwIC2Value", "class_frq_counter.html#a15cb2bad71fd198aa00b9410544aab28", null ]
+    ] ],
+    [ "ETR_GPIO_Port", "group___fr_cnt.html#gad2e4be7eab9d89dfccab610bf8983a17", null ],
+    [ "ETR_Pin", "group___fr_cnt.html#ga619a087f8d31160382c6ca95a6b11400", null ],
+    [ "GPIO_ETR_CLK_ENABLE", "group___fr_cnt.html#ga9f586bc2a9f54623a2d669e5b7ad9601", null ],
+    [ "GPIO_ETR_SET_REMAP", "group___fr_cnt.html#gad347956acfde0e96684c4361bf4f6835", null ],
+    [ "IOMUX_ETR_CLK_ENABLE", "group___fr_cnt.html#gab3f89537f1e524192cc7c50f73f92b07", null ],
+    [ "TIM_EDGE_CLK_DISABLE", "group___fr_cnt.html#ga44014f791d2cd382b57abffedd287328", null ],
+    [ "TIM_EDGE_CLK_ENABLE", "group___fr_cnt.html#ga3f5d5e8e078adaff76201f3d641e51a2", null ],
+    [ "TIM_EDGE_INPx", "group___fr_cnt.html#ga3a8d4536393d2d345206ed156d227b9f", null ],
+    [ "TIM_Slave", "group___fr_cnt.html#ga2dec2cb312f8c8372fe7a8b6e633e61c", null ],
+    [ "TIM_Slave_CLK_DISABLE", "group___fr_cnt.html#gaaa888d396502c55e40ab9e63008b7d8b", null ],
+    [ "TIM_Slave_CLK_ENABLE", "group___fr_cnt.html#ga06ebdf7127bfee8bbcfe1595393ae6fb", null ],
+    [ "TIM_StateTypeDef", "group___fr_cnt.html#gaa7d52449ac647e86a45b6bb44b6ef8ff", [
+      [ "HAL_TIM_STATE_RESET", "group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa28011b79e60b74a6c55947c505c51cbc", null ],
+      [ "HAL_TIM_STATE_READY", "group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa4545554d7fa04d17e78d69d17cb7e4b3", null ],
+      [ "HAL_TIM_STATE_BUSY", "group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa1ddbfef19ad0562eb8143919b710cc12", null ],
+      [ "HAL_TIM_STATE_TIMEOUT", "group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa03e3339df71a74ac37820f72c2989371", null ],
+      [ "HAL_TIM_STATE_ERROR", "group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa318cceb243cb9ca9e01833913e4f90ea", null ],
+      [ "END_COUNT_EDGE", "group___fr_cnt.html#ggaa7d52449ac647e86a45b6bb44b6ef8ffa74658085115b3e66394ccd2fc5a6985b", null ]
+    ] ],
+    [ "FrCnter", "group___fr_cnt.html#ga05cb2b5846b9c1d134deeead695ac507", null ]
+];

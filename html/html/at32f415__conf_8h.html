@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Файл at32f415_conf.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('at32f415__conf_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл at32f415_conf.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>at32f415 config header file  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;at32f415_crm.h&quot;</code><br />
+<code>#include &quot;at32f415_tmr.h&quot;</code><br />
+<code>#include &quot;at32f415_gpio.h&quot;</code><br />
+<code>#include &quot;at32f415_i2c.h&quot;</code><br />
+<code>#include &quot;at32f415_usart.h&quot;</code><br />
+<code>#include &quot;at32f415_pwc.h&quot;</code><br />
+<code>#include &quot;at32f415_can.h&quot;</code><br />
+<code>#include &quot;at32f415_adc.h&quot;</code><br />
+<code>#include &quot;at32f415_spi.h&quot;</code><br />
+<code>#include &quot;at32f415_dma.h&quot;</code><br />
+<code>#include &quot;at32f415_debug.h&quot;</code><br />
+<code>#include &quot;at32f415_flash.h&quot;</code><br />
+<code>#include &quot;at32f415_crc.h&quot;</code><br />
+<code>#include &quot;at32f415_wwdt.h&quot;</code><br />
+<code>#include &quot;at32f415_wdt.h&quot;</code><br />
+<code>#include &quot;at32f415_exint.h&quot;</code><br />
+<code>#include &quot;at32f415_misc.h&quot;</code><br />
+</div>
+<p><a href="at32f415__conf_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a108fc1cc944596c46b20daee7a6d9503"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a108fc1cc944596c46b20daee7a6d9503">HEXT_VALUE</a>&#160;&#160;&#160;((uint32_t)12000000)</td></tr>
+<tr class="memdesc:a108fc1cc944596c46b20daee7a6d9503"><td class="mdescLeft">&#160;</td><td class="mdescRight">in the following line adjust the value of high speed exernal crystal (hext) used in your application  <a href="#a108fc1cc944596c46b20daee7a6d9503">Подробнее...</a><br /></td></tr>
+<tr class="separator:a108fc1cc944596c46b20daee7a6d9503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c710aefb45ad15df57c4103b6c24ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#ac8c710aefb45ad15df57c4103b6c24ba">HEXT_STARTUP_TIMEOUT</a>&#160;&#160;&#160;((uint16_t)0x3000)</td></tr>
+<tr class="memdesc:ac8c710aefb45ad15df57c4103b6c24ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">in the following line adjust the high speed exernal crystal (hext) startup timeout value  <a href="#ac8c710aefb45ad15df57c4103b6c24ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac8c710aefb45ad15df57c4103b6c24ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7feaea017101d7cccb996f6750709f85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a7feaea017101d7cccb996f6750709f85">HICK_VALUE</a>&#160;&#160;&#160;((uint32_t)8000000)</td></tr>
+<tr class="separator:a7feaea017101d7cccb996f6750709f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1797c89b2aff0b3231a6413c50e2baca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a1797c89b2aff0b3231a6413c50e2baca">CRM_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a1797c89b2aff0b3231a6413c50e2baca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81b043799054b6d14bc547c7c5427ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#ae81b043799054b6d14bc547c7c5427ce">TMR_MODULE_ENABLED</a></td></tr>
+<tr class="separator:ae81b043799054b6d14bc547c7c5427ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb0b04d6cdea45e72d9e5a821f8de28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a0eb0b04d6cdea45e72d9e5a821f8de28">GPIO_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a0eb0b04d6cdea45e72d9e5a821f8de28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae53b5415d826b815bc3bf1c7418d27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a0ae53b5415d826b815bc3bf1c7418d27">I2C_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a0ae53b5415d826b815bc3bf1c7418d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1718c97295e1856a508d4313f7b0d1ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a1718c97295e1856a508d4313f7b0d1ef">USART_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a1718c97295e1856a508d4313f7b0d1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae688fdbaba143604bfbd5865deb7a49b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#ae688fdbaba143604bfbd5865deb7a49b">PWC_MODULE_ENABLED</a></td></tr>
+<tr class="separator:ae688fdbaba143604bfbd5865deb7a49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e018fd4c4a447020f6c91e707a11184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a4e018fd4c4a447020f6c91e707a11184">CAN_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a4e018fd4c4a447020f6c91e707a11184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51e97e12881714d29e976e4b4e84281"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#ae51e97e12881714d29e976e4b4e84281">ADC_MODULE_ENABLED</a></td></tr>
+<tr class="separator:ae51e97e12881714d29e976e4b4e84281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582590d1ffde1d391efdbfd911b29baf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a582590d1ffde1d391efdbfd911b29baf">SPI_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a582590d1ffde1d391efdbfd911b29baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb98d8590dca505bbed7cf7640a442d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#afdb98d8590dca505bbed7cf7640a442d">DMA_MODULE_ENABLED</a></td></tr>
+<tr class="separator:afdb98d8590dca505bbed7cf7640a442d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef5e86ce2527cbb0a0f38781748c931"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a7ef5e86ce2527cbb0a0f38781748c931">DEBUG_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a7ef5e86ce2527cbb0a0f38781748c931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7afeec51533705f10d4e81ecc2b760"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a6b7afeec51533705f10d4e81ecc2b760">FLASH_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a6b7afeec51533705f10d4e81ecc2b760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6cec95d9e5f3d675a619741642d099"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#adf6cec95d9e5f3d675a619741642d099">CRC_MODULE_ENABLED</a></td></tr>
+<tr class="separator:adf6cec95d9e5f3d675a619741642d099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f56e1b71b409ea8e3713cbb7ae8555"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#af8f56e1b71b409ea8e3713cbb7ae8555">WWDT_MODULE_ENABLED</a></td></tr>
+<tr class="separator:af8f56e1b71b409ea8e3713cbb7ae8555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c2e4d11cae8c5b71d73bf3bdd32484"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#ad3c2e4d11cae8c5b71d73bf3bdd32484">WDT_MODULE_ENABLED</a></td></tr>
+<tr class="separator:ad3c2e4d11cae8c5b71d73bf3bdd32484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70f0d1294ec2ac37c0a83ac2d24166a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#aa70f0d1294ec2ac37c0a83ac2d24166a">EXINT_MODULE_ENABLED</a></td></tr>
+<tr class="separator:aa70f0d1294ec2ac37c0a83ac2d24166a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56239400c61e3f6f338295c9bb1f9918"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at32f415__conf_8h.html#a56239400c61e3f6f338295c9bb1f9918">MISC_MODULE_ENABLED</a></td></tr>
+<tr class="separator:a56239400c61e3f6f338295c9bb1f9918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>at32f415 config header file </p>
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a></p>
+</div><h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="ae51e97e12881714d29e976e4b4e84281"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a4e018fd4c4a447020f6c91e707a11184"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a class="anchor" id="adf6cec95d9e5f3d675a619741642d099"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRC_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1797c89b2aff0b3231a6413c50e2baca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRM_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00036">36</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a7ef5e86ce2527cbb0a0f38781748c931"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00048">48</a></p>
+
+</div>
+</div>
+<a class="anchor" id="afdb98d8590dca505bbed7cf7640a442d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00047">47</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aa70f0d1294ec2ac37c0a83ac2d24166a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXINT_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00053">53</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a6b7afeec51533705f10d4e81ecc2b760"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a0eb0b04d6cdea45e72d9e5a821f8de28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00040">40</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ac8c710aefb45ad15df57c4103b6c24ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEXT_STARTUP_TIMEOUT&#160;&#160;&#160;((uint16_t)0x3000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>in the following line adjust the high speed exernal crystal (hext) startup timeout value </p>
+<p>time out for hext start up </p>
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a108fc1cc944596c46b20daee7a6d9503"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEXT_VALUE&#160;&#160;&#160;((uint32_t)12000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>in the following line adjust the value of high speed exernal crystal (hext) used in your application </p>
+<p>tip: to avoid modifying this file each time you need to use different hext, you can define the hext value in your toolchain compiler preprocessor. </p>
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00025">25</a></p>
+
+<p>Используется в <a class="el" href="system__at32f415_8c_source.html#l00104">system_core_clock_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7feaea017101d7cccb996f6750709f85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HICK_VALUE&#160;&#160;&#160;((uint32_t)8000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>value of the high speed internal clock in hz </p>
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00033">33</a></p>
+
+<p>Используется в <a class="el" href="system__at32f415_8c_source.html#l00104">system_core_clock_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ae53b5415d826b815bc3bf1c7418d27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a56239400c61e3f6f338295c9bb1f9918"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MISC_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00056">56</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ae688fdbaba143604bfbd5865deb7a49b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWC_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a582590d1ffde1d391efdbfd911b29baf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00046">46</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ae81b043799054b6d14bc547c7c5427ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TMR_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1718c97295e1856a508d4313f7b0d1ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USART_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad3c2e4d11cae8c5b71d73bf3bdd32484"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WDT_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00052">52</a></p>
+
+</div>
+</div>
+<a class="anchor" id="af8f56e1b71b409ea8e3713cbb7ae8555"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WWDT_MODULE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="at32f415__conf_8h_source.html">at32f415_conf.h</a> строка <a class="el" href="at32f415__conf_8h_source.html#l00051">51</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="at32f415__conf_8h.html">at32f415_conf.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

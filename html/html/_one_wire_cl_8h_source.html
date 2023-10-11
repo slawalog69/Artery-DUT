@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл OneWireCl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_one_wire_cl_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">OneWireCl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_one_wire_cl_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;=======</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//******************</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// CLASS: OneWireCl</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// DESCRIPTION:</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//  Base class</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// CREATED: 02.12.2021, by vlogunov</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// FILE: $FILE_FNAME$</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4c7d8110ef223561e144d2139f4b8871e13cd2ea</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ow__defines_8h.html">ow_defines.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//#include &quot;bsp.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef __ONE_WIRE_CL_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_one_wire_cl_8h.html#af64b2dff77ea122f0e7fd1e3a0f69bc4">   32</a></span>&#160;<span class="preprocessor">#define  __ONE_WIRE_CL_H</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_one_wire_cl_8h.html#a0fa2655841a904a316270b7532cb9922">   35</a></span>&#160;<span class="preprocessor">#define ONE_WIRE_NUMBER_NOT_DEFINED   0x7F</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_one_wire_cl_8h.html#aa475b45011f4f234254f5e9bb394bc53">   36</a></span>&#160;<span class="preprocessor">#define ONE_WIRE_NUMBER_NOT_FOUND     (-128)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_one_wire_cl_8h.html#a6a8611e61ad283b4ed9aea1ed0f6790a">   38</a></span>&#160;<span class="preprocessor">#define IDENTIFICATION_MODE_OUTPUT_ENABLED  1</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_one_wire_cl_8h.html#af02f27e27a6a0bc9cd9dedae5c6e04d4">   39</a></span>&#160;<span class="preprocessor">#define OUTPUT_PORT_NUMBER   0x2</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_one_wire_cl_8h.html#aa166210a6da3ac7e8d7504702520e522">   41</a></span>&#160;<span class="preprocessor">#define GPIO_MODE_IT_FALLING   0 </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_one_wire_cl_8h.html#a088659562e68426d9a72821ea4fd8d50">   42</a></span>&#160;<span class="preprocessor">#define GPIO_MODE_IT_RISING    1</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;=======</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4c7d8110ef223561e144d2139f4b8871e13cd2ea</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_o_w___dev___cl.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_w___dev___cl.html">OW_Dev_Cl</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{ </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>: </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//  uint8_t rom_code[SZ_TX_RX];</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//  OW_rx_data_t Recived;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="class_o_w___dev___cl.html#a2f32179c0b29ed27485e64e425875c6a">OW_Dev_Cl</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_o_w___dev___cl.html#a972587e4e90f5cf43c3014674f77f5c8">~OW_Dev_Cl</a>(); </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_o_w___dev___cl.html#a8f134c38273d590420696add93be9b01">   63</a></span>&#160;  RomID <a class="code" href="class_o_w___dev___cl.html#a8f134c38273d590420696add93be9b01">DeviceID</a>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_o_w___dev___cl.html#a711a6613a0ee2ed4e610a4c107d817fd">fill_ID</a>(RomID* tId);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html">   67</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a> : <span class="keyword">public</span> <a class="code" href="class_o_w___dev___cl.html">OW_Dev_Cl</a>{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//  bool fScratchRead; </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  s8 <a class="code" href="class_d_s18_b20_cl.html#a19ffc76a1da0a402999e3f5eef146c36">middle_of_3</a>(s8 ValNow );</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html#aef0c5e1f9ac87f3fe63c2c2cbc77741d">   70</a></span>&#160;  u8 <a class="code" href="class_d_s18_b20_cl.html#aef0c5e1f9ac87f3fe63c2c2cbc77741d">indxVal</a> ; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html#ac6b2a61db5ae6717d6995c162fc80248">   71</a></span>&#160;  s8 <a class="code" href="class_d_s18_b20_cl.html#ac6b2a61db5ae6717d6995c162fc80248">val</a>[3];</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html#acf71feed3cac3a04016f0df1f23030c9">   72</a></span>&#160;  s8 <a class="code" href="class_d_s18_b20_cl.html#acf71feed3cac3a04016f0df1f23030c9">band_min</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html#a4f52d32bbdabb4cec2440f6bc8a9eee3">   73</a></span>&#160;  s8 <a class="code" href="class_d_s18_b20_cl.html#a4f52d32bbdabb4cec2440f6bc8a9eee3">band_max</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="class_d_s18_b20_cl.html#a3e4fa3e1ac292a66c0f9dae939c37cca">DS18B20Cl</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//  void set_rom(uint8_t* code);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  u8 <a class="code" href="class_d_s18_b20_cl.html#a43b3d4adeabde9bdf3c6f499a3b2786c">Get_rec</a>(ScrPd* scpd  );    </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html#ae7fa8859728fd6fb837eedbdd566f03e">   78</a></span>&#160;ScrPd <a class="code" href="class_d_s18_b20_cl.html#ae7fa8859728fd6fb837eedbdd566f03e">OwnScPd</a>; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html#aab7a4b200eca9c541b831dc23d35ab9e">   79</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="class_d_s18_b20_cl.html#aab7a4b200eca9c541b831dc23d35ab9e">Term</a>; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_d_s18_b20_cl.html#ab43c9d2e82b6f73ce57c1f62ed095026">   80</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_d_s18_b20_cl.html#ab43c9d2e82b6f73ce57c1f62ed095026">ErrWrongSett</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html">   84</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_run___o_w_cl.html">Run_OWCl</a>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a0e5efa90f629120ff29e8e1c10447b82">   86</a></span>&#160;  Use_mode <a class="code" href="class_run___o_w_cl.html#a0e5efa90f629120ff29e8e1c10447b82">USE_MODE</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#ae54d953200edbd874ebf9ec82b5dbad4">OW_TIM_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a93c1038c3c6e00dd79c42c755186fdde">FillDevicesOnLine</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//  TIM_HandleTypeDef htimOW;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#adf3628d575ad5babaa835984af6b1e5a">   90</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#adf3628d575ad5babaa835984af6b1e5a">tx</a>[SZ_TX_RX];</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a623b865483daa6f6e93ddf0da674a0c9">   91</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a623b865483daa6f6e93ddf0da674a0c9">CountDS18B20</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a6a17b774195870c0099646c00ddcabce">   92</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a6a17b774195870c0099646c00ddcabce">QuneRun</a> ;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a9aa355a12b46f07f6a03152406b5e1de">   93</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a9aa355a12b46f07f6a03152406b5e1de">f_cmd</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#ad15b267e67c2d60a0f7d329518725889">   97</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#ad15b267e67c2d60a0f7d329518725889">CountDevs</a> ;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="class_run___o_w_cl.html#a5ca6717f7501ddad851f28991b44828e">Run_OWCl</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a85e02502bb8e7f9df71d109f70a5876b">   99</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a85e02502bb8e7f9df71d109f70a5876b">DATA_Ready</a>  ;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#ifdef USE_FREERTOS </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;s8 task_create (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span>  <a class="code" href="class_run___o_w_cl.html#a603d63c04d8478274a817cbd721e8d44">Run_OWCl_INI</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span>  <a class="code" href="class_run___o_w_cl.html#aedcfef97dab4d181b5eb2d246c38db89">RxTx_gpio_Ini</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a914157d14e092c60b46ab9db6a4878d9">OW_Task</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">void</span>   <a class="code" href="class_run___o_w_cl.html#ae60979856c6edfb9aefa0595e4891605">Selftest</a>( );</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#ad65e335bde9fb762ec6307e673cf824d">OW_crc8</a>(u8*Arr, u8 len);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a74b59e01232c197fbdfa0584f544e0a3">  110</a></span>&#160;  RomID <a class="code" href="class_run___o_w_cl.html#a74b59e01232c197fbdfa0584f544e0a3">Found_ID_Devs</a> [<a class="code" href="_config_o_w_8h.html#adbb7ff97d273381150a8b9639d3ae08a">DEVICES_MAX</a>]; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">//  OW_Dev_Cl  Devices[DEVICES_MAX ] ; </span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a2a167fc7f006067bdd039624bff10b49">  114</a></span>&#160;  <a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>  <a class="code" href="class_run___o_w_cl.html#a2a167fc7f006067bdd039624bff10b49">Devs_DS18B20</a>[<a class="code" href="_config_o_w_8h.html#a99010bb1a3734e949c3267685d84c2ea">DEV_DS18B20_MAX</a> ];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a5caec513bb9edfe8e768d35cba8e3225">  116</a></span>&#160;  <a class="code" href="class_o_w___dev___cl.html">OW_Dev_Cl</a>* <a class="code" href="class_run___o_w_cl.html#a5caec513bb9edfe8e768d35cba8e3225">CurrentDev</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#ab7999fe4053d300c8e30bc3850b32b10">  118</a></span>&#160;  tmr_type * <a class="code" href="class_run___o_w_cl.html#ab7999fe4053d300c8e30bc3850b32b10">OW_TIMER</a>; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; <span class="comment">//****errors***********</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a2cc111c63d89d3d0b3dfba989958eeb4">  120</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a2cc111c63d89d3d0b3dfba989958eeb4">ErrCRC</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a5f6b70757f3a1fd78bd6dc564c06ec38">  121</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a5f6b70757f3a1fd78bd6dc564c06ec38">ErrOverTime</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a4991c85943d5b288d006b76f02fdf4f7">  122</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a4991c85943d5b288d006b76f02fdf4f7">ErrFailOnConversion</a>; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a2e3f6d0d07dbdcca9fe97d05389af446">  123</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a2e3f6d0d07dbdcca9fe97d05389af446">ErrPresencDev</a>; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a2427c2a071144eb2e50be241190fe861">  124</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a2427c2a071144eb2e50be241190fe861">ErrSelfTest</a>; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a4fa8703b9dd33982ad5ae308217d1503">  126</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a4fa8703b9dd33982ad5ae308217d1503">ClearErr</a>(){</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    ErrCRC=ErrOverTime = ErrPresencDev  = ErrFailOnConversion  =0;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a70e2fef2da2f0c7d2f46b5bf668319d7">  128</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a70e2fef2da2f0c7d2f46b5bf668319d7">IsErr</a> (){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">bool</span> x = ErrCRC | ErrOverTime | ErrPresencDev | <a class="code" href="class_run___o_w_cl.html#a4991c85943d5b288d006b76f02fdf4f7">ErrFailOnConversion</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> (x);}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">//  bool OW_Get_ERROR_CRC(){</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">//    return  ErrCRC; };</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">//***************</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a5e384ed51d14966a4275e51043c9661e">  137</a></span>&#160;  OW_state_t <a class="code" href="class_run___o_w_cl.html#a5e384ed51d14966a4275e51043c9661e">OW_state</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a80519c033753d07660e4a6c898cdca54">  138</a></span>&#160;  OW_RomCmd <a class="code" href="class_run___o_w_cl.html#a80519c033753d07660e4a6c898cdca54">RomCmdStat</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a24f8b2386aec966bfdb04d33e795bc79">  140</a></span>&#160;  OW_tx_data_t <a class="code" href="class_run___o_w_cl.html#a24f8b2386aec966bfdb04d33e795bc79">OW_tx_data</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#aaa97d79258ef28af5db5b7dcf7dc0af6">  141</a></span>&#160;  OW_rx_data_t <a class="code" href="class_run___o_w_cl.html#aaa97d79258ef28af5db5b7dcf7dc0af6">OW_rx_data</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a0f3a94db83280ee7884899e6a74cf8f5">StopTim</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#aaabfe0066812c4d26b9f1df7ed789f76">setExti</a>(u32 Stat);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a6c9434c9f2c031316638cc8dfe68d337">ow_timer_reinit</a>(u32 tCCR1, u32 tCCR2 =0 ,u32 tCCR3=0,u32 tArr=0 );</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a816d3c5046b3707efe4853200f299742">OW_simple_delay</a>(u32 TimeUs);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#af711ead64504520e46aff473e7b93fd1">swtchToIDLE</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#aefd91a122ac67599a7373b1ecc0ca7a6">diag</a>( );</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">void</span>  <a class="code" href="class_run___o_w_cl.html#a14aacedee3eae6d5949541a263960df6">fillDevs</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">//  volatile uint32_t tim_cnt_value; </span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a77ed6d1e310fda95763c2140a3ad2db1">OW_read_bytes</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a65f70abd65eb08e3d47b2747cacac39b">OW_read_bit_to_byte</a>(<span class="keywordtype">bool</span> bit_val);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#ae2e25d5c4f65b530d77c5646efcc1446">OW_reset_rx_data</a>(u8 ln);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a704db3e3536db82fe7257c23178eaaed">OW_rx</a>( u8 Len);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a96ed1ff5490883aa8191e14442e638bf">OW_reset_tx_data</a>(u8 ln); </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#abf4d37f045421d2d1591b426023ae9b0">OW_write_bytes</a>();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#ab42b3eca160585b2c74e8c6c9982b581">OW_tx</a>(u8*Bytes, u8 Len);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a704319c3c97ba3faec557a5b48e799ad">ROM_Cmd_Ini</a>(OW_RomCmd <a class="code" href="protocol_8h.html#a4d43e8212bdc9dbee866506f04effcea">cmd</a>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">//  void AddNewDev(OW_Dev_Cl * Dev);</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a3ae8b5594f7ed9491b109c1f3cdc69da">OW_ini_reset_presence</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="comment">//  void OW_reset_line();</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">//  void FillPresence();</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a9bc188e348ca5a282a335aef81e10c1d">ClearDevs</a>();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">// ~~~~~OW search methods~~~~~</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a03cd85bd29a4275eaa5fab6718e7344d">  167</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a03cd85bd29a4275eaa5fab6718e7344d">two_bits_buf</a>; <span class="comment">//[2];  </span></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#aa162e3e858001703c1eaa8755a5c6b63">  168</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#aa162e3e858001703c1eaa8755a5c6b63">Ack_Send</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a11c8e7c6471f989df5b38dce650fa362">OW_Ack_bit</a>(<span class="keywordtype">bool</span> Ack_bit = 0);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a0365743731aa9796ca6078b0481270ce">OW_read_bits_search</a>(); </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a7a4a5b42d6d518c1e17dd2c24a75de4f">readTwoBits</a>();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">inline</span> u8 <a class="code" href="class_run___o_w_cl.html#a52d6440cdc234b78759959fd9bb426e4">FindByFamcode</a>(RomID *buf, Famcode WhatSearch, u8 now_find);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  uint8_t <a class="code" href="class_run___o_w_cl.html#a8b3d472075c543a7fce9a342ecfc216b">OW_Search</a>(RomID *buf,  Famcode WhatSearch);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  u32 <a class="code" href="class_run___o_w_cl.html#a5bc78661ab63f36c5c11fe3b192fe4d5">find_Devices</a>(Famcode WhatsSearch );</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">//~~~~~~~~ DS18B20 methods~~~~~~~~~~~~~</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a40e00302e1da7fd81e6cbd7692a58197">Read_Compare_setting</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev ,SettDS18B20* RefSett); </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#ae07721d49e8e8085303ce6253b766ac7">IsSettMatch</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev,SettDS18B20* CurrSett,SettDS18B20* RefSett);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  ScrPd* <a class="code" href="class_run___o_w_cl.html#a251968db5b9a24b3cccf0de340c1c473">read_scrdpd</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev); </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#add060184562c7173173a22d2f9c53dc7">write_scrpad</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev, SettDS18B20* sett =0);  </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a52ae2353c4abbcbe457a20a9e5c96fcd">write_ConvertT</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev );</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#ad0363584dcd0f2bac698e3b601030fc3">IniDevs_DS18B20</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#ab8017801740db7d187f9b56896b0bad5">copy_scrdpd</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#ad60c38d6d667813d13630cdb31d43723">recall_scrdpd</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a28110a955f84e90c1b855e50d2ee6e01">selectDevice</a>(<a class="code" href="class_d_s18_b20_cl.html">DS18B20Cl</a>* Dev);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#af786f773e65f4d752aeab57f94ce5e1e">WaitForConv</a>(u32 Time );</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a85a50d9b018e7843da333f8a33de4ca6">GetTermo</a>(u8 indxQuene = 0);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">//  u8 CountDS18B20 =0;</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  s32 <a class="code" href="class_run___o_w_cl.html#a4528e75b1075efa32facd8fb1c5e7b82">GetOneWireTemp</a>(u8 number, <span class="keywordtype">bool</span> uni);</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a8456a478ee81c79b75a570a4ca3ff89f">  189</a></span>&#160;    s32 <a class="code" href="class_run___o_w_cl.html#a8456a478ee81c79b75a570a4ca3ff89f">tempsens_old</a>[8];</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">void</span>  <a class="code" href="class_run___o_w_cl.html#ad254f88fd1c5f93af749c83942ac178d">ResetAllTempSensor</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">//  bool tempsens_reading;</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="comment">//~~~~~~~~ iButtons DS1990 methods~~~~~~~~~~~~~</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keywordtype">bool</span>  <a class="code" href="class_run___o_w_cl.html#ae13af86fbd238f99d413c30ff790ddc4">Is_valid_Ibutt</a>(RomID *buf);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keywordtype">void</span>  <a class="code" href="class_run___o_w_cl.html#a20e2f78b2cb63f844ddb95dafdb5577b">check_ibut_presence</a>(u8* rom_id );</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">//  bool Save_iButt_MODE ;</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">//  u8 RegistredKeyMode;</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">//  bool Registred_On_SYS ;</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">//  RomID Registred_iButts[64];</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">//  u8 countRegistredButts ;</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#a4f2b2ba825815f94a7829d08925974b7">iButts_task</a>(RomID * rom_iButt);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_run___o_w_cl.html#af3885d08e4f0b858b518e694fe2f733f">OW_ReadRom</a>(RomID *buf );</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a77beebaf6e97af87d895edd057097591">  203</a></span>&#160;  RomID <a class="code" href="class_run___o_w_cl.html#a77beebaf6e97af87d895edd057097591">LastiButt</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">//  bool bOnWriteEvnt;</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#abaa45111b621ba2f5a80610d13cba773">  205</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#abaa45111b621ba2f5a80610d13cba773">Nfnd</a>; </div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a61bd39ecf938f9cc82981eed63f9a590">  206</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a61bd39ecf938f9cc82981eed63f9a590">Nfnd_Reader</a>; </div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#aa6cc06dc6c6d8c0f65366ae943831f00">  207</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#aa6cc06dc6c6d8c0f65366ae943831f00">DelaySrch_iBut</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a1121385f501991af4522cac0145b0bef">  208</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a1121385f501991af4522cac0145b0bef">DelaySrch_Reader</a>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a4ddfe4ac81d6bb3249288c666fa1d754">  209</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a4ddfe4ac81d6bb3249288c666fa1d754">DelaySrch_DS18B20</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_run___o_w_cl.html#a6f7caf556ad9681828109bb4edf91ee1">keyRegistredLogic</a>(<span class="keywordtype">bool</span> val );</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a36949949fff07f853e6ae7c76ed06e55">  212</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a36949949fff07f853e6ae7c76ed06e55">ow_key</a>[8];</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a9ceadde2e847b579ec1c03daa2f8b779">  213</a></span>&#160;  u8 <a class="code" href="class_run___o_w_cl.html#a9ceadde2e847b579ec1c03daa2f8b779">ow_key_save</a> [8];</div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#ac1f151d8e3f83bc40d0fd6c388c0de91">  214</a></span>&#160;    u8 <a class="code" href="class_run___o_w_cl.html#ac1f151d8e3f83bc40d0fd6c388c0de91">authSuccesfull</a>; </div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#ab932c87617e06c7cb1ce19a1b4205740">  215</a></span>&#160;    u32 <a class="code" href="class_run___o_w_cl.html#ab932c87617e06c7cb1ce19a1b4205740">time_First_Contact</a>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#a8d00509d36749317bc48cd43472a71aa">  216</a></span>&#160;    u64 <a class="code" href="class_run___o_w_cl.html#a8d00509d36749317bc48cd43472a71aa">lastCardNumber</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#abf60aa848718fcde1e5175588a5fb585">  217</a></span>&#160;    u32 <a class="code" href="class_run___o_w_cl.html#abf60aa848718fcde1e5175588a5fb585">timeNoKey</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="class_run___o_w_cl.html#ab8b4c27752c5d01f4dc8ea8232f3e399">  218</a></span>&#160;    s8 <a class="code" href="class_run___o_w_cl.html#ab8b4c27752c5d01f4dc8ea8232f3e399">CountErrorsRead</a>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="comment">//~~~~~~~~~~~~~~~~~~~~~ </span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;};</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">extern</span> <a class="code" href="class_run___o_w_cl.html">Run_OWCl</a> <a class="code" href="_one_wire_cl_8h.html#a4f7a3df8b1fe366c5ae8aa9e4881ac06">mRUN_OW</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="ttc" id="_one_wire_cl_8h_html_a4f7a3df8b1fe366c5ae8aa9e4881ac06"><div class="ttname"><a href="_one_wire_cl_8h.html#a4f7a3df8b1fe366c5ae8aa9e4881ac06">mRUN_OW</a></div><div class="ttdeci">Run_OWCl mRUN_OW</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00025">OneWireCl.cpp:25</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ae54d953200edbd874ebf9ec82b5dbad4"><div class="ttname"><a href="class_run___o_w_cl.html#ae54d953200edbd874ebf9ec82b5dbad4">Run_OWCl::OW_TIM_Init</a></div><div class="ttdeci">void OW_TIM_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00540">OneWireCl.cpp:540</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a61bd39ecf938f9cc82981eed63f9a590"><div class="ttname"><a href="class_run___o_w_cl.html#a61bd39ecf938f9cc82981eed63f9a590">Run_OWCl::Nfnd_Reader</a></div><div class="ttdeci">u8 Nfnd_Reader</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00206">OneWireCl.h:206</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a11c8e7c6471f989df5b38dce650fa362"><div class="ttname"><a href="class_run___o_w_cl.html#a11c8e7c6471f989df5b38dce650fa362">Run_OWCl::OW_Ack_bit</a></div><div class="ttdeci">void OW_Ack_bit(bool Ack_bit=0)</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00031">OWSearchROM.cpp:31</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_ae7fa8859728fd6fb837eedbdd566f03e"><div class="ttname"><a href="class_d_s18_b20_cl.html#ae7fa8859728fd6fb837eedbdd566f03e">DS18B20Cl::OwnScPd</a></div><div class="ttdeci">ScrPd OwnScPd</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00078">OneWireCl.h:78</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a52d6440cdc234b78759959fd9bb426e4"><div class="ttname"><a href="class_run___o_w_cl.html#a52d6440cdc234b78759959fd9bb426e4">Run_OWCl::FindByFamcode</a></div><div class="ttdeci">u8 FindByFamcode(RomID *buf, Famcode WhatSearch, u8 now_find)</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00081">OWSearchROM.cpp:81</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a7a4a5b42d6d518c1e17dd2c24a75de4f"><div class="ttname"><a href="class_run___o_w_cl.html#a7a4a5b42d6d518c1e17dd2c24a75de4f">Run_OWCl::readTwoBits</a></div><div class="ttdeci">void readTwoBits()</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00072">OWSearchROM.cpp:72</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a3ae8b5594f7ed9491b109c1f3cdc69da"><div class="ttname"><a href="class_run___o_w_cl.html#a3ae8b5594f7ed9491b109c1f3cdc69da">Run_OWCl::OW_ini_reset_presence</a></div><div class="ttdeci">void OW_ini_reset_presence()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00593">OneWireCl.cpp:593</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a28110a955f84e90c1b855e50d2ee6e01"><div class="ttname"><a href="class_run___o_w_cl.html#a28110a955f84e90c1b855e50d2ee6e01">Run_OWCl::selectDevice</a></div><div class="ttdeci">void selectDevice(DS18B20Cl *Dev)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00107">DS18B20Cl.cpp:107</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_adf3628d575ad5babaa835984af6b1e5a"><div class="ttname"><a href="class_run___o_w_cl.html#adf3628d575ad5babaa835984af6b1e5a">Run_OWCl::tx</a></div><div class="ttdeci">u8 tx[SZ_TX_RX]</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00090">OneWireCl.h:90</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a2e3f6d0d07dbdcca9fe97d05389af446"><div class="ttname"><a href="class_run___o_w_cl.html#a2e3f6d0d07dbdcca9fe97d05389af446">Run_OWCl::ErrPresencDev</a></div><div class="ttdeci">bool ErrPresencDev</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00123">OneWireCl.h:123</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ad65e335bde9fb762ec6307e673cf824d"><div class="ttname"><a href="class_run___o_w_cl.html#ad65e335bde9fb762ec6307e673cf824d">Run_OWCl::OW_crc8</a></div><div class="ttdeci">u8 OW_crc8(u8 *Arr, u8 len)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00489">OneWireCl.cpp:489</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a816d3c5046b3707efe4853200f299742"><div class="ttname"><a href="class_run___o_w_cl.html#a816d3c5046b3707efe4853200f299742">Run_OWCl::OW_simple_delay</a></div><div class="ttdeci">void OW_simple_delay(u32 TimeUs)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00443">OneWireCl.cpp:443</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_acf71feed3cac3a04016f0df1f23030c9"><div class="ttname"><a href="class_d_s18_b20_cl.html#acf71feed3cac3a04016f0df1f23030c9">DS18B20Cl::band_min</a></div><div class="ttdeci">s8 band_min</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00072">OneWireCl.h:72</a></div></div>
+<div class="ttc" id="class_o_w___dev___cl_html_a8f134c38273d590420696add93be9b01"><div class="ttname"><a href="class_o_w___dev___cl.html#a8f134c38273d590420696add93be9b01">OW_Dev_Cl::DeviceID</a></div><div class="ttdeci">RomID DeviceID</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00063">OneWireCl.h:63</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a14aacedee3eae6d5949541a263960df6"><div class="ttname"><a href="class_run___o_w_cl.html#a14aacedee3eae6d5949541a263960df6">Run_OWCl::fillDevs</a></div><div class="ttdeci">void fillDevs()</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00207">DS18B20Cl.cpp:207</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a4f2b2ba825815f94a7829d08925974b7"><div class="ttname"><a href="class_run___o_w_cl.html#a4f2b2ba825815f94a7829d08925974b7">Run_OWCl::iButts_task</a></div><div class="ttdeci">bool iButts_task(RomID *rom_iButt)</div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a0f3a94db83280ee7884899e6a74cf8f5"><div class="ttname"><a href="class_run___o_w_cl.html#a0f3a94db83280ee7884899e6a74cf8f5">Run_OWCl::StopTim</a></div><div class="ttdeci">static void StopTim()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00609">OneWireCl.cpp:609</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a5e384ed51d14966a4275e51043c9661e"><div class="ttname"><a href="class_run___o_w_cl.html#a5e384ed51d14966a4275e51043c9661e">Run_OWCl::OW_state</a></div><div class="ttdeci">OW_state_t OW_state</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00137">OneWireCl.h:137</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_a3e4fa3e1ac292a66c0f9dae939c37cca"><div class="ttname"><a href="class_d_s18_b20_cl.html#a3e4fa3e1ac292a66c0f9dae939c37cca">DS18B20Cl::DS18B20Cl</a></div><div class="ttdeci">DS18B20Cl()</div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ab7999fe4053d300c8e30bc3850b32b10"><div class="ttname"><a href="class_run___o_w_cl.html#ab7999fe4053d300c8e30bc3850b32b10">Run_OWCl::OW_TIMER</a></div><div class="ttdeci">tmr_type * OW_TIMER</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00118">OneWireCl.h:118</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_af786f773e65f4d752aeab57f94ce5e1e"><div class="ttname"><a href="class_run___o_w_cl.html#af786f773e65f4d752aeab57f94ce5e1e">Run_OWCl::WaitForConv</a></div><div class="ttdeci">bool WaitForConv(u32 Time)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00194">DS18B20Cl.cpp:194</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_aefd91a122ac67599a7373b1ecc0ca7a6"><div class="ttname"><a href="class_run___o_w_cl.html#aefd91a122ac67599a7373b1ecc0ca7a6">Run_OWCl::diag</a></div><div class="ttdeci">u8 diag()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00237">OneWireCl.cpp:237</a></div></div>
+<div class="ttc" id="class_o_w___dev___cl_html_a972587e4e90f5cf43c3014674f77f5c8"><div class="ttname"><a href="class_o_w___dev___cl.html#a972587e4e90f5cf43c3014674f77f5c8">OW_Dev_Cl::~OW_Dev_Cl</a></div><div class="ttdeci">~OW_Dev_Cl()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00089">OneWireCl.cpp:89</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ae60979856c6edfb9aefa0595e4891605"><div class="ttname"><a href="class_run___o_w_cl.html#ae60979856c6edfb9aefa0595e4891605">Run_OWCl::Selftest</a></div><div class="ttdeci">void Selftest()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00240">OneWireCl.cpp:240</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a0e5efa90f629120ff29e8e1c10447b82"><div class="ttname"><a href="class_run___o_w_cl.html#a0e5efa90f629120ff29e8e1c10447b82">Run_OWCl::USE_MODE</a></div><div class="ttdeci">Use_mode USE_MODE</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00086">OneWireCl.h:86</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_aef0c5e1f9ac87f3fe63c2c2cbc77741d"><div class="ttname"><a href="class_d_s18_b20_cl.html#aef0c5e1f9ac87f3fe63c2c2cbc77741d">DS18B20Cl::indxVal</a></div><div class="ttdeci">u8 indxVal</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00070">OneWireCl.h:70</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a96ed1ff5490883aa8191e14442e638bf"><div class="ttname"><a href="class_run___o_w_cl.html#a96ed1ff5490883aa8191e14442e638bf">Run_OWCl::OW_reset_tx_data</a></div><div class="ttdeci">void OW_reset_tx_data(u8 ln)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00473">OneWireCl.cpp:473</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_af711ead64504520e46aff473e7b93fd1"><div class="ttname"><a href="class_run___o_w_cl.html#af711ead64504520e46aff473e7b93fd1">Run_OWCl::swtchToIDLE</a></div><div class="ttdeci">void swtchToIDLE()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00699">OneWireCl.cpp:699</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a70e2fef2da2f0c7d2f46b5bf668319d7"><div class="ttname"><a href="class_run___o_w_cl.html#a70e2fef2da2f0c7d2f46b5bf668319d7">Run_OWCl::IsErr</a></div><div class="ttdeci">bool IsErr()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00128">OneWireCl.h:128</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a2427c2a071144eb2e50be241190fe861"><div class="ttname"><a href="class_run___o_w_cl.html#a2427c2a071144eb2e50be241190fe861">Run_OWCl::ErrSelfTest</a></div><div class="ttdeci">bool ErrSelfTest</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00124">OneWireCl.h:124</a></div></div>
+<div class="ttc" id="class_o_w___dev___cl_html_a2f32179c0b29ed27485e64e425875c6a"><div class="ttname"><a href="class_o_w___dev___cl.html#a2f32179c0b29ed27485e64e425875c6a">OW_Dev_Cl::OW_Dev_Cl</a></div><div class="ttdeci">OW_Dev_Cl()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00085">OneWireCl.cpp:85</a></div></div>
+<div class="ttc" id="_config_o_w_8h_html_a99010bb1a3734e949c3267685d84c2ea"><div class="ttname"><a href="_config_o_w_8h.html#a99010bb1a3734e949c3267685d84c2ea">DEV_DS18B20_MAX</a></div><div class="ttdeci">#define DEV_DS18B20_MAX</div><div class="ttdef"><b>Definition:</b> <a href="_config_o_w_8h_source.html#l00017">ConfigOW.h:17</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_aa6cc06dc6c6d8c0f65366ae943831f00"><div class="ttname"><a href="class_run___o_w_cl.html#aa6cc06dc6c6d8c0f65366ae943831f00">Run_OWCl::DelaySrch_iBut</a></div><div class="ttdeci">u8 DelaySrch_iBut</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00207">OneWireCl.h:207</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a8456a478ee81c79b75a570a4ca3ff89f"><div class="ttname"><a href="class_run___o_w_cl.html#a8456a478ee81c79b75a570a4ca3ff89f">Run_OWCl::tempsens_old</a></div><div class="ttdeci">s32 tempsens_old[8]</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00189">OneWireCl.h:189</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a251968db5b9a24b3cccf0de340c1c473"><div class="ttname"><a href="class_run___o_w_cl.html#a251968db5b9a24b3cccf0de340c1c473">Run_OWCl::read_scrdpd</a></div><div class="ttdeci">ScrPd * read_scrdpd(DS18B20Cl *Dev)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00313">DS18B20Cl.cpp:313</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ab8b4c27752c5d01f4dc8ea8232f3e399"><div class="ttname"><a href="class_run___o_w_cl.html#ab8b4c27752c5d01f4dc8ea8232f3e399">Run_OWCl::CountErrorsRead</a></div><div class="ttdeci">s8 CountErrorsRead</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00218">OneWireCl.h:218</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a77ed6d1e310fda95763c2140a3ad2db1"><div class="ttname"><a href="class_run___o_w_cl.html#a77ed6d1e310fda95763c2140a3ad2db1">Run_OWCl::OW_read_bytes</a></div><div class="ttdeci">void OW_read_bytes()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00506">OneWireCl.cpp:506</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a2cc111c63d89d3d0b3dfba989958eeb4"><div class="ttname"><a href="class_run___o_w_cl.html#a2cc111c63d89d3d0b3dfba989958eeb4">Run_OWCl::ErrCRC</a></div><div class="ttdeci">bool ErrCRC</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00120">OneWireCl.h:120</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a9aa355a12b46f07f6a03152406b5e1de"><div class="ttname"><a href="class_run___o_w_cl.html#a9aa355a12b46f07f6a03152406b5e1de">Run_OWCl::f_cmd</a></div><div class="ttdeci">u8 f_cmd</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00093">OneWireCl.h:93</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_aaa97d79258ef28af5db5b7dcf7dc0af6"><div class="ttname"><a href="class_run___o_w_cl.html#aaa97d79258ef28af5db5b7dcf7dc0af6">Run_OWCl::OW_rx_data</a></div><div class="ttdeci">OW_rx_data_t OW_rx_data</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00141">OneWireCl.h:141</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a6c9434c9f2c031316638cc8dfe68d337"><div class="ttname"><a href="class_run___o_w_cl.html#a6c9434c9f2c031316638cc8dfe68d337">Run_OWCl::ow_timer_reinit</a></div><div class="ttdeci">void ow_timer_reinit(u32 tCCR1, u32 tCCR2=0, u32 tCCR3=0, u32 tArr=0)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00649">OneWireCl.cpp:649</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ab42b3eca160585b2c74e8c6c9982b581"><div class="ttname"><a href="class_run___o_w_cl.html#ab42b3eca160585b2c74e8c6c9982b581">Run_OWCl::OW_tx</a></div><div class="ttdeci">void OW_tx(u8 *Bytes, u8 Len)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00450">OneWireCl.cpp:450</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html"><div class="ttname"><a href="class_run___o_w_cl.html">Run_OWCl</a></div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00084">OneWireCl.h:84</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a80519c033753d07660e4a6c898cdca54"><div class="ttname"><a href="class_run___o_w_cl.html#a80519c033753d07660e4a6c898cdca54">Run_OWCl::RomCmdStat</a></div><div class="ttdeci">OW_RomCmd RomCmdStat</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00138">OneWireCl.h:138</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a74b59e01232c197fbdfa0584f544e0a3"><div class="ttname"><a href="class_run___o_w_cl.html#a74b59e01232c197fbdfa0584f544e0a3">Run_OWCl::Found_ID_Devs</a></div><div class="ttdeci">RomID Found_ID_Devs[DEVICES_MAX]</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00110">OneWireCl.h:110</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a85e02502bb8e7f9df71d109f70a5876b"><div class="ttname"><a href="class_run___o_w_cl.html#a85e02502bb8e7f9df71d109f70a5876b">Run_OWCl::DATA_Ready</a></div><div class="ttdeci">bool DATA_Ready</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00099">OneWireCl.h:99</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a1121385f501991af4522cac0145b0bef"><div class="ttname"><a href="class_run___o_w_cl.html#a1121385f501991af4522cac0145b0bef">Run_OWCl::DelaySrch_Reader</a></div><div class="ttdeci">u8 DelaySrch_Reader</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00208">OneWireCl.h:208</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a93c1038c3c6e00dd79c42c755186fdde"><div class="ttname"><a href="class_run___o_w_cl.html#a93c1038c3c6e00dd79c42c755186fdde">Run_OWCl::FillDevicesOnLine</a></div><div class="ttdeci">void FillDevicesOnLine()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00182">OneWireCl.cpp:182</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_add060184562c7173173a22d2f9c53dc7"><div class="ttname"><a href="class_run___o_w_cl.html#add060184562c7173173a22d2f9c53dc7">Run_OWCl::write_scrpad</a></div><div class="ttdeci">void write_scrpad(DS18B20Cl *Dev, SettDS18B20 *sett=0)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00289">DS18B20Cl.cpp:289</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a65f70abd65eb08e3d47b2747cacac39b"><div class="ttname"><a href="class_run___o_w_cl.html#a65f70abd65eb08e3d47b2747cacac39b">Run_OWCl::OW_read_bit_to_byte</a></div><div class="ttdeci">void OW_read_bit_to_byte(bool bit_val)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00481">OneWireCl.cpp:481</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a0365743731aa9796ca6078b0481270ce"><div class="ttname"><a href="class_run___o_w_cl.html#a0365743731aa9796ca6078b0481270ce">Run_OWCl::OW_read_bits_search</a></div><div class="ttdeci">void OW_read_bits_search()</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00051">OWSearchROM.cpp:51</a></div></div>
+<div class="ttc" id="class_o_w___dev___cl_html_a711a6613a0ee2ed4e610a4c107d817fd"><div class="ttname"><a href="class_o_w___dev___cl.html#a711a6613a0ee2ed4e610a4c107d817fd">OW_Dev_Cl::fill_ID</a></div><div class="ttdeci">void fill_ID(RomID *tId)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00092">OneWireCl.cpp:92</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ae07721d49e8e8085303ce6253b766ac7"><div class="ttname"><a href="class_run___o_w_cl.html#ae07721d49e8e8085303ce6253b766ac7">Run_OWCl::IsSettMatch</a></div><div class="ttdeci">bool IsSettMatch(DS18B20Cl *Dev, SettDS18B20 *CurrSett, SettDS18B20 *RefSett)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00396">DS18B20Cl.cpp:396</a></div></div>
+<div class="ttc" id="_config_o_w_8h_html_adbb7ff97d273381150a8b9639d3ae08a"><div class="ttname"><a href="_config_o_w_8h.html#adbb7ff97d273381150a8b9639d3ae08a">DEVICES_MAX</a></div><div class="ttdeci">#define DEVICES_MAX</div><div class="ttdef"><b>Definition:</b> <a href="_config_o_w_8h_source.html#l00018">ConfigOW.h:18</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_abf4d37f045421d2d1591b426023ae9b0"><div class="ttname"><a href="class_run___o_w_cl.html#abf4d37f045421d2d1591b426023ae9b0">Run_OWCl::OW_write_bytes</a></div><div class="ttdeci">void OW_write_bytes()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00411">OneWireCl.cpp:411</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a20e2f78b2cb63f844ddb95dafdb5577b"><div class="ttname"><a href="class_run___o_w_cl.html#a20e2f78b2cb63f844ddb95dafdb5577b">Run_OWCl::check_ibut_presence</a></div><div class="ttdeci">void check_ibut_presence(u8 *rom_id)</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00356">OWSearchROM.cpp:356</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html"><div class="ttname"><a href="class_d_s18_b20_cl.html">DS18B20Cl</a></div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00067">OneWireCl.h:67</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_a4f52d32bbdabb4cec2440f6bc8a9eee3"><div class="ttname"><a href="class_d_s18_b20_cl.html#a4f52d32bbdabb4cec2440f6bc8a9eee3">DS18B20Cl::band_max</a></div><div class="ttdeci">s8 band_max</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00073">OneWireCl.h:73</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a5caec513bb9edfe8e768d35cba8e3225"><div class="ttname"><a href="class_run___o_w_cl.html#a5caec513bb9edfe8e768d35cba8e3225">Run_OWCl::CurrentDev</a></div><div class="ttdeci">OW_Dev_Cl * CurrentDev</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00116">OneWireCl.h:116</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_aaabfe0066812c4d26b9f1df7ed789f76"><div class="ttname"><a href="class_run___o_w_cl.html#aaabfe0066812c4d26b9f1df7ed789f76">Run_OWCl::setExti</a></div><div class="ttdeci">void setExti(u32 Stat)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00617">OneWireCl.cpp:617</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a9ceadde2e847b579ec1c03daa2f8b779"><div class="ttname"><a href="class_run___o_w_cl.html#a9ceadde2e847b579ec1c03daa2f8b779">Run_OWCl::ow_key_save</a></div><div class="ttdeci">u8 ow_key_save[8]</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00213">OneWireCl.h:213</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ad15b267e67c2d60a0f7d329518725889"><div class="ttname"><a href="class_run___o_w_cl.html#ad15b267e67c2d60a0f7d329518725889">Run_OWCl::CountDevs</a></div><div class="ttdeci">u8 CountDevs</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00097">OneWireCl.h:97</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a8d00509d36749317bc48cd43472a71aa"><div class="ttname"><a href="class_run___o_w_cl.html#a8d00509d36749317bc48cd43472a71aa">Run_OWCl::lastCardNumber</a></div><div class="ttdeci">u64 lastCardNumber</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00216">OneWireCl.h:216</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a4fa8703b9dd33982ad5ae308217d1503"><div class="ttname"><a href="class_run___o_w_cl.html#a4fa8703b9dd33982ad5ae308217d1503">Run_OWCl::ClearErr</a></div><div class="ttdeci">void ClearErr()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00126">OneWireCl.h:126</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a6f7caf556ad9681828109bb4edf91ee1"><div class="ttname"><a href="class_run___o_w_cl.html#a6f7caf556ad9681828109bb4edf91ee1">Run_OWCl::keyRegistredLogic</a></div><div class="ttdeci">void keyRegistredLogic(bool val)</div><div class="ttdef"><b>Definition:</b> <a href="_read__i_butt_8cpp_source.html#l00052">Read_iButt.cpp:52</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_aab7a4b200eca9c541b831dc23d35ab9e"><div class="ttname"><a href="class_d_s18_b20_cl.html#aab7a4b200eca9c541b831dc23d35ab9e">DS18B20Cl::Term</a></div><div class="ttdeci">float Term</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00079">OneWireCl.h:79</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a77beebaf6e97af87d895edd057097591"><div class="ttname"><a href="class_run___o_w_cl.html#a77beebaf6e97af87d895edd057097591">Run_OWCl::LastiButt</a></div><div class="ttdeci">RomID LastiButt</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00203">OneWireCl.h:203</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_ab43c9d2e82b6f73ce57c1f62ed095026"><div class="ttname"><a href="class_d_s18_b20_cl.html#ab43c9d2e82b6f73ce57c1f62ed095026">DS18B20Cl::ErrWrongSett</a></div><div class="ttdeci">bool ErrWrongSett</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00080">OneWireCl.h:80</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a6a17b774195870c0099646c00ddcabce"><div class="ttname"><a href="class_run___o_w_cl.html#a6a17b774195870c0099646c00ddcabce">Run_OWCl::QuneRun</a></div><div class="ttdeci">u8 QuneRun</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00092">OneWireCl.h:92</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_ac6b2a61db5ae6717d6995c162fc80248"><div class="ttname"><a href="class_d_s18_b20_cl.html#ac6b2a61db5ae6717d6995c162fc80248">DS18B20Cl::val</a></div><div class="ttdeci">s8 val[3]</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00071">OneWireCl.h:71</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ab8017801740db7d187f9b56896b0bad5"><div class="ttname"><a href="class_run___o_w_cl.html#ab8017801740db7d187f9b56896b0bad5">Run_OWCl::copy_scrdpd</a></div><div class="ttdeci">void copy_scrdpd(DS18B20Cl *Dev)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00360">DS18B20Cl.cpp:360</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a40e00302e1da7fd81e6cbd7692a58197"><div class="ttname"><a href="class_run___o_w_cl.html#a40e00302e1da7fd81e6cbd7692a58197">Run_OWCl::Read_Compare_setting</a></div><div class="ttdeci">bool Read_Compare_setting(DS18B20Cl *Dev, SettDS18B20 *RefSett)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00274">DS18B20Cl.cpp:274</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_abaa45111b621ba2f5a80610d13cba773"><div class="ttname"><a href="class_run___o_w_cl.html#abaa45111b621ba2f5a80610d13cba773">Run_OWCl::Nfnd</a></div><div class="ttdeci">u8 Nfnd</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00205">OneWireCl.h:205</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ae2e25d5c4f65b530d77c5646efcc1446"><div class="ttname"><a href="class_run___o_w_cl.html#ae2e25d5c4f65b530d77c5646efcc1446">Run_OWCl::OW_reset_rx_data</a></div><div class="ttdeci">void OW_reset_rx_data(u8 ln)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00466">OneWireCl.cpp:466</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a24f8b2386aec966bfdb04d33e795bc79"><div class="ttname"><a href="class_run___o_w_cl.html#a24f8b2386aec966bfdb04d33e795bc79">Run_OWCl::OW_tx_data</a></div><div class="ttdeci">OW_tx_data_t OW_tx_data</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00140">OneWireCl.h:140</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a5f6b70757f3a1fd78bd6dc564c06ec38"><div class="ttname"><a href="class_run___o_w_cl.html#a5f6b70757f3a1fd78bd6dc564c06ec38">Run_OWCl::ErrOverTime</a></div><div class="ttdeci">bool ErrOverTime</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00121">OneWireCl.h:121</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a9bc188e348ca5a282a335aef81e10c1d"><div class="ttname"><a href="class_run___o_w_cl.html#a9bc188e348ca5a282a335aef81e10c1d">Run_OWCl::ClearDevs</a></div><div class="ttdeci">void ClearDevs()</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00287">OWSearchROM.cpp:287</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_a43b3d4adeabde9bdf3c6f499a3b2786c"><div class="ttname"><a href="class_d_s18_b20_cl.html#a43b3d4adeabde9bdf3c6f499a3b2786c">DS18B20Cl::Get_rec</a></div><div class="ttdeci">u8 Get_rec(ScrPd *scpd)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00069">DS18B20Cl.cpp:69</a></div></div>
+<div class="ttc" id="class_o_w___dev___cl_html"><div class="ttname"><a href="class_o_w___dev___cl.html">OW_Dev_Cl</a></div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00054">OneWireCl.h:54</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a03cd85bd29a4275eaa5fab6718e7344d"><div class="ttname"><a href="class_run___o_w_cl.html#a03cd85bd29a4275eaa5fab6718e7344d">Run_OWCl::two_bits_buf</a></div><div class="ttdeci">u8 two_bits_buf</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00167">OneWireCl.h:167</a></div></div>
+<div class="ttc" id="protocol_8h_html_a4d43e8212bdc9dbee866506f04effcea"><div class="ttname"><a href="protocol_8h.html#a4d43e8212bdc9dbee866506f04effcea">cmd</a></div><div class="ttdeci">uint8_t cmd</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00072">protocol.h:72</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ad0363584dcd0f2bac698e3b601030fc3"><div class="ttname"><a href="class_run___o_w_cl.html#ad0363584dcd0f2bac698e3b601030fc3">Run_OWCl::IniDevs_DS18B20</a></div><div class="ttdeci">void IniDevs_DS18B20(DS18B20Cl *Dev)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00404">DS18B20Cl.cpp:404</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a704319c3c97ba3faec557a5b48e799ad"><div class="ttname"><a href="class_run___o_w_cl.html#a704319c3c97ba3faec557a5b48e799ad">Run_OWCl::ROM_Cmd_Ini</a></div><div class="ttdeci">void ROM_Cmd_Ini(OW_RomCmd cmd)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00458">OneWireCl.cpp:458</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_af3885d08e4f0b858b518e694fe2f733f"><div class="ttname"><a href="class_run___o_w_cl.html#af3885d08e4f0b858b518e694fe2f733f">Run_OWCl::OW_ReadRom</a></div><div class="ttdeci">bool OW_ReadRom(RomID *buf)</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00312">OWSearchROM.cpp:312</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_abf60aa848718fcde1e5175588a5fb585"><div class="ttname"><a href="class_run___o_w_cl.html#abf60aa848718fcde1e5175588a5fb585">Run_OWCl::timeNoKey</a></div><div class="ttdeci">u32 timeNoKey</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00217">OneWireCl.h:217</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ad60c38d6d667813d13630cdb31d43723"><div class="ttname"><a href="class_run___o_w_cl.html#ad60c38d6d667813d13630cdb31d43723">Run_OWCl::recall_scrdpd</a></div><div class="ttdeci">void recall_scrdpd(DS18B20Cl *Dev)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00384">DS18B20Cl.cpp:384</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_aa162e3e858001703c1eaa8755a5c6b63"><div class="ttname"><a href="class_run___o_w_cl.html#aa162e3e858001703c1eaa8755a5c6b63">Run_OWCl::Ack_Send</a></div><div class="ttdeci">bool Ack_Send</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00168">OneWireCl.h:168</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a5ca6717f7501ddad851f28991b44828e"><div class="ttname"><a href="class_run___o_w_cl.html#a5ca6717f7501ddad851f28991b44828e">Run_OWCl::Run_OWCl</a></div><div class="ttdeci">Run_OWCl()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00103">OneWireCl.cpp:103</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a52ae2353c4abbcbe457a20a9e5c96fcd"><div class="ttname"><a href="class_run___o_w_cl.html#a52ae2353c4abbcbe457a20a9e5c96fcd">Run_OWCl::write_ConvertT</a></div><div class="ttdeci">void write_ConvertT(DS18B20Cl *Dev)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00254">DS18B20Cl.cpp:254</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a4ddfe4ac81d6bb3249288c666fa1d754"><div class="ttname"><a href="class_run___o_w_cl.html#a4ddfe4ac81d6bb3249288c666fa1d754">Run_OWCl::DelaySrch_DS18B20</a></div><div class="ttdeci">u8 DelaySrch_DS18B20</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00209">OneWireCl.h:209</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a603d63c04d8478274a817cbd721e8d44"><div class="ttname"><a href="class_run___o_w_cl.html#a603d63c04d8478274a817cbd721e8d44">Run_OWCl::Run_OWCl_INI</a></div><div class="ttdeci">void Run_OWCl_INI()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00162">OneWireCl.cpp:162</a></div></div>
+<div class="ttc" id="class_d_s18_b20_cl_html_a19ffc76a1da0a402999e3f5eef146c36"><div class="ttname"><a href="class_d_s18_b20_cl.html#a19ffc76a1da0a402999e3f5eef146c36">DS18B20Cl::middle_of_3</a></div><div class="ttdeci">s8 middle_of_3(s8 ValNow)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00043">DS18B20Cl.cpp:43</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ae13af86fbd238f99d413c30ff790ddc4"><div class="ttname"><a href="class_run___o_w_cl.html#ae13af86fbd238f99d413c30ff790ddc4">Run_OWCl::Is_valid_Ibutt</a></div><div class="ttdeci">bool Is_valid_Ibutt(RomID *buf)</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00347">OWSearchROM.cpp:347</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ad254f88fd1c5f93af749c83942ac178d"><div class="ttname"><a href="class_run___o_w_cl.html#ad254f88fd1c5f93af749c83942ac178d">Run_OWCl::ResetAllTempSensor</a></div><div class="ttdeci">void ResetAllTempSensor(void)</div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a36949949fff07f853e6ae7c76ed06e55"><div class="ttname"><a href="class_run___o_w_cl.html#a36949949fff07f853e6ae7c76ed06e55">Run_OWCl::ow_key</a></div><div class="ttdeci">u8 ow_key[8]</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00212">OneWireCl.h:212</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a4528e75b1075efa32facd8fb1c5e7b82"><div class="ttname"><a href="class_run___o_w_cl.html#a4528e75b1075efa32facd8fb1c5e7b82">Run_OWCl::GetOneWireTemp</a></div><div class="ttdeci">s32 GetOneWireTemp(u8 number, bool uni)</div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a8b3d472075c543a7fce9a342ecfc216b"><div class="ttname"><a href="class_run___o_w_cl.html#a8b3d472075c543a7fce9a342ecfc216b">Run_OWCl::OW_Search</a></div><div class="ttdeci">uint8_t OW_Search(RomID *buf, Famcode WhatSearch)</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00120">OWSearchROM.cpp:120</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a914157d14e092c60b46ab9db6a4878d9"><div class="ttname"><a href="class_run___o_w_cl.html#a914157d14e092c60b46ab9db6a4878d9">Run_OWCl::OW_Task</a></div><div class="ttdeci">void OW_Task()</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00255">OneWireCl.cpp:255</a></div></div>
+<div class="ttc" id="ow__defines_8h_html"><div class="ttname"><a href="ow__defines_8h.html">ow_defines.h</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a4991c85943d5b288d006b76f02fdf4f7"><div class="ttname"><a href="class_run___o_w_cl.html#a4991c85943d5b288d006b76f02fdf4f7">Run_OWCl::ErrFailOnConversion</a></div><div class="ttdeci">bool ErrFailOnConversion</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00122">OneWireCl.h:122</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a623b865483daa6f6e93ddf0da674a0c9"><div class="ttname"><a href="class_run___o_w_cl.html#a623b865483daa6f6e93ddf0da674a0c9">Run_OWCl::CountDS18B20</a></div><div class="ttdeci">u8 CountDS18B20</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00091">OneWireCl.h:91</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_aedcfef97dab4d181b5eb2d246c38db89"><div class="ttname"><a href="class_run___o_w_cl.html#aedcfef97dab4d181b5eb2d246c38db89">Run_OWCl::RxTx_gpio_Ini</a></div><div class="ttdeci">void RxTx_gpio_Ini(void)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00124">OneWireCl.cpp:124</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a85a50d9b018e7843da333f8a33de4ca6"><div class="ttname"><a href="class_run___o_w_cl.html#a85a50d9b018e7843da333f8a33de4ca6">Run_OWCl::GetTermo</a></div><div class="ttdeci">bool GetTermo(u8 indxQuene=0)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s18_b20_cl_8cpp_source.html#l00144">DS18B20Cl.cpp:144</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a5bc78661ab63f36c5c11fe3b192fe4d5"><div class="ttname"><a href="class_run___o_w_cl.html#a5bc78661ab63f36c5c11fe3b192fe4d5">Run_OWCl::find_Devices</a></div><div class="ttdeci">u32 find_Devices(Famcode WhatsSearch)</div><div class="ttdef"><b>Definition:</b> <a href="_o_w_search_r_o_m_8cpp_source.html#l00366">OWSearchROM.cpp:366</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ab932c87617e06c7cb1ce19a1b4205740"><div class="ttname"><a href="class_run___o_w_cl.html#ab932c87617e06c7cb1ce19a1b4205740">Run_OWCl::time_First_Contact</a></div><div class="ttdeci">u32 time_First_Contact</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00215">OneWireCl.h:215</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a704db3e3536db82fe7257c23178eaaed"><div class="ttname"><a href="class_run___o_w_cl.html#a704db3e3536db82fe7257c23178eaaed">Run_OWCl::OW_rx</a></div><div class="ttdeci">void OW_rx(u8 Len)</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8cpp_source.html#l00532">OneWireCl.cpp:532</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_ac1f151d8e3f83bc40d0fd6c388c0de91"><div class="ttname"><a href="class_run___o_w_cl.html#ac1f151d8e3f83bc40d0fd6c388c0de91">Run_OWCl::authSuccesfull</a></div><div class="ttdeci">u8 authSuccesfull</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00214">OneWireCl.h:214</a></div></div>
+<div class="ttc" id="class_run___o_w_cl_html_a2a167fc7f006067bdd039624bff10b49"><div class="ttname"><a href="class_run___o_w_cl.html#a2a167fc7f006067bdd039624bff10b49">Run_OWCl::Devs_DS18B20</a></div><div class="ttdeci">DS18B20Cl Devs_DS18B20[DEV_DS18B20_MAX]</div><div class="ttdef"><b>Definition:</b> <a href="_one_wire_cl_8h_source.html#l00114">OneWireCl.h:114</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3f89f2c36ad4b038fdcb59e73295b972.html">OWire</a></li><li class="navelem"><a class="el" href="_one_wire_cl_8h.html">OneWireCl.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

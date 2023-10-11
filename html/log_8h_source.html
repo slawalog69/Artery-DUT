@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>LLS5M проект: Исходный файл log.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LLS5M проект
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('log_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">log.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="log_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __LOG_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __LOG_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="log_8h.html#a4151ed5c671e7c3c3bea27a29960d3fe">    6</a></span>&#160;<span class="preprocessor">#define LOG_HEADER_VERSION  0xA1</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="log_8h.html#a29c9978e16221d5a071caa7986f7157e">    7</a></span>&#160;<span class="preprocessor">#define LOG_SERVICE_VERSION 0xB1</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="log_8h.html#a1e3a4d578acda2e97a53b22cdacfb9a3">    9</a></span>&#160;<span class="preprocessor">#define LOG_RD_TRIES_MAX  10</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="log_8h.html#aa2f54b8ace2112538a65e20b52acc1d0">   10</a></span>&#160;<span class="preprocessor">#define LOG_WR_TRIES_MAX  10</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472">   12</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472af982da1067e3e87248f92e4c792daa8d">   14</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472af982da1067e3e87248f92e4c792daa8d">LOG_OPCODE_DEV_ADDR</a> = 0x00,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472adb3727beab4be809f285556e05b5e9cf">   15</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472adb3727beab4be809f285556e05b5e9cf">LOG_OPCODE_BAUDRATE</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a5e4e209b2433d952ab15571090f4a1b5">   16</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a5e4e209b2433d952ab15571090f4a1b5">LOG_OPCODE_N_MIN</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472ae736f875c4e2a2c6a9b91708fb5239e4">   17</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472ae736f875c4e2a2c6a9b91708fb5239e4">LOG_OPCODE_N_MAX</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a796df56b3d023cb017a59b4c1ac7ba6e">   18</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a796df56b3d023cb017a59b4c1ac7ba6e">LOG_OPCODE_FILTER_LEN</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472ad08c8b573c90afe7b4891595de0d02aa">   19</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472ad08c8b573c90afe7b4891595de0d02aa">LOG_OPCODE_AUTOMODE</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a9efc3fab24a68351a3177887f42de194">   20</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a9efc3fab24a68351a3177887f42de194">LOG_OPCODE_AUTOTIME</a>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a913f48e8297dd95baaa273f3d848c109">   21</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a913f48e8297dd95baaa273f3d848c109">LOG_OPCODE_CNT_MAIN_EMPTY</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a387b4abce2c49aff07c5c05367b57c48">   22</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a387b4abce2c49aff07c5c05367b57c48">LOG_OPCODE_CNT_MAIN_FULL</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a87d831dee31880c3bad32d261719433d">   23</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a87d831dee31880c3bad32d261719433d">LOG_OPCODE_CNT_REF_EMPTY</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a2f1f23cc784056fbc3b6286fd2da84ba">   24</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a2f1f23cc784056fbc3b6286fd2da84ba">LOG_OPCODE_CNT_REF_FULL</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a35d32d7900f6bf02b003f09026df80cd">   25</a></span>&#160;  <a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a35d32d7900f6bf02b003f09026df80cd">LOG_OPCODE_SW_RESET</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}<a class="code" href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472">log_opcode_t</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="log_8h.html#aeae3541d8256307651cea13b2910d042">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="log_8h.html#aeae3541d8256307651cea13b2910d042a10077ba4e2aa326c18fc7f5b65a4e815">   30</a></span>&#160;  <a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042a10077ba4e2aa326c18fc7f5b65a4e815">LOG_ERROR_OK</a> = 0,</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="log_8h.html#aeae3541d8256307651cea13b2910d042a24fea97e5a602e7d6c9494340c0750d5">   31</a></span>&#160;  <a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042a24fea97e5a602e7d6c9494340c0750d5">LOG_ERROR_VERSION</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="log_8h.html#aeae3541d8256307651cea13b2910d042a6874c4fbdcb39664be43a6b56dee8ee6">   32</a></span>&#160;  <a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042a6874c4fbdcb39664be43a6b56dee8ee6">LOG_ERROR_CRC</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="log_8h.html#aeae3541d8256307651cea13b2910d042a277353428f733482e56f1257fe251da9">   33</a></span>&#160;  <a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042a277353428f733482e56f1257fe251da9">LOG_ERROR_READ</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="log_8h.html#aeae3541d8256307651cea13b2910d042a6dcecd90c1d265d5a93fc8d8a5f3e61e">   34</a></span>&#160;  <a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042a6dcecd90c1d265d5a93fc8d8a5f3e61e">LOG_ERROR_WRITE</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="log_8h.html#aeae3541d8256307651cea13b2910d042a70b0610e7e5021338aa4c1883d758c0a">   35</a></span>&#160;  <a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042a70b0610e7e5021338aa4c1883d758c0a">LOG_ERROR_OVER</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}<a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042">log_error_t</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#pragma pack(1)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structlog__service__t.html">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structlog__service__t.html#abf6db027723b65e7bad774053a407915">   41</a></span>&#160;  uint32_t <a class="code" href="structlog__service__t.html#abf6db027723b65e7bad774053a407915">uptime</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structlog__service__t.html#a4e0bfcf9652f9dbd33ea43aad411c415">   42</a></span>&#160;  uint32_t <a class="code" href="structlog__service__t.html#a4e0bfcf9652f9dbd33ea43aad411c415">poweron_counter</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structlog__service__t.html#aca1755b7ec43c01fe234144116a218fb">   43</a></span>&#160;  uint8_t <a class="code" href="structlog__service__t.html#aca1755b7ec43c01fe234144116a218fb">version</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structlog__service__t.html#a37f80c99941941d96b37e6e893e2e71f">   44</a></span>&#160;  uint8_t <a class="code" href="structlog__service__t.html#a37f80c99941941d96b37e6e893e2e71f">crc</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}<a class="code" href="structlog__service__t.html">log_service_t</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structlog__record__t.html">   47</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structlog__record__t.html#a86cb6966f484d8a8a676de2d40ea9954">   49</a></span>&#160;  uint32_t <a class="code" href="structlog__record__t.html#a86cb6966f484d8a8a676de2d40ea9954">id</a>;  </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structlog__record__t.html#a6f7c49467735efeed08bd0524fba3b7c">   50</a></span>&#160;  uint32_t <a class="code" href="structlog__record__t.html#a6f7c49467735efeed08bd0524fba3b7c">time</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structlog__record__t.html#a8caed1a345e4b390fd4e9cb1b794a3e8">   51</a></span>&#160;  uint32_t <a class="code" href="structlog__record__t.html#a8caed1a345e4b390fd4e9cb1b794a3e8">value</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structlog__record__t.html#a506e838621da19d7c86111ff9c10c4f7">   52</a></span>&#160;  uint8_t <a class="code" href="structlog__record__t.html#a506e838621da19d7c86111ff9c10c4f7">opcode</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structlog__record__t.html#a26aa8e451fc67df6f7a2ce5b1784d9cb">   53</a></span>&#160;  uint8_t <a class="code" href="structlog__record__t.html#a26aa8e451fc67df6f7a2ce5b1784d9cb">crc</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}<a class="code" href="structlog__record__t.html">log_record_t</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structlog__header__t.html">   56</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structlog__header__t.html#a61828a9ef223f4602b1e3e2827ce6dc7">   58</a></span>&#160;  uint32_t <a class="code" href="structlog__header__t.html#a61828a9ef223f4602b1e3e2827ce6dc7">last_record_id</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structlog__header__t.html#ac0f43bcba97a6286c0463de7b1d07fbe">   59</a></span>&#160;  uint8_t <a class="code" href="structlog__header__t.html#ac0f43bcba97a6286c0463de7b1d07fbe">version</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structlog__header__t.html#af20ecb544ee6855fc04e7bd39f3efb8d">   60</a></span>&#160;  uint8_t <a class="code" href="structlog__header__t.html#af20ecb544ee6855fc04e7bd39f3efb8d">crc</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}<a class="code" href="structlog__header__t.html">log_header_t</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#pragma pack()</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="log_8h.html#a29e083bc5628c8e6aed2b149b1cb4eb6">   64</a></span>&#160;<span class="preprocessor">#define LOG_PERSISTENT_RECORDS_QNT    5  // кол-во неизменяемых записей лога</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="log_8h.html#a09657fb10d7ccd9ea83d1ac09e0739e5">   65</a></span>&#160;<span class="preprocessor">#define LOG_VARIABLE_RECORDS_QNT      24 // кол-во изменяемых записей лога</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="log_8h.html#a434492832ff45372dd1cd2971b956132">   66</a></span>&#160;<span class="preprocessor">#define LOG_TOTAL_RECORDS_QNT         (LOG_PERSISTENT_RECORDS_QNT + LOG_VARIABLE_RECORDS_QNT)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="log_8h.html#ac7a97dd8012f736330d5e514e9084b53">   68</a></span>&#160;<span class="preprocessor">#define LOG_SERVICE_RECORD_SIZE       (sizeof(log_service_t))</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="log_8h.html#afb97c47115a60e5e54fe1eb2b5b72c99">   69</a></span>&#160;<span class="preprocessor">#define LOG_HEADER_RECORD_SIZE        (sizeof(log_header_t))</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="log_8h.html#af8971b0de8fa8173d835fb701d30a5cb">   70</a></span>&#160;<span class="preprocessor">#define LOG_DATA_RECORD_SIZE          (sizeof(log_record_t))</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="log_8h.html#afc178c62cfb7bcd5cf938cbd6fc672cd">   71</a></span>&#160;<span class="preprocessor">#define LOG_PERSISTENT_RECORDS_SIZE   (LOG_PERSISTENT_RECORDS_QNT * LOG_DATA_RECORD_SIZE)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="log_8h.html#a81daa5301f92a983ab6f5bd40a1d6c9e">   72</a></span>&#160;<span class="preprocessor">#define LOG_VARIABLE_RECORDS_SIZE     (LOG_VARIABLE_RECORDS_QNT * LOG_DATA_RECORD_SIZE)</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="log_8h.html#a958e8ba8f7300649c3f12c77a228f28e">log_init</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042">log_error_t</a> <a class="code" href="log_8h.html#a778071c30eede7fb061b4f0a94927bf4">log_write_service</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042">log_error_t</a> <a class="code" href="log_8h.html#a7a422af1e870304d62816af3dc0f2dcf">log_put_record</a>(uint16_t opcode, uint32_t time, uint32_t <a class="code" href="protocol_8h.html#a94a0e9b1a87b872f648bdc10666c8299">data</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="log_8h.html#aeae3541d8256307651cea13b2910d042">log_error_t</a> <a class="code" href="log_8h.html#a4f8aa4ab5afc34ef825dfadb401501b7">log_read_record</a>(uint16_t record_offset, uint8_t *p_data);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;uint16_t <a class="code" href="log_8h.html#a876db4dc6676c52f84d0c935d84e46b0">log_get_sizeof_log</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif // __LOG_H</span></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a2f1f23cc784056fbc3b6286fd2da84ba"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a2f1f23cc784056fbc3b6286fd2da84ba">LOG_OPCODE_CNT_REF_FULL</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00024">log.h:24</a></div></div>
+<div class="ttc" id="log_8h_html_aeae3541d8256307651cea13b2910d042a6dcecd90c1d265d5a93fc8d8a5f3e61e"><div class="ttname"><a href="log_8h.html#aeae3541d8256307651cea13b2910d042a6dcecd90c1d265d5a93fc8d8a5f3e61e">LOG_ERROR_WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00034">log.h:34</a></div></div>
+<div class="ttc" id="structlog__record__t_html_a8caed1a345e4b390fd4e9cb1b794a3e8"><div class="ttname"><a href="structlog__record__t.html#a8caed1a345e4b390fd4e9cb1b794a3e8">log_record_t::value</a></div><div class="ttdeci">uint32_t value</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00051">log.h:51</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472ad08c8b573c90afe7b4891595de0d02aa"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472ad08c8b573c90afe7b4891595de0d02aa">LOG_OPCODE_AUTOMODE</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00019">log.h:19</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a9efc3fab24a68351a3177887f42de194"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a9efc3fab24a68351a3177887f42de194">LOG_OPCODE_AUTOTIME</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00020">log.h:20</a></div></div>
+<div class="ttc" id="structlog__record__t_html"><div class="ttname"><a href="structlog__record__t.html">log_record_t</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00047">log.h:47</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a87d831dee31880c3bad32d261719433d"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a87d831dee31880c3bad32d261719433d">LOG_OPCODE_CNT_REF_EMPTY</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00023">log.h:23</a></div></div>
+<div class="ttc" id="log_8h_html_aeae3541d8256307651cea13b2910d042a10077ba4e2aa326c18fc7f5b65a4e815"><div class="ttname"><a href="log_8h.html#aeae3541d8256307651cea13b2910d042a10077ba4e2aa326c18fc7f5b65a4e815">LOG_ERROR_OK</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00030">log.h:30</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472adb3727beab4be809f285556e05b5e9cf"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472adb3727beab4be809f285556e05b5e9cf">LOG_OPCODE_BAUDRATE</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00015">log.h:15</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a5e4e209b2433d952ab15571090f4a1b5"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a5e4e209b2433d952ab15571090f4a1b5">LOG_OPCODE_N_MIN</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00016">log.h:16</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a796df56b3d023cb017a59b4c1ac7ba6e"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a796df56b3d023cb017a59b4c1ac7ba6e">LOG_OPCODE_FILTER_LEN</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00018">log.h:18</a></div></div>
+<div class="ttc" id="structlog__record__t_html_a506e838621da19d7c86111ff9c10c4f7"><div class="ttname"><a href="structlog__record__t.html#a506e838621da19d7c86111ff9c10c4f7">log_record_t::opcode</a></div><div class="ttdeci">uint8_t opcode</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00052">log.h:52</a></div></div>
+<div class="ttc" id="log_8h_html_a7a422af1e870304d62816af3dc0f2dcf"><div class="ttname"><a href="log_8h.html#a7a422af1e870304d62816af3dc0f2dcf">log_put_record</a></div><div class="ttdeci">log_error_t log_put_record(uint16_t opcode, uint32_t time, uint32_t data)</div><div class="ttdef"><b>Definition:</b> <a href="log_8c_source.html#l00125">log.c:125</a></div></div>
+<div class="ttc" id="log_8h_html_a958e8ba8f7300649c3f12c77a228f28e"><div class="ttname"><a href="log_8h.html#a958e8ba8f7300649c3f12c77a228f28e">log_init</a></div><div class="ttdeci">void log_init()</div><div class="ttdef"><b>Definition:</b> <a href="log_8c_source.html#l00011">log.c:11</a></div></div>
+<div class="ttc" id="log_8h_html_aeae3541d8256307651cea13b2910d042"><div class="ttname"><a href="log_8h.html#aeae3541d8256307651cea13b2910d042">log_error_t</a></div><div class="ttdeci">log_error_t</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00028">log.h:28</a></div></div>
+<div class="ttc" id="structlog__service__t_html_aca1755b7ec43c01fe234144116a218fb"><div class="ttname"><a href="structlog__service__t.html#aca1755b7ec43c01fe234144116a218fb">log_service_t::version</a></div><div class="ttdeci">uint8_t version</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00043">log.h:43</a></div></div>
+<div class="ttc" id="structlog__record__t_html_a86cb6966f484d8a8a676de2d40ea9954"><div class="ttname"><a href="structlog__record__t.html#a86cb6966f484d8a8a676de2d40ea9954">log_record_t::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00049">log.h:49</a></div></div>
+<div class="ttc" id="log_8h_html_aeae3541d8256307651cea13b2910d042a277353428f733482e56f1257fe251da9"><div class="ttname"><a href="log_8h.html#aeae3541d8256307651cea13b2910d042a277353428f733482e56f1257fe251da9">LOG_ERROR_READ</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+<div class="ttc" id="log_8h_html_a876db4dc6676c52f84d0c935d84e46b0"><div class="ttname"><a href="log_8h.html#a876db4dc6676c52f84d0c935d84e46b0">log_get_sizeof_log</a></div><div class="ttdeci">uint16_t log_get_sizeof_log()</div><div class="ttdef"><b>Definition:</b> <a href="log_8c_source.html#l00190">log.c:190</a></div></div>
+<div class="ttc" id="structlog__service__t_html"><div class="ttname"><a href="structlog__service__t.html">log_service_t</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00039">log.h:39</a></div></div>
+<div class="ttc" id="log_8h_html_aeae3541d8256307651cea13b2910d042a24fea97e5a602e7d6c9494340c0750d5"><div class="ttname"><a href="log_8h.html#aeae3541d8256307651cea13b2910d042a24fea97e5a602e7d6c9494340c0750d5">LOG_ERROR_VERSION</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+<div class="ttc" id="protocol_8h_html_a94a0e9b1a87b872f648bdc10666c8299"><div class="ttname"><a href="protocol_8h.html#a94a0e9b1a87b872f648bdc10666c8299">data</a></div><div class="ttdeci">uint8_t data[PAGE_BUF_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="protocol_8h_source.html#l00086">protocol.h:86</a></div></div>
+<div class="ttc" id="structlog__record__t_html_a26aa8e451fc67df6f7a2ce5b1784d9cb"><div class="ttname"><a href="structlog__record__t.html#a26aa8e451fc67df6f7a2ce5b1784d9cb">log_record_t::crc</a></div><div class="ttdeci">uint8_t crc</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00053">log.h:53</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a913f48e8297dd95baaa273f3d848c109"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a913f48e8297dd95baaa273f3d848c109">LOG_OPCODE_CNT_MAIN_EMPTY</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00021">log.h:21</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a35d32d7900f6bf02b003f09026df80cd"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a35d32d7900f6bf02b003f09026df80cd">LOG_OPCODE_SW_RESET</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00025">log.h:25</a></div></div>
+<div class="ttc" id="structlog__header__t_html_af20ecb544ee6855fc04e7bd39f3efb8d"><div class="ttname"><a href="structlog__header__t.html#af20ecb544ee6855fc04e7bd39f3efb8d">log_header_t::crc</a></div><div class="ttdeci">uint8_t crc</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00060">log.h:60</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472">log_opcode_t</a></div><div class="ttdeci">log_opcode_t</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00012">log.h:12</a></div></div>
+<div class="ttc" id="structlog__header__t_html"><div class="ttname"><a href="structlog__header__t.html">log_header_t</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00056">log.h:56</a></div></div>
+<div class="ttc" id="structlog__record__t_html_a6f7c49467735efeed08bd0524fba3b7c"><div class="ttname"><a href="structlog__record__t.html#a6f7c49467735efeed08bd0524fba3b7c">log_record_t::time</a></div><div class="ttdeci">uint32_t time</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00050">log.h:50</a></div></div>
+<div class="ttc" id="structlog__service__t_html_a4e0bfcf9652f9dbd33ea43aad411c415"><div class="ttname"><a href="structlog__service__t.html#a4e0bfcf9652f9dbd33ea43aad411c415">log_service_t::poweron_counter</a></div><div class="ttdeci">uint32_t poweron_counter</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00042">log.h:42</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472ae736f875c4e2a2c6a9b91708fb5239e4"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472ae736f875c4e2a2c6a9b91708fb5239e4">LOG_OPCODE_N_MAX</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00017">log.h:17</a></div></div>
+<div class="ttc" id="log_8h_html_a778071c30eede7fb061b4f0a94927bf4"><div class="ttname"><a href="log_8h.html#a778071c30eede7fb061b4f0a94927bf4">log_write_service</a></div><div class="ttdeci">log_error_t log_write_service()</div><div class="ttdef"><b>Definition:</b> <a href="log_8c_source.html#l00109">log.c:109</a></div></div>
+<div class="ttc" id="structlog__service__t_html_a37f80c99941941d96b37e6e893e2e71f"><div class="ttname"><a href="structlog__service__t.html#a37f80c99941941d96b37e6e893e2e71f">log_service_t::crc</a></div><div class="ttdeci">uint8_t crc</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00044">log.h:44</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472a387b4abce2c49aff07c5c05367b57c48"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472a387b4abce2c49aff07c5c05367b57c48">LOG_OPCODE_CNT_MAIN_FULL</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00022">log.h:22</a></div></div>
+<div class="ttc" id="log_8h_html_a4f8aa4ab5afc34ef825dfadb401501b7"><div class="ttname"><a href="log_8h.html#a4f8aa4ab5afc34ef825dfadb401501b7">log_read_record</a></div><div class="ttdeci">log_error_t log_read_record(uint16_t record_offset, uint8_t *p_data)</div><div class="ttdef"><b>Definition:</b> <a href="log_8c_source.html#l00170">log.c:170</a></div></div>
+<div class="ttc" id="log_8h_html_aeae3541d8256307651cea13b2910d042a70b0610e7e5021338aa4c1883d758c0a"><div class="ttname"><a href="log_8h.html#aeae3541d8256307651cea13b2910d042a70b0610e7e5021338aa4c1883d758c0a">LOG_ERROR_OVER</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00035">log.h:35</a></div></div>
+<div class="ttc" id="structlog__header__t_html_a61828a9ef223f4602b1e3e2827ce6dc7"><div class="ttname"><a href="structlog__header__t.html#a61828a9ef223f4602b1e3e2827ce6dc7">log_header_t::last_record_id</a></div><div class="ttdeci">uint32_t last_record_id</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00058">log.h:58</a></div></div>
+<div class="ttc" id="log_8h_html_a0a97ebda4eb036ee8a13d284d1733472af982da1067e3e87248f92e4c792daa8d"><div class="ttname"><a href="log_8h.html#a0a97ebda4eb036ee8a13d284d1733472af982da1067e3e87248f92e4c792daa8d">LOG_OPCODE_DEV_ADDR</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00014">log.h:14</a></div></div>
+<div class="ttc" id="structlog__header__t_html_ac0f43bcba97a6286c0463de7b1d07fbe"><div class="ttname"><a href="structlog__header__t.html#ac0f43bcba97a6286c0463de7b1d07fbe">log_header_t::version</a></div><div class="ttdeci">uint8_t version</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00059">log.h:59</a></div></div>
+<div class="ttc" id="structlog__service__t_html_abf6db027723b65e7bad774053a407915"><div class="ttname"><a href="structlog__service__t.html#abf6db027723b65e7bad774053a407915">log_service_t::uptime</a></div><div class="ttdeci">uint32_t uptime</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00041">log.h:41</a></div></div>
+<div class="ttc" id="log_8h_html_aeae3541d8256307651cea13b2910d042a6874c4fbdcb39664be43a6b56dee8ee6"><div class="ttname"><a href="log_8h.html#aeae3541d8256307651cea13b2910d042a6874c4fbdcb39664be43a6b56dee8ee6">LOG_ERROR_CRC</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00032">log.h:32</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="log_8h.html">log.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>
